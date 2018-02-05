@@ -1,24 +1,142 @@
 @charset "utf-8";
 @font-face {
-    font-family: "Lantinghei";
-    src: url('../fonts/Lantinghei.eot?t=1502934803553');
-    /* IE9*/
-    src: url('../fonts/Lantinghei.eot?t=1502934803553#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Lantinghei.woff?t=1502934803553') format('woff'), /* chrome, firefox */ url('../fonts/Lantinghei.ttf?t=1502934803553') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/Lantinghei.svg?t=1502934803553#iconfont') format('svg');/* iOS 4.1- */
+    font-family: "SourceHanSansCN-Regular";
+    src: url('../fonts/SourceHanSansCN-Regular.eot');
+    src:
+            url('../fonts/SourceHanSansCN-Regular.eot?#font-spider') format('embedded-opentype'),
+            url('../fonts/SourceHanSansCN-Regular.woff2') format('woff2'),
+            url('../fonts/SourceHanSansCN-Regular.woff') format('woff'),
+            url('../fonts/SourceHanSansCN-Regular.ttf') format('truetype'),
+            url('../fonts/SourceHanSansCN-Regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+/*字体文件*/
+@font-face {
+    font-family: 'iconfont';  /* project id 563951 */
+    src: url('//at.alicdn.com/t/font_563951_iu1cotp1xv6xbt9.eot');
+    src: url('//at.alicdn.com/t/font_563951_iu1cotp1xv6xbt9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_563951_iu1cotp1xv6xbt9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_563951_iu1cotp1xv6xbt9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_563951_iu1cotp1xv6xbt9.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
+.icon-yduidingwei:before { content: "\e67b"; }
+
+.icon-paixujiantoushang:before { content: "\e74c"; }
+
+.icon-phone6dianhua:before { content: "\e679"; }
+
+.icon-location3dingwei3:before { content: "\e6b6"; }
+
+.icon-guo:before { content: "\e649"; }
+
+.icon-zuojiantou:before { content: "\e64b"; }
+
+.icon-shoucang1:before { content: "\e63c"; }
+
+.icon-iconfontzhizuobiaozhun25:before { content: "\e618"; }
+
+.icon-shuilongtouhuasaanzhuang:before { content: "\e612"; }
+
+.icon-fangdajing:before { content: "\e627"; }
+
+.icon-liaotian:before { content: "\e60e"; }
+
+.icon-xiala:before { content: "\e656"; }
+
+.icon-shoucang:before { content: "\e63b"; }
+
+.icon-yuyueguanli:before { content: "\e610"; }
+
+.icon-caidan:before { content: "\e691"; }
+
+.icon-fenxiang:before { content: "\e655"; }
+
+.icon-shafa:before { content: "\e67d"; }
+
+.icon-ditu:before { content: "\e859"; }
+
+.icon-zhinengchuang-f:before { content: "\e6a8"; }
 html,
 body {
     background: #fff;
-    /* font-family: 'slHeiTi','Microsoft Yahei','Lantinghei','Arial Narrow','HELVETICA','Tahoma',serif; */
+    /*font-family:Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,sans-self;*/
     /* 第一个是第三方字体 */
-    font-family: 'Lantinghei', serif;
+    font-family: 'SourceHanSansCN-Regular', Helvetica,sans-self;
     font-style: normal;
     -webkit-user-select: none;
     /* 禁止页面文字选择 */
 }
-
+/*轮播图收藏分享*/
+.wrapper{
+    position: relative;
+    z-index: 11;
+    border: none;
+}
+.top-inform{
+    width: 100%;
+    position: absolute;
+    z-index: 12;
+    top:0.2rem;
+}
+.zuojiantou{
+    color: #fff;
+    font-size: 0.6rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+.dingwei{
+    color: #fff;
+    font-size: 0.5rem;
+    float: right;
+    margin-right: 0.3rem;
+    margin-top: 0.05rem;
+}
+.shoucang{
+    color: #fff;
+    font-size: 0.5rem;
+    float: right;
+    margin-right: 0.3rem;
+    margin-top: 0.05rem;
+}
+.shoucang1{
+    color: red;
+    font-size: 0.5rem;
+    float: right;
+    margin-right: 0.3rem;
+    margin-top: 0.05rem;
+}
+.fenxiang{
+    color: #fff;
+    font-size: 0.5rem;
+    float: right;
+    margin-right: 0.2rem;
+    margin-top: 0.05rem;
+}
+.bottom-inform{
+    width: auto;
+    position: absolute;
+    z-index: 12;
+    bottom:0;
+    right: 0;
+    height: auto;
+    padding: 0.15rem 0.3rem;
+    font-size: 0.5rem;
+    color: red;
+    background: url("../img/background.png") repeat center;
+    -webkit-border-top-left-radius: 0.2rem;
+    -moz-border-top-left-radius: 0.2rem;
+    border-top-left-radius: 0.2rem;
+}
+/*轮播图收藏分享end*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 
