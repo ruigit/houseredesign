@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>灯泡找房</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--轮播图-->
+    <link rel="stylesheet" href="css/slider.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!--轮播图-->
+    <script type="text/javascript" src="js/h5-slider.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        })
+        $(document).ready(function() {
+//            收藏
+            $(".shou").on("click", function () {
+                $(this).toggleClass("shoucang icon-shoucang").toggleClass("shoucang1 icon-shoucang1");
+            })
+//            切换
+            $(".content-main-tap ul li").on("click", function () {
+                var i = $(this).index();
+                $(this).addClass("color-tap-yellow").siblings().removeClass("color-tap-yellow");
+                $('.tab-main li').eq(i).addClass("show").siblings().removeClass("show");
+            })
+        })
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="top-inform">
+        <i class="iconfont icon-zuojiantou zuojiantou"></i>
+        <i class="iconfont icon-fenxiang fenxiang"></i>
+        <i class="shou iconfont icon-shoucang shoucang"></i>
+        <i class="iconfont icon-yduidingwei dingwei"></i>
+        <div class="clearfix"></div>
+    </div>
+    <!-- 轮播图开始 -->
+    <div class="aui-banner-content " data-aui-slider>
+        <div class="aui-banner-wrapper">
+            <div class="aui-banner-wrapper-item">
+                <a href="#">
+                    <img data-src="img/news-banner3.jpg">
+                </a>
+            </div>
+            <div class="aui-banner-wrapper-item">
+                <a href="#">
+                    <img data-src="img/news-banner1.jpg">
+                </a>
+            </div>
+            <div class="aui-banner-wrapper-item">
+                <a href="#">
+                    <img data-src="img/news-banner4.jpg">
+                </a>
+            </div>
+            <div class="aui-banner-wrapper-item">
+                <a href="#">
+                    <img data-src="img/news-banner2.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图结束 -->
+    <div class="bottom-inform">
+        23万/年
+    </div>
+</div>
+<div class="detail-main">
+    <div class="detail-main-title">
+        <div class="detail-main-title-left">
+            <dl>
+                <dt>中海国际社区3期2号楼1-25-1</dt>
+                <dt>110m²</dt>
+                <!--红黄蓝使用-->
+                <dt><i class="iconfont icon-shafa shafa"></i><span>3</span>
+                    <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                    <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                    <i class="iconfont icon-guo guo"></i><span>1</span>
+                    <div class="clearfix"></div>
+                </dt>
+                <!--绿色使用-->
+                <!--<dt>均价 <i style="color: red">1.5w/m²</i></dt>-->
+                <dt>南北</dt>
+            </dl>
+        </div>
+        <div class="detail-main-title-right">
+            <img src="img/picd.jpg" />
+            <div class="detail-main-title-right-p color-control-yellow">
+                <i class="iconfont icon-iconfontzhizuobiaozhun25 phone"></i>
+                <span>咨询</span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--end-->
+    <div class="content-main">
+        <div class="content-main-tap">
+            <ul>
+                <li class="color-tap-yellow">房子详情</li>
+                <li>公司介绍</li>
+                <li>成交记录</li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <div class="tab-main">
+            <ul>
+                <li class="show">
+                    <dl>
+                        <dt>
+                            <span>看房时间</span>
+                            <p class="detail-tab-main color-control-yellow">
+                                <i class="iconfont icon-yuyueguanli yuyue"></i>
+                                <a class="yuyue-phone">电话预约</a>
+                                <p class="clearfix"></p>
+                            </p>
+                            <div class="clearfix"></div>
+                        </dt>
+                        <dt>
+                            <span>房源信息</span>
+                            <p>房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息</p>
+                            <div class="clearfix"></div>
+                        </dt>
+                        <dt>
+                            <span>投资</span>
+                            <p>23万/年</p>
+                            <div class="clearfix"></div>
+                        </dt>
+                        <dt>
+                            <span>评估</span>
+                            <p>房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息</p>
+                            <div class="clearfix"></div>
+                        </dt>
+                    </dl>
+                </li>
+                <li><dl>
+
+                    <dt>
+                        <span>房源信息</span>
+                        <p>房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息</p>
+                        <div class="clearfix"></div>
+                    </dt>
+
+                    <dt>
+                        <span>公司介绍</span>
+                        <p>房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息房源信息</p>
+                        <div class="clearfix"></div>
+                    </dt>
+                </dl></li>
+                <li>
+                    <div class="tab-main-pic-main">
+                    <div class="tab-main-pic">
+                        <img src="img/news-banner1.jpg" />
+                    </div>
+                    <div class="bottom-inform-img">
+                        <img src="img/picd.jpg" />
+                    </div>
+                    <div class="bottom-inform-pic">
+                        23万/年
+                    </div>
+                    <div class="bottom-inform-i">
+                        <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                        <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                        <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                        <i class="iconfont icon-guo guo"></i><span>1</span>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="bottom-inform-watermark-i">
+                        <img src="img/watermark.png" />
+                    </div>
+                </div>
+                    <div class="tab-main-pic-main">
+                        <div class="tab-main-pic">
+                            <img src="img/news-banner1.jpg" />
+                        </div>
+                        <div class="bottom-inform-img">
+                            <img src="img/picd.jpg" />
+                        </div>
+                        <div class="bottom-inform-pic">
+                            23万/年
+                        </div>
+                        <div class="bottom-inform-i">
+                            <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                            <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                            <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                            <i class="iconfont icon-guo guo"></i><span>1</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="bottom-inform-watermark-i">
+                            <img src="img/watermark.png" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-phone">
+        <ul>
+            <li class="color-tap-yellow">
+                <i class="iconfont icon-liaotian liaotian"></i>
+            </li>
+            <li class="color-tap-yellow">
+                <i class="iconfont icon-phone6dianhua phone6"></i>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
