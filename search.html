@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>灯泡找房</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <link rel="stylesheet" href="css/mobileSelect.css"/>
+    <script type="text/javascript" src="js/mobileSelect.min.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function(){
+            new
+            FastClick(document.body);
+        })
+        $(document).ready(function() {
+            //		背景高度
+            var winHeight = window.innerHeight + $(".search-nav").height();
+            var bodyheight = $(".caidan-line").height() + $(".search-nav").height();
+            if (winHeight > bodyheight){
+                $(".caidan-line").css({height: winHeight});
+            }else {
+                $(".caidan-line").css({height: bodyheight});
+            }
+//            侧边导航
+            $(".caidan").on("click", function(){
+//                $(".caidan-line").animate({left: '0'}, 800);
+
+                $(".caidan-line").removeClass("showleftnav-r");
+                $(".caidan-line").toggleClass("showleftnav");
+//                禁止移动
+//                $('body').on("touchmove",function(e){
+//                    e.preventDefault();
+//                });
+
+            })
+            $(".cha").on("click", function(){
+//                $(".caidan-line").animate({left: '-100%'}, 800);
+                $(".caidan-line").removeClass("showleftnav");
+                $(".caidan-line").toggleClass("showleftnav-r");
+//                解绑移动事件
+//                $('body').unbind('touchmove');
+            })
+            //            房源面积
+
+            $("#area").on("touchstart", function () {
+//                $(".masking").animate({bottom: '0'}, 800);
+//                $(".area").animate({bottom: '0'}, 800);
+                $(".masking").removeClass("showleftnav-y");
+                $(".masking").toggleClass("showleftnav-yr");
+                $(".area").removeClass("showleftnav-y");
+                $(".area").toggleClass("showleftnav-yr");
+
+                //                禁止移动
+//                $('body').on("touchmove",function(e){
+//                    e.preventDefault();
+//                });
+            })
+
+            //输入框失去焦点时
+            $(".chose-input-num-last").on('blur',function(){
+                if($(".chose-input-num").val()=="" || $(".chose-input-num-last").val()==""){
+                    alert("请输入面积");
+                }else if($(".chose-input-num").val() <= $(".chose-input-num-last").val()){
+                    alert("请输入正确的范围");
+                }else {
+                    $(".dater").on("touchstart", function () {
+//                        $(".masking").animate({bottom: '-100%'}, 800);
+//                        $(".area").animate({bottom: '-40%'}, 800);
+                        $(".masking").removeClass("showleftnav-yr");
+                        $(".masking").toggleClass("showleftnav-y");
+                        $(".area").removeClass("showleftnav-yr");
+                        $(".area").toggleClass("showleftnav-y");
+                        //                解绑移动事件
+//                        $('body').unbind('touchmove');
+                    })
+                    }
+                })
+
+
+            //            房源面积end
+            //            价位
+            $("#price").on("touchstart", function () {
+//                $(".masking").animate({bottom: '0'}, 800);
+//                $(".price").animate({bottom: '0'}, 800);
+                $(".masking").removeClass("showleftnav-y");
+                $(".masking").toggleClass("showleftnav-yr");
+                $(".price").removeClass("showleftnav-y");
+                $(".price").toggleClass("showleftnav-yr");
+                //                禁止移动
+//                $('body').on("touchmove",function(e){
+//                    e.preventDefault();
+//                });
+            })
+
+            //输入框失去焦点时
+            $(".price-chose-input-num-last").on('blur',function(){
+
+                if($(".price-chose-input-num").val()=="" || $(".price-chose-input-num-last").val()==""){
+                    alert("请输入价格");
+                }else if($(".price-chose-input-num").val() <= $(".price-chose-input-num-last").val()){
+                    alert("请输入正确的范围");
+                }else {
+                    $(".price-dater").on("touchstart", function () {
+//                        $(".masking").animate({bottom: '-100%'}, 800);
+//                        $(".price").animate({bottom: '-40%'}, 800);
+                        $(".masking").removeClass("showleftnav-yr");
+                        $(".masking").toggleClass("showleftnav-y");
+                        $(".price").removeClass("showleftnav-yr");
+                        $(".price").toggleClass("showleftnav-y");
+                        //                解绑移动事件
+//                        $('body').unbind('touchmove');
+
+                    })
+                    }
+                })
+
+            //            价位end
+            //            房源朝向
+//            $("#toward").on("touchstart", function () {
+////                $(".masking").animate({bottom: '0'}, 800);
+////                $(".toward").animate({bottom: '0'}, 800);
+//                $(".masking").removeClass("showleftnav-y");
+//                $(".masking").toggleClass("showleftnav-yr");
+//                $(".toward").removeClass("showleftnav-y");
+//                $(".toward").toggleClass("showleftnav-yr");
+////                $(".toward-chose dl").scroll(function() {
+////
+////                });
+//
+//            })
+//            $(".toward-dater").on("touchstart", function () {
+////                $(".masking").animate({bottom: '-100%'}, 800);
+////                $(".toward").animate({bottom: '-40%'}, 800);
+//                $(".masking").removeClass("showleftnav-yr");
+//                $(".masking").toggleClass("showleftnav-y");
+//                $(".toward").removeClass("showleftnav-yr");
+//                $(".toward").toggleClass("showleftnav-y");
+//
+//            })
+            var mobileSelect1 = new MobileSelect({
+                trigger: '#toward',
+                title: '编辑筛选的房源朝向',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['全部','东','东南','北','东北','南','西南','西','西北']}
+                ],
+                position:[3], //初始化定位
+                callback:function(indexArr, data){
+                    $(".toward-val").empty().append(data);
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="search-content">
+<div class="search-nav">
+    <i class="iconfont icon-caidan caidan"></i>
+    <i class="iconfont icon-ditu ditu"></i>
+    <div class="search-nav-list">List</div>
+    <div class="clearfix"></div>
+</div>
+<div class="caidan-line">
+    <div class="caidan-line-1">
+        <dl>
+            <dt>
+                <img src="img/logoblue.png">
+                <i class="iconfont icon-chacha cha"></i>
+            </dt>
+            <dt class="bordertop"><p>二手房</p></dt>
+            <dt><p>新房</p></dt>
+            <dt><p>租房</p></dt>
+            <dt><p>公建商铺</p></dt>
+            <dt><p class="border-none">找经纪人</p></dt>
+        </dl>
+    </div>
+    <div class="caidan-line-2">
+        <dl>
+            <dt id="area"><p>面积</p><span class="area-val">全部 ></span><div  class="clearfix"></div></dt>
+            <dt id="toward"><p>朝向</p><span class="toward-val">全部 ></span><div  class="clearfix"></div></dt>
+            <dt id="room"><p>厅室</p><span class="room-val">全部 ></span><div  class="clearfix"></div></dt>
+            <dt id="floor"><p>楼层</p><span class="floor-val">全部 ></span><div  class="clearfix"></div></dt>
+            <dt id="price" class="border-none"><p>价位</p><span class="price-val">全部 ></span><div  class="clearfix"></div></dt>
+        </dl>
+    </div>
+    <div class="caidan-line-3">
+        我的收藏
+    </div>
+</div>
+    <div class="masking">
+    <div class="area">
+        <div class="area-title">编辑筛选的房源面积</div>
+        <p>全部</p>
+        <div class="chose">
+            <div class="chose-input">
+                <input type="number" class="chose-input-num" value="">
+                <span>m²</span>
+                <div class="clearfix"></div>
+            </div>
+            <div class="chose-input-ful">~</div>
+            <div class="chose-input">
+                <input type="number" class="chose-input-num-last" value="">
+                <span>m²</span>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    <div class="dater">确定</div>
+    </div>
+    <!--<div class="toward">-->
+        <!--<div class="toward-title">编辑筛选的房源朝向</div>-->
+        <!--<div class="toward-chose">-->
+            <!--&lt;!&ndash;<dl>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>全部</dt>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>东</dt>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>东南</dt>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>北</dt>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>东北</dt>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>南</dt>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>西南</dt>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>西</dt>&ndash;&gt;-->
+                <!--&lt;!&ndash;<dt>西北</dt>&ndash;&gt;-->
+            <!--&lt;!&ndash;</dl>&ndash;&gt;-->
+        <!--</div>-->
+        <!--<div class="toward-dater">确定</div>-->
+    <!--</div>-->
+    <div class="room"></div>
+    <div class="floor"></div>
+    <div class="price">
+        <div class="price-title">编辑筛选的房源价格</div>
+        <p>全部</p>
+        <div class="price-chose">
+            <div class="price-chose-input">
+                <input type="number" class="price-chose-input-num" value="">
+                <span>￥</span>
+                <div class="clearfix"></div>
+            </div>
+            <div class="price-chose-input-ful">~</div>
+            <div class="price-chose-input">
+                <input type="number" class="price-chose-input-num-last" value="">
+                <span>￥</span>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="price-dater">确定</div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
