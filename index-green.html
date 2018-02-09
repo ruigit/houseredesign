@@ -76,41 +76,41 @@
 
             })
 
-                    $(".dater").on("touchstart", function () {
-                        var areanum = parseInt($(".chose-input-num").val());
-                        var areanumlast = parseInt($(".chose-input-num-last").val());
-                        var areaall = $(".area p").html();
-                        var areadat = $(".chose-input-num").val() + ' ~ ' + $(".chose-input-num-last").val();
+            $(".dater").on("touchstart", function () {
+                var areanum = parseInt($(".chose-input-num").val());
+                var areanumlast = parseInt($(".chose-input-num-last").val());
+                var areaall = $(".area p").html();
+                var areadat = $(".chose-input-num").val() + ' ~ ' + $(".chose-input-num-last").val();
 //                        $(".masking").animate({bottom: '-100%'}, 800);
 //                        $(".area").animate({bottom: '-40%'}, 800);
-                        if($(".area p").is('.areabj')){
-                            $(".masking").removeClass("showleftnav-yrf");
-                            $(".masking").toggleClass("showleftnav-yf");
-                            $(".area").removeClass("showleftnav-yr");
-                            $(".area").toggleClass("showleftnav-y");
-                            $(".chose-input-num").val() == "";
-                            $(".chose-input-num-last").val() == "";
-                            $(".area-val").empty().append(areaall);
-                        }else if( $(".chose-input-num").val() == "" && $(".chose-input-num-last").val() == ""){
-                            $(".area p").removeClass();
-                            alert("请输入面积");
-                        }else if( areanum >= areanumlast ){
-                            $(".area p").removeClass();
-                            alert("请输入正确的范围");
-                        }else {
-                            $(".area p").removeClass();
-                        $(".masking").removeClass("showleftnav-yrf");
-                        $(".masking").toggleClass("showleftnav-yf");
-                        $(".area").removeClass("showleftnav-yr");
-                        $(".area").toggleClass("showleftnav-y");
+                if($(".area p").is('.areabj')){
+                    $(".masking").removeClass("showleftnav-yrf");
+                    $(".masking").toggleClass("showleftnav-yf");
+                    $(".area").removeClass("showleftnav-yr");
+                    $(".area").toggleClass("showleftnav-y");
+                    $(".chose-input-num").val() == "";
+                    $(".chose-input-num-last").val() == "";
+                    $(".area-val").empty().append(areaall);
+                }else if( $(".chose-input-num").val() == "" && $(".chose-input-num-last").val() == ""){
+                    $(".area p").removeClass();
+                    alert("请输入面积");
+                }else if( areanum >= areanumlast ){
+                    $(".area p").removeClass();
+                    alert("请输入正确的范围");
+                }else {
+                    $(".area p").removeClass();
+                    $(".masking").removeClass("showleftnav-yrf");
+                    $(".masking").toggleClass("showleftnav-yf");
+                    $(".area").removeClass("showleftnav-yr");
+                    $(".area").toggleClass("showleftnav-y");
 
-                                $(".area-val").empty().append(areadat);
+                    $(".area-val").empty().append(areadat);
 
-                        //                解绑移动事件
+                    //                解绑移动事件
 //                        $('body').unbind('touchmove');
-                        }
+                }
 
-                    })
+            })
 //            点击遮罩层关闭
             $(".masking").on("touchstart", function () {
                 $(".area ,.price ,.room").removeClass("showleftnav-yr");
@@ -141,39 +141,39 @@
                 $(".price p").removeClass().addClass("pricebj");
 
             })
-                    $(".price-dater").on("touchstart", function () {
-                        var pricenum = parseInt($(".price-chose-input-num").val());
-                        var pricenumlast = parseInt($(".price-chose-input-num-last").val());
-                        var priceall = $(".price p").html();
-                        var pricedat = $(".price-chose-input-num").val() + ' ~ ' + $(".price-chose-input-num-last").val();
-                        if($(".price p").is('.pricebj')){
-                            $(".masking").removeClass("showleftnav-yrf");
-                            $(".masking").toggleClass("showleftnav-yf");
-                            $(".price").removeClass("showleftnav-yr");
-                            $(".price").toggleClass("showleftnav-y");
-                            $(".price-chose-input-num").val() == "";
-                            $(".price-chose-input-num-last").val() == "";
-                            $(".price-val").empty().append(priceall);
-                        }else if( $(".price-chose-input-num").val() == "" && $(".price-chose-input-num-last").val() == ""){
-                            $(".price p").removeClass();
-                            alert("请输入价格");
-                        }else if( pricenum >= pricenumlast ){
-                            $(".price p").removeClass();
-                            alert("请输入正确的范围");
-                        }else {
+            $(".price-dater").on("touchstart", function () {
+                var pricenum = parseInt($(".price-chose-input-num").val());
+                var pricenumlast = parseInt($(".price-chose-input-num-last").val());
+                var priceall = $(".price p").html();
+                var pricedat = $(".price-chose-input-num").val() + ' ~ ' + $(".price-chose-input-num-last").val();
+                if($(".price p").is('.pricebj')){
+                    $(".masking").removeClass("showleftnav-yrf");
+                    $(".masking").toggleClass("showleftnav-yf");
+                    $(".price").removeClass("showleftnav-yr");
+                    $(".price").toggleClass("showleftnav-y");
+                    $(".price-chose-input-num").val() == "";
+                    $(".price-chose-input-num-last").val() == "";
+                    $(".price-val").empty().append(priceall);
+                }else if( $(".price-chose-input-num").val() == "" && $(".price-chose-input-num-last").val() == ""){
+                    $(".price p").removeClass();
+                    alert("请输入价格");
+                }else if( pricenum >= pricenumlast ){
+                    $(".price p").removeClass();
+                    alert("请输入正确的范围");
+                }else {
 //                        $(".masking").animate({bottom: '-100%'}, 800);
 //                        $(".price").animate({bottom: '-40%'}, 800);
-                            $(".price p").removeClass();
-                        $(".masking").removeClass("showleftnav-yrf");
-                        $(".masking").toggleClass("showleftnav-yf");
-                        $(".price").removeClass("showleftnav-yr");
-                        $(".price").toggleClass("showleftnav-y");
-                            $(".price-val").empty().append(pricedat);
-                        //                解绑移动事件
+                    $(".price p").removeClass();
+                    $(".masking").removeClass("showleftnav-yrf");
+                    $(".masking").toggleClass("showleftnav-yf");
+                    $(".price").removeClass("showleftnav-yr");
+                    $(".price").toggleClass("showleftnav-y");
+                    $(".price-val").empty().append(pricedat);
+                    //                解绑移动事件
 //                        $('body').unbind('touchmove');
-                        }
+                }
 
-                    })
+            })
 
 
 
@@ -299,16 +299,16 @@
                             ]
                         },
                     ]}
-                    ],
+                ],
                 position:[2,0], //初始化定位
                 onShow:function(){
-                  if($('.wheel').length == "2"){
-                      $(".selectLine").empty();
+                    if($('.wheel').length == "2"){
+                        $(".selectLine").empty();
 
-                  }else if($('.wheel').length == "3"){
-                      $(".selectLine").html("to");
+                    }else if($('.wheel').length == "3"){
+                        $(".selectLine").html("to");
 
-                  }
+                    }
                 },
                 transitionEnd:function(indexArr, data) {
                     for (var i=0;i<data.length;i++) {
@@ -358,40 +358,50 @@
 </head>
 <body>
 <div class="search-content">
-<div class="search-nav search-nav-blue">
-    <i class="iconfont icon-caidan caidan"></i>
-    <i class="iconfont icon-ditu ditu"></i>
-    <div class="search-nav-list">List</div>
-    <div class="clearfix"></div>
-</div>
+    <div class="search-nav search-nav-green">
+        <i class="iconfont icon-caidan caidan"></i>
+        <div class="index-location-search">
+            <i class="iconfont icon-location3dingwei3 location3"></i>
+            <img src="img/logowhite.png">
+            <i class="iconfont icon-fangdajing fangdajing"></i>
+            <div class="clearfix"></div>
+        </div>
+        <!--<div class="index-search">-->
+            <!--<input type="text" class="index-searchtext">-->
+            <!--<i class="iconfont icon-fangdajing fangdajingt"></i>-->
+            <!--<div class="clearfix"></div>-->
+        <!--</div>-->
+        <div class="search-nav-list">List</div>
+        <div class="clearfix"></div>
+    </div>
 
-<div class="caidan-line">
-    <div class="caidan-line-1">
-        <dl>
-            <dt>
-                <img src="img/logoblue.png">
-                <i class="iconfont icon-chacha cha"></i>
-            </dt>
-            <dt class="bordertop"><p>二手房</p></dt>
-            <dt><p>新房</p></dt>
-            <dt><p>租房</p></dt>
-            <dt><p>公建商铺</p></dt>
-            <dt><p class="border-none">找经纪人</p></dt>
-        </dl>
+    <div class="caidan-line">
+        <div class="caidan-line-1">
+            <dl>
+                <dt>
+                    <img src="img/logogreen.png">
+                    <i class="iconfont icon-chacha cha"></i>
+                </dt>
+                <dt class="bordertop"><p>二手房</p></dt>
+                <dt class="color-tap-green"><p>新房</p></dt>
+                <dt><p>租房</p></dt>
+                <dt><p>公建商铺</p></dt>
+                <dt><p class="border-none">找经纪人</p></dt>
+            </dl>
+        </div>
+        <div class="caidan-line-2">
+            <dl>
+                <dt id="area"><p>面积</p><span class="area-val">全部 ></span><div  class="clearfix"></div></dt>
+                <dt id="toward"><p>朝向</p><span class="toward-val">全部 ></span><div  class="clearfix"></div></dt>
+                <dt id="room"><p>厅室</p><span class="room-val">全部 ></span><div  class="clearfix"></div></dt>
+                <dt id="floor"><p>楼层</p><span class="floor-val">全部 ></span><div  class="clearfix"></div></dt>
+                <dt id="price" class="border-none"><p>价位</p><span class="price-val">全部 ></span><div  class="clearfix"></div></dt>
+            </dl>
+        </div>
+        <div class="caidan-line-3">
+            我的收藏
+        </div>
     </div>
-    <div class="caidan-line-2">
-        <dl>
-            <dt id="area"><p>面积</p><span class="area-val">全部 ></span><div  class="clearfix"></div></dt>
-            <dt id="toward"><p>朝向</p><span class="toward-val">全部 ></span><div  class="clearfix"></div></dt>
-            <dt id="room"><p>厅室</p><span class="room-val">全部 ></span><div  class="clearfix"></div></dt>
-            <dt id="floor"><p>楼层</p><span class="floor-val">全部 ></span><div  class="clearfix"></div></dt>
-            <dt id="price" class="border-none"><p>价位</p><span class="price-val">全部 ></span><div  class="clearfix"></div></dt>
-        </dl>
-    </div>
-    <div class="caidan-line-3">
-        我的收藏
-    </div>
-</div>
     <div class="masking"></div>
     <div class="area">
         <div class="area-title">编辑筛选的房源面积</div>
@@ -410,7 +420,7 @@
             </div>
             <div class="clearfix"></div>
         </div>
-    <div class="dater">确定</div>
+        <div class="dater">确定</div>
     </div>
     <div class="room">
         <div class="room-title">编辑筛选的房源厅室</div>

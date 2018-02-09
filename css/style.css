@@ -436,49 +436,11 @@ body {
     margin-left: 40%;
 }
 /*detail end*/
-/*颜色控制*/
-.color-tap-blue{
-    border-color: #4f7cef!important;
-    color: #fff!important;
-    background: #4f7cef;
-}
-.color-tap-yellow{
-    border-color: #f9bb06!important;
-    color: #fff!important;
-    background: #f9bb06;
-}
-.color-tap-red{
-    border-color: #ea4235!important;
-    color: #fff!important;
-    background: #ea4235;
-}
-.color-tap-green{
-    border-color: #34a853!important;
-    color: #fff!important;
-    background: #34a853;
-}
-.color-control-blue{
-    color: #4f7cef!important;
-    border:1px #4f7cef solid!important;
-}
-.color-control-yellow{
-     color: #f9bb06!important;
-     border:1px #f9bb06 solid!important;
-}
-.color-control-red{
-    color: #ea4235!important;
-    border:1px #ea4235 solid!important;
-}
-.color-control-green{
-    color: #34a853!important;
-    border:1px #34a853 solid!important;
-}
-/*end*/
+
 /*search start*/
 .search-nav{
     width: 100%;
     height: 1rem;
-    background: #4f7cef;
 }
 .caidan{
     color: #fff;
@@ -491,12 +453,12 @@ body {
     color: #fff;
     font-size: 0.7rem;
     float: left;
-    margin-left: 30%;
+    margin-left: 31%;
     margin-top: 0.15rem;
 }
 .search-nav-list{
     color: #fff;
-    font-size: 0.4rem;
+    font-size: 0.38rem;
     float: right;
     margin-right: 0.25rem;
     line-height: 1rem;
@@ -974,6 +936,117 @@ input::-webkit-input-placeholder {
     -o-transition: -o-transform 0.8s;
 }
 /*search end*/
+/*index start*/
+.index-location-search{
+
+    width: 5rem;
+    height: 1rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+.index-location-search img{
+    width: 0.45rem;
+    height: 0.7rem;
+    margin-top: 0.15rem;
+    float: left;
+    margin-left: 1rem;
+}
+.location3{
+    color: #fff;
+    font-size: 0.6rem;
+    float: left;
+    margin-left: 0.75rem;
+    margin-top: 0.2rem;
+}
+.fangdajing{
+    color: #fff;
+    font-size: 0.6rem;
+    float: left;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
+/*.index-search{*/
+    /*display: none;*/
+    /*background: #fff;*/
+    /*width: 4.2rem;*/
+    /*height: 0.8rem;*/
+    /*float: left;*/
+    /*margin-left: 0.6rem;*/
+    /*margin-top: 0.1rem;*/
+    /*border: 1px #cecece solid;*/
+    /*-webkit-border-radius: 0.1rem;*/
+    /*-moz-border-radius: 0.1rem;*/
+    /*border-radius: 0.1rem;*/
+/*}*/
+/*.index-searchtext{*/
+    /*width: 3rem;*/
+    /*height: 0.6rem;*/
+    /*margin: 0.1rem auto 0.1rem 0.3rem;*/
+    /*line-height: 0.6rem;*/
+    /*float: left;*/
+    /*border: none;*/
+    /*color: #000;*/
+    /*text-indent: 0.2rem;*/
+    /*font: normal 0.3rem Arial;*/
+/*}*/
+/*.fangdajingt{*/
+    /*color: #4f7cef;*/
+    /*font-size: 0.6rem;*/
+    /*float: left;*/
+    /*margin-left: 0.1rem;*/
+    /*margin-top: 0.1rem;*/
+/*}*/
+/*颜色控制*/
+.color-tap-blue{
+    border-color: #4f7cef!important;
+    color: #fff!important;
+    background: #4f7cef!important;
+}
+.color-tap-yellow{
+    border-color: #f9bb06!important;
+    color: #fff!important;
+    background: #f9bb06!important;
+}
+.color-tap-red{
+    border-color: #ea4235!important;
+    color: #fff!important;
+    background: #ea4235!important;
+}
+.color-tap-green{
+    border-color: #34a853!important;
+    color: #fff!important;
+    background: #34a853!important;
+}
+.color-control-blue{
+    color: #4f7cef!important;
+    border:1px #4f7cef solid!important;
+}
+.color-control-yellow{
+    color: #f9bb06!important;
+    border:1px #f9bb06 solid!important;
+}
+.color-control-red{
+    color: #ea4235!important;
+    border:1px #ea4235 solid!important;
+}
+.color-control-green{
+    color: #34a853!important;
+    border:1px #34a853 solid!important;
+}
+.search-nav-blue{
+    background: #4f7cef!important;
+}
+.search-nav-yellow{
+    background: #f9bb06!important;
+}
+.search-nav-red{
+    background: #ea4235!important;
+}
+.search-nav-green{
+    background: #34a853!important;
+}
+/*end*/
+/*index end*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 
