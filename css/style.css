@@ -3,7 +3,7 @@
     font-family: "SourceHanSansCN-Regular";
     src: url('../fonts/SourceHanSansCN-Regular.eot');
     src:
-            url('../fonts/SourceHanSansCN-Regular.eot?#font-spider') format('embedded-opentype'),
+            url('../fonts/SourceHanSansCN-Regular.eot') format('embedded-opentype'),
             url('../fonts/SourceHanSansCN-Regular.woff2') format('woff2'),
             url('../fonts/SourceHanSansCN-Regular.woff') format('woff'),
             url('../fonts/SourceHanSansCN-Regular.ttf') format('truetype'),
@@ -14,11 +14,11 @@
 /*字体文件*/
 @font-face {
     font-family: 'iconfont';  /* project id 563951 */
-    src: url('//at.alicdn.com/t/font_563951_q4gmyyd3vwyx2yb9.eot');
-    src: url('//at.alicdn.com/t/font_563951_q4gmyyd3vwyx2yb9.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_563951_q4gmyyd3vwyx2yb9.woff') format('woff'),
-    url('//at.alicdn.com/t/font_563951_q4gmyyd3vwyx2yb9.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_563951_q4gmyyd3vwyx2yb9.svg#iconfont') format('svg');
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
 }
 .iconfont {
     font-family:"iconfont" !important;
