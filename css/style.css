@@ -1049,6 +1049,10 @@ input::-webkit-input-placeholder {
     margin-top: 0.05rem;
     float: left;
 }
+.search-content-list{
+    width: 98%;
+    margin: 0.1rem 1% auto 1%;
+}
 /*颜色控制*/
 .color-tap-blue{
     border-color: #4f7cef!important;
