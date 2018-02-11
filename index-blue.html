@@ -30,6 +30,8 @@
             //		背景高度
             var winHeight = window.innerHeight + $(".search-nav").height();
             var bodyheight = $(".caidan-line").height() + $(".search-nav").height();
+            var winHei = window.innerHeight - $(".search-nav").height();
+            $(".index-map").css({height: winHei});
             if (winHeight > bodyheight){
                 $(".caidan-line").css({height: winHeight});
             }else {
@@ -53,6 +55,11 @@
                 $(".caidan-line").toggleClass("showleftnav-r");
 //                解绑移动事件
 //                $('body').unbind('touchmove');
+            })
+            // 模拟点击
+            $(".index-map").on("click", function(){
+                $(".map-content").removeClass("showleftnav-y");
+                $(".map-content").addClass("showleftnav-yr");
             })
             //            房源面积
 
@@ -374,7 +381,7 @@
         <div class="search-nav-list">List</div>
         <div class="clearfix"></div>
     </div>
-
+<div class="index-map">模拟</div>
     <div class="caidan-line">
         <div class="caidan-line-1">
             <dl>
@@ -473,6 +480,97 @@
         </div>
         <div class="price-dater">确定</div>
     </div>
+    <div class="map-content">
+    <div class="map-search">
+        <p>中海社区4号楼</p><span>当前在售房源3套</span><div class="clearfix"></div>
+    </div>
+    <div class="search-chose">
+        <ul>
+            <li><p>地区选择</p><div class="clearfix"></div></li>
+            <li><p>房源价格</p><div class="search-chose-p"><i class="iconfont icon-paixujiantoushang shang"></i><i class="iconfont icon-xiala xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li><p>房源面积</p><div class="search-chose-p"><i class="iconfont icon-paixujiantoushang shang"></i><i class="iconfont icon-xiala xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+    <div class="search-content-list map-cont">
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <img src="img/news-banner1.jpg">
+            </div>
+            <div class="bottom-inform-img">
+                <img src="img/picd.jpg">
+            </div>
+            <div class="bottom-inform-pic">
+                123万
+            </div>
+            <div class="bottom-inform-i">
+                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                <i class="iconfont icon-guo guo"></i><span>1</span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <img src="img/news-banner1.jpg">
+            </div>
+            <div class="bottom-inform-img">
+                <img src="img/picd.jpg">
+            </div>
+            <div class="bottom-inform-pic">
+                123万
+            </div>
+            <div class="bottom-inform-i">
+                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                <i class="iconfont icon-guo guo"></i><span>1</span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <img src="img/news-banner1.jpg">
+            </div>
+            <div class="bottom-inform-img">
+                <img src="img/picd.jpg">
+            </div>
+            <div class="bottom-inform-pic">
+                123万
+            </div>
+            <div class="bottom-inform-i">
+                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                <i class="iconfont icon-guo guo"></i><span>1</span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <img src="img/news-banner1.jpg">
+            </div>
+            <div class="bottom-inform-img">
+                <img src="img/picd.jpg">
+            </div>
+            <div class="bottom-inform-pic">
+                123万
+            </div>
+            <div class="bottom-inform-i">
+                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                <i class="iconfont icon-guo guo"></i><span>1</span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
 </div>
 </body>
 </html>

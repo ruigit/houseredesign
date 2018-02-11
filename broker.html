@@ -242,63 +242,63 @@
 //                ],
                 wheels:[
                     {data:[
-                        {id:'1',value:'全部'},
-                        {
-                            id:'2',
-                            value:'1F',
-                            childs:[
-                                {id:'1',value:'2F'},
-                                {id:'2',value:'3F'},
-                                {id:'3',value:'4F'},
-                                {id:'4',value:'5F'},
-                                {id:'5',value:'6F'}
-                            ]
-                        },
-                        {
-                            id:'3',
-                            value:'2F',
-                            childs:[
-                                {id:'1',value:'3F'},
-                                {id:'2',value:'4F'},
-                                {id:'3',value:'5F'},
-                                {id:'4',value:'6F'},
-                                {id:'5',value:'7F'}
-                            ]
-                        },
-                        {
-                            id:'4',
-                            value:'3F',
-                            childs:[
-                                {id:'1',value:'4F'},
-                                {id:'2',value:'5F'},
-                                {id:'3',value:'6F'},
-                                {id:'4',value:'7F'},
-                                {id:'5',value:'8F'}
-                            ]
-                        },
-                        {
-                            id:'5',
-                            value:'4F',
-                            childs:[
-                                {id:'1',value:'5F'},
-                                {id:'2',value:'6F'},
-                                {id:'3',value:'7F'},
-                                {id:'4',value:'8F'},
-                                {id:'5',value:'9F'}
-                            ]
-                        },
-                        {
-                            id:'6',
-                            value:'5F',
-                            childs:[
-                                {id:'1',value:'6F'},
-                                {id:'2',value:'7F'},
-                                {id:'3',value:'8F'},
-                                {id:'4',value:'9F'},
-                                {id:'5',value:'10F'}
-                            ]
-                        },
-                    ]}
+                            {id:'1',value:'全部'},
+                            {
+                                id:'2',
+                                value:'1F',
+                                childs:[
+                                    {id:'1',value:'2F'},
+                                    {id:'2',value:'3F'},
+                                    {id:'3',value:'4F'},
+                                    {id:'4',value:'5F'},
+                                    {id:'5',value:'6F'}
+                                ]
+                            },
+                            {
+                                id:'3',
+                                value:'2F',
+                                childs:[
+                                    {id:'1',value:'3F'},
+                                    {id:'2',value:'4F'},
+                                    {id:'3',value:'5F'},
+                                    {id:'4',value:'6F'},
+                                    {id:'5',value:'7F'}
+                                ]
+                            },
+                            {
+                                id:'4',
+                                value:'3F',
+                                childs:[
+                                    {id:'1',value:'4F'},
+                                    {id:'2',value:'5F'},
+                                    {id:'3',value:'6F'},
+                                    {id:'4',value:'7F'},
+                                    {id:'5',value:'8F'}
+                                ]
+                            },
+                            {
+                                id:'5',
+                                value:'4F',
+                                childs:[
+                                    {id:'1',value:'5F'},
+                                    {id:'2',value:'6F'},
+                                    {id:'3',value:'7F'},
+                                    {id:'4',value:'8F'},
+                                    {id:'5',value:'9F'}
+                                ]
+                            },
+                            {
+                                id:'6',
+                                value:'5F',
+                                childs:[
+                                    {id:'1',value:'6F'},
+                                    {id:'2',value:'7F'},
+                                    {id:'3',value:'8F'},
+                                    {id:'4',value:'9F'},
+                                    {id:'5',value:'10F'}
+                                ]
+                            },
+                        ]}
                 ],
                 position:[2,0], //初始化定位
                 onShow:function(){
@@ -364,7 +364,67 @@
         <div class="search-nav-list">List</div>
         <div class="clearfix"></div>
     </div>
-
+    <div class="index-search">
+        <input type="text" class="index-searchtext" value="搜索经纪人关键词"  onfocus="if(this.value=='搜索经纪人关键词'){this.value=''}" onblur="if(this.value==''){this.value='搜索经纪人关键词'}">
+        <i class="iconfont icon-fangdajing fangdajingt"></i>
+        <div class="clearfix"></div>
+    </div>
+    <div class="search-broker-chose">
+        <ul>
+            <li><p>地区选择</p></li>
+            <li><p>排序</p></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+<div class="search-broker-chose-content">
+    <dl>
+        <dt>
+            <img src="img/picd.jpg">
+            <div class="broker-chose-content-title">
+                <p>张晓航</p>
+                <span>沈阳市大东区－天悦小区</span>
+            </div>
+            <div class="broker-chose-button">咨询</div>
+            <div class="clearfix"></div>
+        </dt>
+        <dt>
+            <img src="img/picd.jpg">
+            <div class="broker-chose-content-title">
+                <p>张晓航</p>
+                <span>沈阳市大东区－天悦小区</span>
+            </div>
+            <div class="broker-chose-button">咨询</div>
+            <div class="clearfix"></div>
+        </dt>
+        <dt>
+            <img src="img/picd.jpg">
+            <div class="broker-chose-content-title">
+                <p>张晓航</p>
+                <span>沈阳市大东区－天悦小区</span>
+            </div>
+            <div class="broker-chose-button">咨询</div>
+            <div class="clearfix"></div>
+        </dt>
+        <dt>
+            <img src="img/picd.jpg">
+            <div class="broker-chose-content-title">
+                <p>张晓航</p>
+                <span>沈阳市大东区－天悦小区</span>
+            </div>
+            <div class="broker-chose-button">咨询</div>
+            <div class="clearfix"></div>
+        </dt>
+        <dt>
+            <img src="img/picd.jpg">
+            <div class="broker-chose-content-title">
+                <p>张晓航</p>
+                <span>沈阳市大东区－天悦小区</span>
+            </div>
+            <div class="broker-chose-button">咨询</div>
+            <div class="clearfix"></div>
+        </dt>
+    </dl>
+</div>
     <div class="caidan-line">
         <div class="caidan-line-1">
             <dl>
