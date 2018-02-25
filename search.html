@@ -24,9 +24,9 @@
         //阻止穿透事件
         $(function(){
             new
+            $(document).ready(function() {
             FastClick(document.body);
         })
-        $(document).ready(function() {
             //		背景高度
             var winHeight = window.innerHeight + $(".search-nav").height();
             var bodyheight = $(".caidan-line").height() + $(".search-nav").height();
@@ -41,18 +41,20 @@
 
                 $(".caidan-line").removeClass("showleftnav-r");
                 $(".caidan-line").toggleClass("showleftnav");
+                $('html,body').css({"height":"100%","overflow":"hidden"});
 //                禁止移动
-//                $('body').on("touchmove",function(e){
-//                    e.preventDefault();
-//                });
+               $('body').on("touchmove",function(e){
+                   e.preventDefault();
+               });
 
             })
             $(".cha").on("click", function(){
 //                $(".caidan-line").animate({left: '-100%'}, 800);
+                $('html,body').css({"height":"","overflow":""});
                 $(".caidan-line").removeClass("showleftnav");
                 $(".caidan-line").toggleClass("showleftnav-r");
 //                解绑移动事件
-//                $('body').unbind('touchmove');
+               $('body').unbind('touchmove');
             })
             //            房源面积
 

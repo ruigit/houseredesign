@@ -44,10 +44,12 @@
                 $(".caidan-line").removeClass("showleftnav-r");
                 $(".caidan-line").toggleClass("showleftnav");
                 $(".map-content").removeClass("showleftnav-yr");
+                //                解绑移动事件
+                // $('.search-content').unbind('touchmove');
 //                禁止移动
-//                $('body').on("touchmove",function(e){
-//                    e.preventDefault();
-//                });
+               $('.search-content').on("touchmove",function(e){
+                   e.preventDefault();
+               });
 
             })
             $(".cha").on("click", function(){
@@ -55,7 +57,7 @@
                 $(".caidan-line").removeClass("showleftnav");
                 $(".caidan-line").toggleClass("showleftnav-r");
 //                解绑移动事件
-//                $('body').unbind('touchmove');
+               $('.search-content').unbind('touchmove');
             })
             //            房源面积
 
@@ -126,11 +128,17 @@
                 $(".map-content").removeClass("showleftnav-y");
                 $(".map-content").addClass("showleftnav-yr");
                 $(".caidan-line").removeClass("showleftnav");
-                $('html,body').css({"height":"100%","overflow":"hidden"})
+                //                解绑移动事件
+                // $('body').unbind('touchmove');
+                //                禁止移动
+                $('.search-content').on("touchmove",function(e){
+                    e.preventDefault();
+                });
 
             })
             $(".map-search").on("click", function(){
-                $('html,body').css({"height":"","overflow":""})
+                //                解绑移动事件
+                $('.search-content').unbind('touchmove');
                 $(".map-content").removeClass("showleftnav-yr");
                 $(".map-content").addClass("showleftnav-y");
 
@@ -391,195 +399,196 @@
         <div class="clearfix"></div>
     </div>
     <div class="index-map">模拟</div>
-    <div class="caidan-line">
-        <div class="caidan-line-1">
-            <dl>
-                <dt>
-                    <img src="img/logored.png">
-                    <i class="iconfont icon-chacha cha"></i>
-                </dt>
-                <dt class="bordertop"><p>二手房</p></dt>
-                <dt><p>新房</p></dt>
-                <dt class="color-tap-red"><p>租房</p></dt>
-                <dt><p>公建商铺</p></dt>
-                <dt><p class="border-none">找经纪人</p></dt>
-            </dl>
-        </div>
-        <div class="caidan-line-2">
-            <dl>
-                <dt id="area"><p>面积</p><span class="area-val">全部 ></span><div  class="clearfix"></div></dt>
-                <dt id="toward"><p>朝向</p><span class="toward-val">全部 ></span><div  class="clearfix"></div></dt>
-                <dt id="room"><p>厅室</p><span class="room-val">全部 ></span><div  class="clearfix"></div></dt>
-                <dt id="floor"><p>楼层</p><span class="floor-val">全部 ></span><div  class="clearfix"></div></dt>
-                <dt id="price" class="border-none"><p>价位</p><span class="price-val">全部 ></span><div  class="clearfix"></div></dt>
-            </dl>
-        </div>
-        <div class="caidan-line-3">
-            我的收藏
-        </div>
-    </div>
-    <div class="masking"></div>
-    <div class="area">
-        <div class="area-title">编辑筛选的房源面积</div>
-        <p>全部</p>
-        <div class="chose">
-            <div class="chose-input">
-                <input type="text" class="chose-input-num" value="">
-                <span>m²</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="chose-input-ful">~</div>
-            <div class="chose-input">
-                <input type="text" class="chose-input-num-last" value="">
-                <span>m²</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="dater">确定</div>
-    </div>
-    <div class="room">
-        <div class="room-title">编辑筛选的房源厅室</div>
-        <div class="room-chose">
-            <dl>
-                <dt class="room-ting">
-                    <ul>
-                        <div class="ro-tingd"> <i class="iconfont icon-shafa shafad"></i></div>
-                        <li class="roting room-chose-blue">全部</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <div class="clearfix"></div>
-                    </ul>
-                </dt>
-                <dt class="room-shi">
-                    <ul>
-                        <div class="ro-tingd"> <i class="iconfont icon-zhinengchuang-f chuangd"></i></div>
-                        <li class="roshi room-chose-blue">全部</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <div class="clearfix"></div>
-                    </ul>
-                </dt>
-            </dl>
-        </div>
-        <div class="room-dater">确定</div>
-    </div>
-    <div class="price">
-        <div class="price-title">编辑筛选的房源价格</div>
-        <p>全部</p>
-        <div class="price-chose">
-            <div class="price-chose-input">
-                <input type="text" class="price-chose-input-num" value="">
-                <span>￥</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="price-chose-input-ful">~</div>
-            <div class="price-chose-input">
-                <input type="text" class="price-chose-input-num-last" value="">
-                <span>￥</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="price-dater">确定</div>
-    </div>
-    <div class="map-content">
-        <div class="map-search">
-            <p>中海社区4号楼</p><span>当前在售房源3套</span><i class="iconfont icon-chacha map-search-close"></i><div class="clearfix"></div>
-        </div>
-        <div class="search-chose">
-            <ul>
-                <li><p>地区选择</p><div class="clearfix"></div></li>
-                <li><p>房源价格</p><div class="search-chose-p"><i class="iconfont icon-paixujiantoushang shang"></i><i class="iconfont icon-xiala xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-                <li><p>房源面积</p><div class="search-chose-p"><i class="iconfont icon-paixujiantoushang shang"></i><i class="iconfont icon-xiala xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-                <div class="clearfix"></div>
-            </ul>
-        </div>
-        <div class="search-content-list map-cont">
-            <div class="tab-main-pic-main">
-                <div class="tab-main-pic">
-                    <img src="img/news-banner1.jpg">
-                </div>
-                <div class="bottom-inform-img">
-                    <img src="img/picd.jpg">
-                </div>
-                <div class="bottom-inform-pic">
-                    123万
-                </div>
-                <div class="bottom-inform-i">
-                    <i class="iconfont icon-shafa shafa"></i><span>3</span>
-                    <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
-                    <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
-                    <i class="iconfont icon-guo guo"></i><span>1</span>
-                    <div class="clearfix"></div>
-                </div>
 
-            </div>
-            <div class="tab-main-pic-main">
-                <div class="tab-main-pic">
-                    <img src="img/news-banner1.jpg">
-                </div>
-                <div class="bottom-inform-img">
-                    <img src="img/picd.jpg">
-                </div>
-                <div class="bottom-inform-pic">
-                    123万
-                </div>
-                <div class="bottom-inform-i">
-                    <i class="iconfont icon-shafa shafa"></i><span>3</span>
-                    <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
-                    <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
-                    <i class="iconfont icon-guo guo"></i><span>1</span>
-                    <div class="clearfix"></div>
-                </div>
-
-            </div>
-            <div class="tab-main-pic-main">
-                <div class="tab-main-pic">
-                    <img src="img/news-banner1.jpg">
-                </div>
-                <div class="bottom-inform-img">
-                    <img src="img/picd.jpg">
-                </div>
-                <div class="bottom-inform-pic">
-                    123万
-                </div>
-                <div class="bottom-inform-i">
-                    <i class="iconfont icon-shafa shafa"></i><span>3</span>
-                    <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
-                    <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
-                    <i class="iconfont icon-guo guo"></i><span>1</span>
-                    <div class="clearfix"></div>
-                </div>
-
-            </div>
-            <div class="tab-main-pic-main">
-                <div class="tab-main-pic">
-                    <img src="img/news-banner1.jpg">
-                </div>
-                <div class="bottom-inform-img">
-                    <img src="img/picd.jpg">
-                </div>
-                <div class="bottom-inform-pic">
-                    123万
-                </div>
-                <div class="bottom-inform-i">
-                    <i class="iconfont icon-shafa shafa"></i><span>3</span>
-                    <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
-                    <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
-                    <i class="iconfont icon-guo guo"></i><span>1</span>
-                    <div class="clearfix"></div>
-                </div>
-
-            </div>
-        </div>
-    </div>
 </div>
 </body>
 </html>
+<div class="caidan-line">
+    <div class="caidan-line-1">
+        <dl>
+            <dt>
+                <img src="img/logored.png">
+                <i class="iconfont icon-chacha cha"></i>
+            </dt>
+            <dt class="bordertop"><p>二手房</p></dt>
+            <dt><p>新房</p></dt>
+            <dt class="color-tap-red"><p>租房</p></dt>
+            <dt><p>公建商铺</p></dt>
+            <dt><p class="border-none">找经纪人</p></dt>
+        </dl>
+    </div>
+    <div class="caidan-line-2">
+        <dl>
+            <dt id="area"><p>面积</p><span class="area-val">全部 ></span><div  class="clearfix"></div></dt>
+            <dt id="toward"><p>朝向</p><span class="toward-val">全部 ></span><div  class="clearfix"></div></dt>
+            <dt id="room"><p>厅室</p><span class="room-val">全部 ></span><div  class="clearfix"></div></dt>
+            <dt id="floor"><p>楼层</p><span class="floor-val">全部 ></span><div  class="clearfix"></div></dt>
+            <dt id="price" class="border-none"><p>价位</p><span class="price-val">全部 ></span><div  class="clearfix"></div></dt>
+        </dl>
+    </div>
+    <div class="caidan-line-3">
+        我的收藏
+    </div>
+</div>
+<div class="masking"></div>
+<div class="area">
+    <div class="area-title">编辑筛选的房源面积</div>
+    <p>全部</p>
+    <div class="chose">
+        <div class="chose-input">
+            <input type="text" class="chose-input-num" value="">
+            <span>m²</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="chose-input-ful">~</div>
+        <div class="chose-input">
+            <input type="text" class="chose-input-num-last" value="">
+            <span>m²</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="dater">确定</div>
+</div>
+<div class="room">
+    <div class="room-title">编辑筛选的房源厅室</div>
+    <div class="room-chose">
+        <dl>
+            <dt class="room-ting">
+                <ul>
+                    <div class="ro-tingd"> <i class="iconfont icon-shafa shafad"></i></div>
+                    <li class="roting room-chose-blue">全部</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <div class="clearfix"></div>
+                </ul>
+            </dt>
+            <dt class="room-shi">
+                <ul>
+                    <div class="ro-tingd"> <i class="iconfont icon-zhinengchuang-f chuangd"></i></div>
+                    <li class="roshi room-chose-blue">全部</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <div class="clearfix"></div>
+                </ul>
+            </dt>
+        </dl>
+    </div>
+    <div class="room-dater">确定</div>
+</div>
+<div class="price">
+    <div class="price-title">编辑筛选的房源价格</div>
+    <p>全部</p>
+    <div class="price-chose">
+        <div class="price-chose-input">
+            <input type="text" class="price-chose-input-num" value="">
+            <span>￥</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="price-chose-input-ful">~</div>
+        <div class="price-chose-input">
+            <input type="text" class="price-chose-input-num-last" value="">
+            <span>￥</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="price-dater">确定</div>
+</div>
+<div class="map-content">
+    <div class="map-search">
+        <p>中海社区4号楼</p><span>当前在售房源3套</span><i class="iconfont icon-chacha map-search-close"></i><div class="clearfix"></div>
+    </div>
+    <div class="search-chose">
+        <ul>
+            <li><p>地区选择</p><div class="clearfix"></div></li>
+            <li><p>房源价格</p><div class="search-chose-p"><i class="iconfont icon-paixujiantoushang shang"></i><i class="iconfont icon-xiala xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li><p>房源面积</p><div class="search-chose-p"><i class="iconfont icon-paixujiantoushang shang"></i><i class="iconfont icon-xiala xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+    <div class="search-content-list map-cont">
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <img src="img/news-banner1.jpg">
+            </div>
+            <div class="bottom-inform-img">
+                <img src="img/picd.jpg">
+            </div>
+            <div class="bottom-inform-pic">
+                123万
+            </div>
+            <div class="bottom-inform-i">
+                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                <i class="iconfont icon-guo guo"></i><span>1</span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <img src="img/news-banner1.jpg">
+            </div>
+            <div class="bottom-inform-img">
+                <img src="img/picd.jpg">
+            </div>
+            <div class="bottom-inform-pic">
+                123万
+            </div>
+            <div class="bottom-inform-i">
+                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                <i class="iconfont icon-guo guo"></i><span>1</span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <img src="img/news-banner1.jpg">
+            </div>
+            <div class="bottom-inform-img">
+                <img src="img/picd.jpg">
+            </div>
+            <div class="bottom-inform-pic">
+                123万
+            </div>
+            <div class="bottom-inform-i">
+                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                <i class="iconfont icon-guo guo"></i><span>1</span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <img src="img/news-banner1.jpg">
+            </div>
+            <div class="bottom-inform-img">
+                <img src="img/picd.jpg">
+            </div>
+            <div class="bottom-inform-pic">
+                123万
+            </div>
+            <div class="bottom-inform-i">
+                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
+                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
+                <i class="iconfont icon-guo guo"></i><span>1</span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -41,18 +41,20 @@
 
                 $(".caidan-line").removeClass("showleftnav-r");
                 $(".caidan-line").toggleClass("showleftnav");
+                $('html,body').css({"height":"100%","overflow":"hidden"});
 //                禁止移动
-//                $('body').on("touchmove",function(e){
-//                    e.preventDefault();
-//                });
+               $('body').on("touchmove",function(e){
+                   e.preventDefault();
+               });
 
             })
             $(".cha").on("click", function(){
 //                $(".caidan-line").animate({left: '-100%'}, 800);
                 $(".caidan-line").removeClass("showleftnav");
                 $(".caidan-line").toggleClass("showleftnav-r");
+                $('html,body').css({"height":"","overflow":""});
 //                解绑移动事件
-//                $('body').unbind('touchmove');
+               $('body').unbind('touchmove');
             })
             //            房源面积
 
