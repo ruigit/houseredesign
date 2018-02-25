@@ -43,6 +43,8 @@
 
                 $(".caidan-line").removeClass("showleftnav-r");
                 $(".caidan-line").toggleClass("showleftnav");
+                $(".map-content").removeClass("showleftnav-yr");
+
 //                禁止移动
 //                $('body').on("touchmove",function(e){
 //                    e.preventDefault();
@@ -60,6 +62,13 @@
             $(".index-map").on("click", function(){
                 $(".map-content").removeClass("showleftnav-y");
                 $(".map-content").addClass("showleftnav-yr");
+                $(".caidan-line").removeClass("showleftnav");
+            })
+            $(".map-search").on("click", function(){
+
+                $(".map-content").removeClass("showleftnav-yr");
+                $(".map-content").addClass("showleftnav-y");
+
             })
             //            房源面积
 
@@ -482,7 +491,7 @@
     </div>
     <div class="map-content">
     <div class="map-search">
-        <p>中海社区4号楼</p><span>当前在售房源3套</span><div class="clearfix"></div>
+        <p>中海社区4号楼</p><span>当前在售房源3套</span><i class="iconfont icon-chacha map-search-close"></i><div class="clearfix"></div>
     </div>
     <div class="search-chose">
         <ul>
