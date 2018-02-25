@@ -62,9 +62,11 @@
                 $(".map-content").removeClass("showleftnav-y");
                 $(".map-content").addClass("showleftnav-yr");
                 $(".caidan-line").removeClass("showleftnav");
+                $('html,body').css({"height":"100%","overflow":"hidden"})
+
             })
             $(".map-search").on("click", function(){
-
+                $('html,body').css({"height":"","overflow":""})
                 $(".map-content").removeClass("showleftnav-yr");
                 $(".map-content").addClass("showleftnav-y");
 
