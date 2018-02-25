@@ -1111,10 +1111,10 @@ input::-webkit-input-placeholder {
 }
 .map-content{
     position: fixed;
-    bottom: -67%;
+    bottom: -73%;
     width: 100%;
     background: #fff;
-    height: 67%;
+    height: 73%;
     z-index: 15;
 }
 .map-cont{
