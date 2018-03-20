@@ -228,6 +228,9 @@
                         $(".selectLine").empty();
                     }
                 },
+                onHide:function(){
+                    $(".selectLine").html("to");
+                },
                 callback:function(indexArr, data){
                     $(".toward-val").empty().append(data);
                 }
@@ -304,13 +307,16 @@
                 ],
                 position:[2,0], //初始化定位
                 onShow:function(){
-                    if($('.wheel').length == "2"){
+                    if($(".floor-val").html() == "全部"){
                         $(".selectLine").empty();
 
-                    }else if($('.wheel').length == "3"){
+                    }else{
                         $(".selectLine").html("to");
 
                     }
+                },
+                onHide:function(){
+                    $(".selectLine").empty();
                 },
                 transitionEnd:function(indexArr, data) {
                     for (var i=0;i<data.length;i++) {
@@ -336,25 +342,144 @@
                 }
             });
 //            异步获取房源楼层json数据
-//            $.ajax({
-//                type: "POST",
-//                url: "",
-//                data: {},
-//                dataType: "json",
-//                success: function(res){
-//                    //这里假设获取到的res.data为：
-//                    // [{
-//                    //     id:'1',
-//                    //     value:'更新后数据',
-//                    //     childs:[
-//                    //         {id:'A1',value:'apple'},
-//                    //         {id:'A2',value:'banana'},
-//                    //         {id:'A3',value:'orange'}
-//                    //     ]
-//                    // }]
-//                    mobileSelect2.updateWheels(res.data);
-//                }
-//            });
+//             $.ajax({
+//                 data : {},//请求接口传递的参数
+//                 url : "",//接口URL地址
+//                 dataType : 'jsonp',//JSONP格式，跨域请求使用
+//                 jsonp : 'callback',
+//                 success : function(result) {
+//                     numArr = result.data;//先取numArr数据，再加载mobileSelect，实测效果ok
+//                     var wapSelect = new MobileSelect({
+//                         trigger: '#floor',
+//                             title: '编辑筛选的房源楼层',
+//                                 floor: 'to',
+//                             triggerDisplayData: false,
+//                         wheels: [
+//                             {data : numArr}
+//                         ],
+//                         position:[2,0], //初始化定位
+//             onShow:function(){
+//                 if($('.wheel').length == "2"){
+//                     $(".selectLine").empty();
+//
+//                 }else if($('.wheel').length == "3"){
+//                     $(".selectLine").html("to");
+//
+//                 }
+//             },
+//             transitionEnd:function(indexArr, data) {
+//                 for (var i=0;i<data.length;i++) {
+//                     if(data[i].value == '全部'){
+//                         $(".selectLine").empty();
+//                         break;
+//                     }else{
+//                         $(".selectLine").html("to");
+//                         break;
+//                     }
+//                 }
+//             },
+//             callback:function(indexArr, data) {
+//                 for (var i=0;i<data.length;i++) {
+//                     if(data[i].value == '全部'){
+//                         $(".floor-val").empty().append(data[i].value);
+//                         break;
+//                     }else{
+//                         $(".floor-val").empty().append(data[i++].value + ' ~ ' + data[i].value);
+//                         break;
+//                     }
+//                 }
+//             }
+//                     });
+//                 }
+//             });
+            //            房源楼层
+            // 地区选择
+            var mobileSelect3 = new MobileSelect({
+                trigger: '#broker-chose-click',
+                title: '地区选择',
+                triggerDisplayData: false,
+
+                wheels:[
+                    {data:[
+                            {id:'1',value:'全部'},
+                            {
+                                id:'2',
+                                value:'1F',
+                                childs:[
+                                    {id:'1',value:'2F',childs:[
+                                            {id:'1',value:'2F'},
+                                            {id:'2',value:'3F'},
+                                            {id:'3',value:'4F'},
+                                            {id:'4',value:'5F'},
+                                            {id:'5',value:'6F'}
+                                        ]},
+                                    {id:'2',value:'3F'},
+                                    {id:'3',value:'4F'},
+                                    {id:'4',value:'5F'},
+                                    {id:'5',value:'6F'}
+                                ]
+                            },
+                            {
+                                id:'3',
+                                value:'2F',
+                                childs:[
+                                    {id:'1',value:'3F'},
+                                    {id:'2',value:'4F'},
+                                    {id:'3',value:'5F'},
+                                    {id:'4',value:'6F'},
+                                    {id:'5',value:'7F'}
+                                ]
+                            },
+                            {
+                                id:'4',
+                                value:'3F',
+                                childs:[
+                                    {id:'1',value:'4F'},
+                                    {id:'2',value:'5F'},
+                                    {id:'3',value:'6F'},
+                                    {id:'4',value:'7F'},
+                                    {id:'5',value:'8F'}
+                                ]
+                            },
+                            {
+                                id:'5',
+                                value:'4F',
+                                childs:[
+                                    {id:'1',value:'5F'},
+                                    {id:'2',value:'6F'},
+                                    {id:'3',value:'7F'},
+                                    {id:'4',value:'8F'},
+                                    {id:'5',value:'9F'}
+                                ]
+                            },
+                            {
+                                id:'6',
+                                value:'5F',
+                                childs:[
+                                    {id:'1',value:'6F'},
+                                    {id:'2',value:'7F'},
+                                    {id:'3',value:'8F'},
+                                    {id:'4',value:'9F'},
+                                    {id:'5',value:'10F'}
+                                ]
+                            },
+                        ]}
+                ],
+                position:[0], //初始化定位
+                onShow:function(){
+                    $(".selectLine").empty();
+                },
+                onHide:function(){
+                    $(".selectLine").html("to");
+                },
+                transitionEnd:function() {
+                    $(".selectLine").empty();
+                },
+                callback:function(indexArr, data){
+                    console.log(data);
+                }
+
+            });
         })
     </script>
 </head>
@@ -373,7 +498,7 @@
     </div>
     <div class="search-broker-chose">
         <ul>
-            <li><p>地区选择</p></li>
+            <li id="broker-chose-click"><p>地区选择</p></li>
             <li><p>排序</p></li>
             <div class="clearfix"></div>
         </ul>

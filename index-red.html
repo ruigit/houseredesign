@@ -250,6 +250,9 @@
                         $(".selectLine").empty();
                     }
                 },
+                onHide:function(){
+                    $(".selectLine").empty();
+                },
                 callback:function(indexArr, data){
                     $(".toward-val").empty().append(data);
                 }
@@ -326,13 +329,16 @@
                 ],
                 position:[2,0], //初始化定位
                 onShow:function(){
-                    if($('.wheel').length == "2"){
+                    if($(".floor-val").html() == "全部"){
                         $(".selectLine").empty();
 
-                    }else if($('.wheel').length == "3"){
+                    }else{
                         $(".selectLine").html("to");
 
                     }
+                },
+                onHide:function(){
+                    $(".selectLine").empty();
                 },
                 transitionEnd:function(indexArr, data) {
                     for (var i=0;i<data.length;i++) {
