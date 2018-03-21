@@ -435,10 +435,17 @@
                 ],
                 position:[0], //初始化定位
                 onShow:function(){
+                    // //                禁止移动
+                    // $('body').on("touchmove",function(e){
+                    //     e.preventDefault();
+                    // });
+
                     $(".selectLine").empty();
                 },
                 onHide:function(){
                     $(".selectLine").html("to");
+                    // //                解绑移动事件
+                    // $('body').unbind('touchmove');
                 },
                 transitionEnd:function() {
                     $(".selectLine").empty();
