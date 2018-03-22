@@ -15,6 +15,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.icon-jianhao:before { content: "\e667"; }
+
+.icon-jiahao:before { content: "\e668"; }
+
 .icon-yduidingwei:before { content: "\e67b"; }
 
 .icon-paixujiantoushang:before { content: "\e74c"; }
@@ -670,6 +674,113 @@ body {
     text-indent: 0.2rem;
 }
 /*area end*/
+.louceng-area{
+    position: fixed;
+    bottom: -52%;
+    width: 100%;
+    background: #fff;
+    height: 52%;
+    z-index: 15;
+}
+
+.louceng-dater{
+    width: 80%;
+    margin: 0 10%;
+    height: 1rem;
+    color: #000;
+    font-size: 0.35rem;
+    line-height: 1rem;
+    text-align: center;
+    border-top: 1px #cecece solid;
+}
+.louceng-area-title{
+    width: 80%;
+    margin: 0 10%;
+    height: 0.7rem;
+    color: #4f7cef;
+    font-size: 0.32rem;
+    line-height: 0.7rem;
+    text-align: center;
+    background: #e7eeff;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 0.2rem;
+}
+.louceng-area p{
+    width: 80%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    color: #4f7cef;
+    font-size: 0.35rem;
+    text-align: center;
+    margin: 0.3rem auto 0.2rem auto;
+}
+.louceng-chose{
+    width: 80%;
+    height: auto;
+    margin: 0.2rem auto 0.2rem 18%;
+}
+.louceng-jian{
+    width: 80%;
+    height: auto;
+    margin: 0.2rem auto 0.2rem 18%;
+}
+.louceng-jian ul li{
+    float: left;
+    width: 50%;
+}
+.jian-lou{
+    color: #999;
+    font-size: 0.5rem;
+    margin-left: 20%;
+}
+.louceng-jia{
+    width: 80%;
+    height: auto;
+    margin: 0.2rem auto 0.5rem 18%;
+}
+
+.louceng-jia ul li{
+    float: left;
+    width: 50%;
+}
+.louceng-chose-input{
+    border: 1px #cecece solid;
+    height: 0.9rem;
+    width: 30%;
+    float: left;
+}
+.louceng-chose-input-ful{
+    width: 20%;
+    float: left;
+    color: #000;
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: 0.9rem;
+}
+.louceng-chose-input span{
+    width: 25%;
+    color: #333;
+    font-size: 0.3rem;
+    float: left;
+    display: block;
+    line-height: 0.5rem;
+    margin-top: 0.2rem;
+    margin-left: 0.1rem;
+}
+.louceng-chose-input-num ,.louceng-chose-input-num-last{
+    width: 65%;
+    border: none;
+    float: left;
+    margin: 0.2rem auto;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #000;
+    font-size: 0.32rem;
+    text-indent: 0.2rem;
+}
+/*louceng end*/
 .price{
     position: fixed;
     bottom: -42%;
