@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>灯泡找房</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function(){
+            new
+            FastClick(document.body);
+        })
+        $(document).ready(function() {
+            //		背景高度
+            var winHeight = window.innerHeight;
+            var bodyheight = $(".register-line").height();
+            if (winHeight > bodyheight){
+                $(".register-content").css({height: winHeight});
+            }
+            // 请设置至少6位数密码
+            var btgval = $("#upass").val();
+            $("#upass").focus(function(){
+                var btgval1 = $("#upass").val();
+                $("#upass").prop("type","password");
+                if (btgval1 == ""){
+                    $("#upass").prop("value", btgval);
+                    $("#upass").prop("type", "text");
+
+                }else if (btgval1 == "请设置至少6位数密码") {
+                    $("#upass").prop("value","");
+                }else{
+                    $("#upass").prop("value",btgval1);
+                    $("#upass").prop("type","password");
+                }
+
+            });
+            $("#upass").blur(function(){
+                var btgval2 = $("#upass").val();
+
+                if (btgval2 == "") {
+                    $("#upass").prop("value", btgval);
+                    $("#upass").prop("type", "text");
+
+                }else if(btgval2 != "请设置至少6位数密码"){
+                    $("#upass").prop("value",btgval2);
+                    $("#upass").prop("type","password");
+                }
+            });
+            // 请再次输入至少6位数密码
+            var qbtgval = $("#upass1").val();
+            $("#upass1").focus(function(){
+                var qbtgval1 = $("#upass1").val();
+                $("#upass1").prop("type","password");
+                if (qbtgval1 == ""){
+                    $("#upass1").prop("value", btgval);
+                    $("#upass1").prop("type", "text");
+
+                }else if (qbtgval1 == "请再次输入至少6位数密码") {
+                    $("#upass1").prop("value","");
+                }else{
+                    $("#upass1").prop("value",qbtgval1);
+                    $("#upass1").prop("type","password");
+                }
+
+            });
+            $("#upass1").blur(function(){
+                var qbtgval2 = $("#upass1").val();
+
+                if (qbtgval2 == "") {
+                    $("#upass1").prop("value", qbtgval);
+                    $("#upass1").prop("type", "text");
+
+                }else if(qbtgval2 != "请再次输入至少6位数密码"){
+                    $("#upass1").prop("value",qbtgval2);
+                    $("#upass1").prop("type","password");
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="register-content">
+    <div class="register-nav search-nav-blue">
+        <i class="iconfont icon-zuojiantou regist-zuo"></i>
+        <div class="register-nav-list">注册</div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="register-line">
+        <div class="register-con">
+            <p>
+                <i class="iconfont icon-shouji-tianchong register-icon"></i>
+                <input class="register-input" id="uphone" type="text" name="phone" value="请输入您的手机号码" onfocus="if(this.value=='请输入您的手机号码'){this.value=''}" onblur="if(this.value==''){this.value='请输入您的手机号码'}">
+            </p>
+            <p>
+                <i class="iconfont icon-wo register-icon"></i>
+                <input class="register-input" id="uname" type="text" name="nicheng" value="请输入您的昵称" onfocus="if(this.value=='请输入您的昵称'){this.value=''}" onblur="if(this.value==''){this.value='请输入您的昵称'}">
+            </p>
+            <p>
+                <i class="iconfont icon-mima register-icon"></i>
+                <input class="register-input" id="upass" type="text" name="psw" value="请设置至少6位数密码">
+            </p>
+            <p>
+                <i class="iconfont icon-mima register-icon"></i>
+                <input class="register-input" id="upass1" type="text" name="psw1" value="请再次输入至少6位数密码">
+            </p>
+            <p>
+                <i class="iconfont icon-duanxin register-icon"></i>
+                <input class="register-input register-input-yanzheng" id="yanzheng" type="text" name="yanzheng" value="请输入4位验证码" onfocus="if(this.value=='请输入4位验证码'){this.value=''}" onblur="if(this.value==''){this.value='请输入4位验证码'}">
+                <span class="get-code">获取验证码</span>
+            </p>
+        </div>
+            <button class="register-btn-info">注册并登陆</button>
+
+    </div>
+</div>
+</body>
+</html>

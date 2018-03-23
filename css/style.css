@@ -23,6 +23,8 @@
 
 .icon-paixujiantoushang:before { content: "\e74c"; }
 
+.icon-mima:before { content: "\e622"; }
+
 .icon-phone6dianhua:before { content: "\e679"; }
 
 .icon-location3dingwei3:before { content: "\e6b6"; }
@@ -35,7 +37,11 @@
 
 .icon-iconfontzhizuobiaozhun25:before { content: "\e618"; }
 
+.icon-wo:before { content: "\e663"; }
+
 .icon-shuilongtouhuasaanzhuang:before { content: "\e612"; }
+
+.icon-duanxin:before { content: "\e64d"; }
 
 .icon-fangdajing:before { content: "\e627"; }
 
@@ -51,6 +57,8 @@
 
 .icon-caidan:before { content: "\e691"; }
 
+.icon-shouji-tianchong:before { content: "\e643"; }
+
 .icon-fenxiang:before { content: "\e655"; }
 
 .icon-shafa:before { content: "\e67d"; }
@@ -58,6 +66,7 @@
 .icon-ditu:before { content: "\e859"; }
 
 .icon-zhinengchuang-f:before { content: "\e6a8"; }
+
 html,
 body {
     background: #fff;
@@ -1370,6 +1379,186 @@ input::-webkit-input-placeholder {
 }
 /*end*/
 /*index end*/
+.register-nav{
+    width: 100%;
+    height: 1rem;
+}
+.regist-zuo{
+    color: #fff;
+    font-size: 0.65rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+}
+.register-content{
+    z-index: 11;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.register-nav-list {
+    color: #fff;
+    font-size: 0.38rem;
+    float: left;
+    margin-left: 34%;
+    line-height: 1rem;
+}
+.register-line{
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+.register-con{
+    width: 90%;
+    margin: 0 5%;
+}
+.register-con p{
+    border-bottom: 2px solid #b8b8b8;
+
+    padding-bottom: 0.05rem;
+    margin-top: 0.2rem;
+    height: 1rem;
+}
+.register-input{
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    text-indent: 0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    transition: all 0.3s ease 0s;
+    display: block;
+    width: 80%;
+    font-size: 0.35rem;
+    color: #b8b8b8;
+    margin-top: 0.25rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+.register-input-yanzheng{
+    width: 50%!important;
+}
+.register-icon{
+    font-size: 0.45rem;
+    color: #666867;
+    float: left;
+    line-height: 1rem;
+    margin-left: 0.2rem;
+}
+.register-btn-info{
+    width: 80%;
+    background: #4f7cef;
+    line-height: 0.9rem;
+    height: 0.9rem;
+    font-size: 0.4rem;
+    text-align: center;
+    color: #fff;
+    -moz-border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    margin: 1.5rem 10% 0 10%;
+    border: none;
+}
+.get-code{
+    display: block;
+    width: 30%;
+    float: left;
+    background: #4f7cef;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fff;
+    -moz-border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    margin-top: 0.1rem;
+}
+/*registerend*/
+.login-content{
+    z-index: 11;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.login-line{
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+.login-con{
+    width: 90%;
+    margin: 0 5%;
+}
+.login-con p{
+    border-bottom: 2px solid #b8b8b8;
+
+    padding-bottom: 0.05rem;
+    margin-top: 0.2rem;
+    height: 1rem;
+}
+.login-icon{
+    font-size: 0.45rem;
+    color: #666867;
+    float: left;
+    line-height: 1rem;
+    margin-left: 0.2rem;
+}
+.login-btn-info{
+    width: 80%;
+    background: #4f7cef;
+    line-height: 0.9rem;
+    height: 0.9rem;
+    font-size: 0.4rem;
+    text-align: center;
+    color: #fff;
+    -moz-border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    margin: 1rem 10% 0.3rem 10%;
+    border: none;
+}
+.login-input{
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    text-indent: 0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    transition: all 0.3s ease 0s;
+    display: block;
+    width: 80%;
+    font-size: 0.35rem;
+    color: #b8b8b8;
+    margin-top: 0.25rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+.login-register{
+    width: 80%;
+    margin: 0 10%;
+    line-height: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #4f7cef;
+    border: none;
+}
+.login-background{
+    width: 100%;
+    height: 5.5rem;
+    background: url("../img/loginbackground.png") no-repeat top center;
+    background-size: 100% 5.5rem;
+}
+.login-background img{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    margin: 20% auto auto 38%;
+}
+/*loginend*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 

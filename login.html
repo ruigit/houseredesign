@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>灯泡找房</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function(){
+            new
+            FastClick(document.body);
+        })
+        $(document).ready(function() {
+            //		背景高度
+            var winHeight = window.innerHeight;
+            var bodyheight = $(".login-line").height();
+            if (winHeight > bodyheight){
+                $(".login-content").css({height: winHeight});
+            }
+// 密码
+            var btgval = $("#lupass").val();
+            $("#lupass").focus(function(){
+                var btgval1 = $("#lupass").val();
+                $("#lupass").prop("type","password");
+                if (btgval1 == ""){
+                    $("#lupass").prop("value", btgval);
+                    $("#lupass").prop("type", "text");
+
+                }else if (btgval1 == "密码") {
+                    $("#lupass").prop("value","");
+                }else{
+                    $("#lupass").prop("value",btgval1);
+                    $("#lupass").prop("type","password");
+                }
+
+            });
+            $("#lupass").blur(function(){
+                var btgval2 = $("#lupass").val();
+
+                if (btgval2 == "") {
+                    $("#lupass").prop("value", btgval);
+                    $("#lupass").prop("type", "text");
+
+                }else if(btgval2 != "密码"){
+                    $("#lupass").prop("value",btgval2);
+                    $("#lupass").prop("type","password");
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="login-content">
+    <div class="login-background">
+        <img src="img/backgroundlogo.png" />
+    </div>
+    <div class="login-line">
+        <div class="login-con">
+            <p>
+                <i class="iconfont icon-shouji-tianchong login-icon"></i>
+                <input class="login-input" id="lphone" type="text" name="phone" value="手机号" onfocus="if(this.value=='手机号'){this.value=''}" onblur="if(this.value==''){this.value='手机号'}">
+            </p>
+
+            <p>
+                <i class="iconfont icon-mima login-icon"></i>
+                <input class="login-input" id="lupass" type="text" name="psw" value="密码">
+            </p>
+
+        </div>
+        <button class="login-btn-info">登陆</button>
+        <div class="login-register">注册账号</div>
+    </div>
+</div>
+</body>
+</html>
