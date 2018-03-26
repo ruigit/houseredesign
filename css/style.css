@@ -390,6 +390,74 @@ body {
     left: 0.1rem;
     bottom:0.3rem;
 }
+.bottom-inform-blue{
+    width: auto;
+    padding: 0 0.3rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #fff;
+    font-size: 0.32rem;
+    overflow: hidden;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    background: url(../img/blue.png) repeat center;
+    position: absolute;
+    z-index: 12;
+    left: 0.1rem;
+    top:0.1rem;
+}
+.bottom-inform-red{
+    width: auto;
+    padding: 0 0.3rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #fff;
+    font-size: 0.32rem;
+    overflow: hidden;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    background: url(../img/red.png) repeat center;
+    position: absolute;
+    z-index: 12;
+    left: 0.1rem;
+    top:0.1rem;
+}
+.bottom-inform-yellow{
+    width: auto;
+    padding: 0 0.3rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #fff;
+    font-size: 0.32rem;
+    overflow: hidden;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    background: url(../img/yellow.png) repeat center;
+    position: absolute;
+    z-index: 12;
+    left: 0.1rem;
+    top:0.1rem;
+}
+.bottom-inform-green{
+    width: auto;
+    padding: 0 0.3rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #fff;
+    font-size: 0.32rem;
+    overflow: hidden;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    background: url(../img/green.png) repeat center;
+    position: absolute;
+    z-index: 12;
+    left: 0.1rem;
+    top:0.1rem;
+}
 .bottom-inform-i span {
     float: left;
     font-size: 0.25rem;
