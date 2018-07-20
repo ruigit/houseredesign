@@ -43,6 +43,7 @@
                 $(".caidan-line").removeClass("showleftnav-r");
                 $(".caidan-line").toggleClass("showleftnav");
                 $('html,body').css({"height":"100%","overflow":"hidden"});
+                $('html,body').css({"height":"100%","position":"fixed"});
 //                禁止移动
                $('body').on("touchmove",function(e){
                    e.preventDefault();
@@ -53,6 +54,7 @@
 //                $(".caidan-line").animate({left: '-100%'}, 800);
                 $(".caidan-line").removeClass("showleftnav");
                 $(".caidan-line").toggleClass("showleftnav-r");
+                $('html,body').css({"height":"","position":""});
                 $('html,body').css({"height":"","overflow":""});
 //                解绑移动事件
                $('body').unbind('touchmove');
