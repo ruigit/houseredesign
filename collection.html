@@ -42,6 +42,8 @@
 
                 $(".caidan-line").removeClass("showleftnav-r");
                 $(".caidan-line").toggleClass("showleftnav");
+                $(".masking1").removeClass("showleftnav-yf");
+                $(".masking1").toggleClass("showleftnav-yrf");
                 $('html,body').css({"height":"100%","overflow":"hidden"});
                 $('html,body').css({"height":"100%","position":"fixed"});
 //                禁止移动
@@ -53,6 +55,7 @@
             $(".cha").on("click", function(){
 //                $(".caidan-line").animate({left: '-100%'}, 800);
                 $(".caidan-line").removeClass("showleftnav");
+                $(".masking1").removeClass("showleftnav-yrf");
                 $(".caidan-line").toggleClass("showleftnav-r");
                 $('html,body').css({"height":"","position":""});
                 $('html,body').css({"height":"","overflow":""});
@@ -61,7 +64,7 @@
             })
             //            房源面积
 
-            $("#area").on("touchstart", function () {
+            $("#area").on("click", function () {
 //                $(".masking").animate({bottom: '0'}, 800);
 //                $(".area").animate({bottom: '0'}, 800);
                 $(".masking").removeClass("showleftnav-yf");
@@ -76,12 +79,12 @@
             })
 
             //area确定
-            $(".area p").on("touchstart", function () {
+            $(".area p").on("click", function () {
                 $(".area p").removeClass().addClass("areabj");
 
             })
 
-            $(".dater").on("touchstart", function () {
+            $(".dater").on("click", function () {
                 var areanum = parseInt($(".chose-input-num").val());
                 var areanumlast = parseInt($(".chose-input-num-last").val());
                 var areaall = $(".area p").html();
@@ -117,17 +120,26 @@
 
             })
 //            点击遮罩层关闭
-            $(".masking").on("touchstart", function () {
+            $(".masking").on("click", function () {
                 $(".area ,.price ,.room").removeClass("showleftnav-yr");
                 $(".masking").removeClass("showleftnav-yrf");
                 $(".area ,.price ,.room").toggleClass("showleftnav-ymf");
             })
-
+//            点击遮罩层关闭1
+            $(".masking1").on("click", function () {
+                $(".caidan-line").removeClass("showleftnav-yf");
+                $(".masking1").removeClass("showleftnav-yrf");
+                $(".caidan-line").removeClass("showleftnav");
+                $('html,body').css({"height":"","position":""});
+                $('html,body').css({"height":"","overflow":""});
+//                解绑移动事件
+                $('body').unbind('touchmove');
+            })
 
 
             //            房源面积end
             //            价位
-            $("#price").on("touchstart", function () {
+            $("#price").on("click", function () {
 //                $(".masking").animate({bottom: '0'}, 800);
 //                $(".price").animate({bottom: '0'}, 800);
                 $(".masking").removeClass("showleftnav-yf");
@@ -142,11 +154,11 @@
             })
 
             //price确定
-            $(".price p").on("touchstart", function () {
+            $(".price p").on("click", function () {
                 $(".price p").removeClass().addClass("pricebj");
 
             })
-            $(".price-dater").on("touchstart", function () {
+            $(".price-dater").on("click", function () {
                 var pricenum = parseInt($(".price-chose-input-num").val());
                 var pricenumlast = parseInt($(".price-chose-input-num-last").val());
                 var priceall = $(".price p").html();
@@ -184,7 +196,7 @@
 
             //            价位end
             //            房源厅室
-            $("#room").on("touchstart", function () {
+            $("#room").on("click", function () {
 //                $(".masking").animate({bottom: '0'}, 800);
 //                $(".toward").animate({bottom: '0'}, 800);
                 $(".masking").removeClass("showleftnav-yf");
@@ -194,14 +206,14 @@
 //                $(".toward-chose dl").scroll(function() {
 //
 //                });
-                $(".room-ting ul li").on("touchstart", function () {
+                $(".room-ting ul li").on("click", function () {
                     $(this).addClass("roting room-chose-blue").siblings().removeClass("roting room-chose-blue");
                 })
-                $(".room-shi ul li").on("touchstart", function () {
+                $(".room-shi ul li").on("click", function () {
                     $(this).addClass("roshi room-chose-blue").siblings().removeClass("roshi room-chose-blue");
                 })
             })
-            $(".room-dater").on("touchstart", function () {
+            $(".room-dater").on("click", function () {
                 var roomnum = $(".roting").html();
                 var roomnumlast = $(".roshi").html();
                 var roomdat = $(".roting").html() + ' ~ ' + $(".roshi").html();
@@ -604,6 +616,7 @@
         </div>
     </div>
     <div class="masking"></div>
+    <div class="masking1"></div>
     <div class="area">
         <div class="area-title">编辑筛选的房源面积</div>
         <p>全部</p>
