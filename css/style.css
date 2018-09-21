@@ -15,59 +15,39 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.icon-jianhao:before { content: "\e667"; }
+.icon-icon:before { content: "\e601"; }
 
-.icon-jiahao:before { content: "\e668"; }
+.icon-category:before { content: "\e699"; }
 
-.icon-yduidingwei:before { content: "\e67b"; }
+.icon-close:before { content: "\e69a"; }
 
-.icon-paixujiantoushang:before { content: "\e74c"; }
+.icon-form:before { content: "\e6a2"; }
 
-.icon-new3:before { content: "\e761"; }
+.icon-search:before { content: "\e6ac"; }
 
-.icon-mima:before { content: "\e622"; }
+.icon-add:before { content: "\e6b9"; }
 
-.icon-phone6dianhua:before { content: "\e679"; }
+.icon-subtract:before { content: "\e6fe"; }
 
-.icon-location3dingwei3:before { content: "\e6b6"; }
+.icon-chimakuang:before { content: "\e69f"; }
 
-.icon-guo:before { content: "\e649"; }
+.icon-map:before { content: "\e715"; }
 
-.icon-zuojiantou:before { content: "\e64b"; }
+.icon-phone:before { content: "\e725"; }
 
-.icon-shoucang1:before { content: "\e63c"; }
+.icon-shouji:before { content: "\e866"; }
 
-.icon-iconfontzhizuobiaozhun25:before { content: "\e618"; }
+.icon-chuang:before { content: "\e688"; }
 
-.icon-wo:before { content: "\e663"; }
+.icon-zhuce:before { content: "\e63b"; }
 
-.icon-shuilongtouhuasaanzhuang:before { content: "\e612"; }
+.icon-youjian:before { content: "\e62b"; }
 
-.icon-duanxin:before { content: "\e64d"; }
+.icon-chufang:before { content: "\e662"; }
 
-.icon-fangdajing:before { content: "\e627"; }
+.icon-zhuanfa:before { content: "\e60c"; }
 
-.icon-liaotian:before { content: "\e60e"; }
-
-.icon-xiala:before { content: "\e656"; }
-
-.icon-chacha:before { content: "\e60f"; }
-
-.icon-shoucang:before { content: "\e63b"; }
-
-.icon-yuyueguanli:before { content: "\e610"; }
-
-.icon-caidan:before { content: "\e691"; }
-
-.icon-shouji-tianchong:before { content: "\e643"; }
-
-.icon-fenxiang:before { content: "\e655"; }
-
-.icon-shafa:before { content: "\e67d"; }
-
-.icon-ditu:before { content: "\e859"; }
-
-.icon-zhinengchuang-f:before { content: "\e6a8"; }
+.icon-suo-:before { content: "\e615"; }
 
 html,
 body {
@@ -523,10 +503,10 @@ body {
 }
 .caidan{
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     float: left;
-    margin-left: 0.2rem;
-    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
 }
 .ditu{
     color: #fff;
@@ -535,13 +515,13 @@ body {
     margin-left: 31%;
     margin-top: 0.15rem;
 }
-.search-nav-list{
-    color: #fff;
-    font-size: 0.38rem;
-    float: right;
-    margin-right: 0.25rem;
-    line-height: 1rem;
-}
+/*.search-nav-list{*/
+    /*color: #fff;*/
+    /*font-size: 0.38rem;*/
+    /*float: right;*/
+    /*margin-right: 0.25rem;*/
+    /*line-height: 1rem;*/
+/*}*/
 .search-content{
     position: relative;
     z-index: 11;
@@ -593,11 +573,11 @@ body {
     padding-top: 1rem;
 }
 .caidan-line-1 dl dt:first-of-type{
-    height: 1rem;
+    height: 1.2rem;
 }
 .caidan-line-1 dl dt{
     width: 100%;
-    height: 0.8rem;
+    height: 0.75rem;
     color: #000;
     text-align: center;
 }
@@ -610,9 +590,9 @@ body {
 .caidan-line-1 dl dt p{
     width: 95%;
     margin: 0 2.5%;
-    font-size: 0.32rem;
+    font-size: 0.28rem;
     text-align: center;
-    line-height: 0.8rem;
+    line-height: 0.75rem;
     border-bottom: 1px #cecece solid;
 }
 .bordertop{
@@ -623,10 +603,10 @@ body {
 }
 .cha{
     color: #000;
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     position: absolute;
     right: 0.1rem;
-    top: 1.05rem;
+    top: 1.1rem;
 }
 .caidan-line-2{
     width: 100%;
@@ -1140,31 +1120,38 @@ input::-webkit-input-placeholder {
 /*index start*/
 .index-location-search{
 
-    width: 5rem;
+    width: auto;
     height: 1rem;
     float: left;
-    margin-left: 0.2rem;
+    margin-left: 1rem;
 }
 .index-location-search img{
     width: 0.45rem;
-    height: 0.7rem;
+    height: 0.65rem;
     margin-top: 0.15rem;
     float: left;
     margin-left: 1rem;
 }
 .location3{
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     float: left;
-    margin-left: 0.75rem;
+    margin-left: 0rem;
     margin-top: 0.2rem;
 }
 .fangdajing{
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     float: left;
     margin-left: 1rem;
-    margin-top: 0.2rem;
+    margin-top: 0.25rem;
+}
+.formm{
+    color: #fff;
+    font-size: 0.45rem;
+    float: right;
+    margin-right: 0.4rem;
+    margin-top: 0.27rem;
 }
 .index-search{
     margin-top: 0.2rem;
