@@ -590,7 +590,7 @@ body {
 .caidan-line-1 dl dt p{
     width: 95%;
     margin: 0 2.5%;
-    font-size: 0.28rem;
+    font-size: 0.3rem;
     text-align: center;
     line-height: 0.75rem;
     border-bottom: 1px #cecece solid;
@@ -623,14 +623,14 @@ body {
 .caidan-line-2 dl dt p{
     width: 50%;
     line-height: 0.7rem;
-    font-size: 0.3rem;
+    font-size: 0.26rem;
     color: #000;
     float: left;
 }
 .caidan-line-2 dl dt span{
     width: 45%;
     line-height: 0.7rem;
-    font-size: 0.3rem;
+    font-size: 0.26rem;
     color: #3d3d3d;
     float: right;
     display: block;
