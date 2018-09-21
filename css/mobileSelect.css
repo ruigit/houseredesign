@@ -80,15 +80,27 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   height: 0.7rem;
-  color: #4f7cef;
+  /*color: #4f7cef;*/
   font-size: 0.3rem;
   line-height: 0.7rem;
   text-align: center;
-  background: #e7eeff;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  border-radius: 0.5rem;
+  /*background: #e7eeff;*/
+  /*-webkit-border-radius: 0.5rem;*/
+  /*-moz-border-radius: 0.5rem;*/
+  /*border-radius: 0.5rem;*/
   margin-top: 0.2rem;
+}
+.title-green{
+  color: #63ae48;
+}
+.title-red{
+  color: #d32c2e;
+}
+.title-blue{
+  color: #4f96eb;
+}
+.title-purple{
+  color: #7882d2;
 }
 .mobileSelect .content .panel:after {
   content: ".";
@@ -145,8 +157,8 @@
   pointer-events: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-top: 1px solid #4f7cef;
-  border-bottom: 1px solid #4f7cef;
+  border-top: 1px solid #a4a4a4;
+  border-bottom: 1px solid #a4a4a4;
 }
 .selectii{
   height: 0.8rem;
