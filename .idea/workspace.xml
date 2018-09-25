@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="大连房产系统">
+    <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.eot" afterPath="$PROJECT_DIR$/fonts/iconfont.eot" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.svg" afterPath="$PROJECT_DIR$/fonts/iconfont.svg" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.ttf" afterPath="$PROJECT_DIR$/fonts/iconfont.ttf" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.woff" afterPath="$PROJECT_DIR$/fonts/iconfont.woff" />
       <change beforePath="$PROJECT_DIR$/index-blue.html" afterPath="$PROJECT_DIR$/index-blue.html" />
       <change beforePath="$PROJECT_DIR$/index-green.html" afterPath="$PROJECT_DIR$/index-green.html" />
-      <change beforePath="$PROJECT_DIR$/index-purple.html" afterPath="$PROJECT_DIR$/index-purple.html" />
       <change beforePath="$PROJECT_DIR$/index-red.html" afterPath="$PROJECT_DIR$/index-red.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,8 +27,8 @@
           <file leaf-file-name="index-green.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index-green.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4916">
-                  <caret line="525" column="24" lean-forward="false" selection-start-line="525" selection-start-column="24" selection-end-line="525" selection-end-column="24" />
+                <state relative-caret-position="397">
+                  <caret line="266" column="67" lean-forward="true" selection-start-line="266" selection-start-column="67" selection-end-line="266" selection-end-column="67" />
                   <folding />
                 </state>
               </provider>
@@ -284,7 +278,7 @@
       <workItem from="1537423309472" duration="1244000" />
       <workItem from="1537488745406" duration="2862000" />
       <workItem from="1537492177717" duration="17130000" />
-      <workItem from="1537834762201" duration="22300000" />
+      <workItem from="1537834762201" duration="22355000" />
     </task>
     <task id="LOCAL-00001" summary="大连房产系统">
       <created>1518334841807</created>
@@ -489,11 +483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537834826456</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="大连房产系统">
+      <created>1537866289707</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1537866289707</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131776000" />
+    <option name="totallyTimeSpent" value="131831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -920,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index-green.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4916">
-          <caret line="525" column="24" lean-forward="false" selection-start-line="525" selection-start-column="24" selection-end-line="525" selection-end-column="24" />
+        <state relative-caret-position="397">
+          <caret line="266" column="67" lean-forward="true" selection-start-line="266" selection-start-column="67" selection-end-line="266" selection-end-column="67" />
           <folding />
         </state>
       </provider>
