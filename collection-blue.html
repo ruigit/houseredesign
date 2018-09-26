@@ -19,7 +19,7 @@
     <script type="text/javascript" src="js/rem.js"></script>
     <script type="text/javascript" src="js/fastclick.js"></script>
     <link rel="stylesheet" href="css/mobileSelect.css"/>
-    <script type="text/javascript" src="js/mobileSelect-purple.min.js"></script>
+    <script type="text/javascript" src="js/mobileSelect-blue.min.js"></script>
     <script type="text/javascript" src="js/sweper.min.js"></script>
     <script>
         //阻止穿透事件
@@ -46,12 +46,12 @@
                 $(".caidan-line").removeClass("showleftnav-r");
                 $(".caidan-line").toggleClass("showleftnav");
                 $(".map-content").removeClass("showleftnav-yr");
-                //                解绑移动事件
-                // $('.search-content').unbind('touchmove');
+//                解绑移动事件
+//                 $('.search-content').unbind('touchmove');
 //                禁止移动
-               $('.search-content').on("touchmove",function(e){
-                   e.preventDefault();
-               });
+                $('.search-content').on("touchmove",function(e){
+                    e.preventDefault();
+                });
 
             })
             $(".cha").on("click", function(){
@@ -60,32 +60,16 @@
                 $(".caidan-line").removeClass("showleftnav");
                 $(".caidan-line").toggleClass("showleftnav-r");
 //                解绑移动事件
-               $('.search-content').unbind('touchmove');
+                $('.search-content').unbind('touchmove');
             })
-            // 模拟点击
-            $(".index-map").on("click", function(){
-                $(".map-content").removeClass("showleftnav-y");
-                $(".map-content").addClass("showleftnav-yr");
-                $(".caidan-line").removeClass("showleftnav");
-                //                解绑移动事件
-                // $('body').unbind('touchmove');
-                //                禁止移动
-                $('.search-content').on("touchmove",function(e){
-                    e.preventDefault();
-                });
+
                 // 列表筛选
                 $(".search-chose ul li").on("click", function(){
                     $(this).find("i").toggleClass("icon-xiasanjiao");
                     $(this).find("i").toggleClass("icon-shangsanjiao");
                 })
-            })
-            $(".map-search").on("click", function(){
-                //                解绑移动事件
-                $('.search-content').unbind('touchmove');
-                $(".map-content").removeClass("showleftnav-yr");
-                $(".map-content").addClass("showleftnav-y");
 
-            })
+
             //            房源面积
 
             $("#area").on("click", function () {
@@ -150,7 +134,7 @@
                 $(".masking").removeClass("showleftnav-yrf");
                 $(".area ,.price ,.room ,.ceng").toggleClass("showleftnav-ymf");
             })
-            //            点击遮罩层2关闭
+//            点击遮罩层2关闭
             $(".masking2").on("click", function () {
                 $(".masking2").removeClass("showleftnav-yrf");
                 $(".caidan-line").removeClass("showleftnav");
@@ -258,8 +242,8 @@
                 $(".masking").toggleClass("showleftnav-yrf");
                 $(".room").removeClass("showleftnav-y");
                 $(".room").toggleClass("showleftnav-yr");
-                $(".ro-tingd-qb").removeClass("roting room-chose-purple-fon");
-                $(".ro-tingd-qbs").removeClass("roshi room-chose-purple-fon");
+                $(".ro-tingd-qb").removeClass("roting room-chose-blue-fon");
+                $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
                 // $(".selectine").show();
                 // $(".selectine1").show();
                 var mySwiper = new Swiper('#swiper1',{
@@ -277,7 +261,7 @@
                     },
                     on: {
                         touchEnd: function(){
-                            $(".ro-tingd-qb").removeClass("roting room-chose-purple-fon");
+                            $(".ro-tingd-qb").removeClass("roting room-chose-blue-fon");
                         },
                     }
                 });
@@ -296,18 +280,18 @@
                     },
                     on: {
                         touchEnd: function(){
-                            $(".ro-tingd-qbs").removeClass("roshi room-chose-purple-fon");
+                            $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
                         },
                     }
                 });
 
                 $(".ro-tingd-qb").on("click", function () {
-                    $(this).addClass("roting room-chose-purple-fon");
+                    $(this).addClass("roting room-chose-blue-fon");
                     $(".room-ting .swiper-slide-active").removeClass("swiper-slide-active");
                     // $(".selectine").hide();
                 })
                 $(".ro-tingd-qbs").on("click", function () {
-                    $(this).addClass("roshi room-chose-purple-fon");
+                    $(this).addClass("roshi room-chose-blue-fon");
                     $(".room-shi .swiper-slide-active").removeClass("swiper-slide-active");
                     // $(".selectine1").hide();
                 })
@@ -429,8 +413,6 @@
                     $(".ceng p").removeClass();
                     alert("请输入正确的范围");
                 }else {
-//                        $(".masking").animate({bottom: '-100%'}, 800);
-//                        $(".price").animate({bottom: '-40%'}, 800);
                     $(".ceng p").removeClass();
                     $(".masking").removeClass("showleftnav-yrf");
                     $(".masking").toggleClass("showleftnav-yf");
@@ -442,51 +424,59 @@
                 }
 
             })
-            // 地图悬浮窗选择
-            $(".map-fixed ul li").on("click", function () {
-                $(this).children("p").html();
-            })
+
         })
     </script>
 </head>
 <body>
 <div class="search-content">
-    <div class="search-nav search-nav-purple">
+    <div class="search-nav search-nav-blue">
         <i class="iconfont icon-category caidan"></i>
-        <div class="index-location-search">
-            <i class="iconfont icon-icon location3"></i>
-            <img src="img/logowhite.png">
-            <i class="iconfont icon-search fangdajing"></i>
-            <div class="clearfix"></div>
-        </div>
-        <i class="iconfont icon-form formm"></i>
+        <i class="iconfont icon-map map-dt"></i>
         <div class="clearfix"></div>
     </div>
-    <div class="index-map">模拟</div>
-    <div class="map-fixed">
+
+    <div class="search-chose">
         <ul>
-            <li>
-                <span class="span-red"></span>
-                <p>新房</p>
-                <div class="clearfix"></div>
-            </li>
-            <li>
-                <span class="span-green"></span>
-                <p>二手房</p>
-                <div class="clearfix"></div>
-            </li>
-            <li>
-                <span class="span-blue"></span>
-                <p>租房</p>
-                <div class="clearfix"></div>
-            </li>
-            <li>
-                <span class="span-purple"></span>
-                <p>公建商铺</p>
-                <div class="clearfix"></div>
-            </li>
+            <li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
             <div class="clearfix"></div>
         </ul>
+    </div>
+    <div class="search-content-list">
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+               <ul>
+                   <li>
+                       <img src="img/news-banner1.jpg" />
+                   </li>
+                   <li>
+                       <dl>
+                           <dt>
+                            <div class="list-left">
+                                <p>夏御兰湾A区008号湖畔别墅</p>
+                                <span class="listleft-span-blue">580平</span>
+                                <p>40,800/平</p>
+                            </div>
+                               <div class="list-right">
+                                   <p>￥23,660,000</p>
+                               </div>
+                               <div class="clearfix"></div>
+                           </dt>
+                           <dt>
+                               <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                               <i class="iconfont icon-chuang chuang"></i><span>2</span>
+                               <i class="iconfont icon-linyu huasa"></i><span>2</span>
+                               <i class="iconfont icon-chufang guo"></i><span>1</span>
+                               <div class="clearfix"></div>
+                           </dt>
+                       </dl>
+                   </li>
+                   <div class="clearfix"></div>
+               </ul>
+            </div>
+        </div>
+
     </div>
 </div>
 </body>
@@ -499,9 +489,9 @@
                 <i class="iconfont icon-close cha"></i>
             </dt>
             <dt class="bordertop"><p>新房</p></dt>
-            <dt><p>二手房</p></dt>
+            <dt class="color-tap-blue"><p>二手房</p></dt>
             <dt><p>租房</p></dt>
-            <dt class="color-tap-purple"><p>公建商铺</p></dt>
+            <dt><p>公建商铺</p></dt>
             <dt><p>找经纪人</p></dt>
         </dl>
     </div>
@@ -520,8 +510,8 @@
 </div>
 <div class="masking2"></div>
 <div class="masking"></div>
-<div class="area area-purple">
-    <div class="area-title area-title-purple">面积</div>
+<div class="area area-blue">
+    <div class="area-title area-title-blue">面积</div>
 
     <div class="chose">
         <div class="chose-input">
@@ -540,10 +530,10 @@
         <div class="clearfix"></div>
     </div>
     <p>全部</p>
-    <div class="dater dater-purple">确定</div>
+    <div class="dater dater-blue">确定</div>
 </div>
-<div class="room area-purple">
-    <div class="room-title area-title-purple">厅室</div>
+<div class="room area-blue">
+    <div class="room-title area-title-blue">厅室</div>
     <div class="room-chose">
         <dl>
             <dt class="room-ting">
@@ -586,10 +576,10 @@
             </dt>
         </dl>
     </div>
-    <div class="room-dater dater-purple">确定</div>
+    <div class="room-dater dater-blue">确定</div>
 </div>
-<div class="price area-purple">
-    <div class="price-title area-title-purple">价位</div>
+<div class="price area-blue">
+    <div class="price-title area-title-blue">价位</div>
 
     <div class="price-chose">
         <div class="price-chose-input">
@@ -610,10 +600,10 @@
         <div class="clearfix"></div>
     </div>
     <p>全部</p>
-    <div class="price-dater dater-purple">确定</div>
+    <div class="price-dater dater-blue">确定</div>
 </div>
-<div class="ceng area-purple">
-    <div class="ceng-title area-title-purple">楼层</div>
+<div class="ceng area-blue">
+    <div class="ceng-title area-title-blue">楼层</div>
 
     <div class="ceng-chose">
         <div class="ceng-chose-input">
@@ -634,52 +624,5 @@
         <div class="clearfix"></div>
     </div>
     <p>全部</p>
-    <div class="ceng-dater dater-purple">确定</div>
-</div>
-<div class="map-content">
-    <div class="map-search">
-        <p>中海社区4号楼</p><span>当前在售房源3套</span><i class="iconfont icon-close map-search-close"></i><div class="clearfix"></div>
-    </div>
-    <div class="search-chose">
-        <ul>
-            <li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-            <li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-            <div class="clearfix"></div>
-        </ul>
-    </div>
-    <div class="search-content-list map-cont">
-        <div class="tab-main-pic-main">
-            <div class="tab-main-pic">
-                <ul>
-                    <li>
-                        <img src="img/news-banner1.jpg" />
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>
-                                <div class="list-left">
-                                    <p>夏御兰湾A区008号湖畔别墅</p>
-                                    <span class="listleft-span-purple">580平</span>
-                                    <p>40,800/平</p>
-                                </div>
-                                <div class="list-right">
-                                    <p>￥23,660,000</p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </dt>
-                            <dt>
-                                <i class="iconfont icon-shafa shafa"></i><span>3</span>
-                                <i class="iconfont icon-chuang chuang"></i><span>2</span>
-                                <i class="iconfont icon-linyu huasa"></i><span>2</span>
-                                <i class="iconfont icon-chufang guo"></i><span>1</span>
-                                <div class="clearfix"></div>
-                            </dt>
-                        </dl>
-                    </li>
-                    <div class="clearfix"></div>
-                </ul>
-            </div>
-        </div>
-
-    </div>
+    <div class="ceng-dater dater-blue">确定</div>
 </div>
