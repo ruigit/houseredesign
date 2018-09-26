@@ -20,6 +20,7 @@
     <script type="text/javascript" src="js/fastclick.js"></script>
     <link rel="stylesheet" href="css/mobileSelect.css"/>
     <script type="text/javascript" src="js/mobileSelect-blue.min.js"></script>
+    <script type="text/javascript" src="js/sweper.min.js"></script>
     <script>
         //阻止穿透事件
         $(function(){
@@ -253,37 +254,79 @@
                 $(".masking").toggleClass("showleftnav-yrf");
                 $(".room").removeClass("showleftnav-y");
                 $(".room").toggleClass("showleftnav-yr");
+                $(".ro-tingd-qb").removeClass("roting room-chose-blue-fon");
+                $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
+                // $(".selectine").show();
+                // $(".selectine1").show();
+                var mySwiper = new Swiper('#swiper1',{
+                    slidesPerView : "auto",
+                    touchMoveStopPropagation : false,
+                    centeredSlides : true,
+                    initialSlide :3,
+                    speed:100,
+                    mode:'horizontal',
+                    loop: false,
+                    on: {
+                        slideChangeTransitionEnd: function(){
+                            $(".room-ting .swiper-slide-active").html();
+                        },
+                    },
+                    on: {
+                        touchEnd: function(){
+                            $(".ro-tingd-qb").removeClass("roting room-chose-blue-fon");
+                        },
+                    }
+                });
+                var mySwiper1 = new Swiper('#swiper2',{
+                    slidesPerView : "auto",
+                    touchMoveStopPropagation : false,
+                    centeredSlides : true,
+                    initialSlide :3,
+                    speed:100,
+                    mode:'horizontal',
+                    loop: false,
+                    on: {
+                        slideChangeTransitionEnd: function(){
+                            $(".room-shi .swiper-slide-active").html();
+                        },
+                    },
+                    on: {
+                        touchEnd: function(){
+                            $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
+                        },
+                    }
+                });
 
                 $(".ro-tingd-qb").on("click", function () {
                     $(this).addClass("roting room-chose-blue-fon");
-                    $(".room-ting ul li").removeClass("roting room-chose-blue");
-
+                    $(".room-ting .swiper-slide-active").removeClass("swiper-slide-active");
+                    // $(".selectine").hide();
                 })
                 $(".ro-tingd-qbs").on("click", function () {
                     $(this).addClass("roshi room-chose-blue-fon");
-                    $(".room-shi ul li").removeClass("roshi room-chose-blue");
+                    $(".room-shi .swiper-slide-active").removeClass("swiper-slide-active");
+                    // $(".selectine1").hide();
                 })
-                $(".room-ting ul li").on("click", function () {
-                    $(this).addClass("roting room-chose-blue").siblings().removeClass("roting room-chose-blue");
-                    $(".ro-tingd-qb").removeClass("roting room-chose-blue-fon");
-                })
-                $(".room-shi ul li").on("click", function () {
-                    $(this).addClass("roshi room-chose-blue").siblings().removeClass("roshi room-chose-blue");
-                    $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
-                })
+
             })
             $(".room-dater").on("click", function () {
                 var roomnum = $(".roting").html();
                 var roomnumlast = $(".roshi").html();
-                var roomdat = $(".roting").html() + ' ~ ' + $(".roshi").html();
-//                $(".masking").animate({bottom: '-100%'}, 800);
-//                $(".toward").animate({bottom: '-40%'}, 800);
+                var roomdat = $(".room-ting .swiper-slide-active").html() + ' ~ ' + $(".room-shi .swiper-slide-active").html();
+                var roomda = $(".roting").html() + ' ~ ' + $(".room-shi .swiper-slide-active").html();
+                var roomdas = $(".room-ting .swiper-slide-active").html() + ' ~ ' + $(".roshi").html();
                 $(".masking").removeClass("showleftnav-yrf");
                 $(".masking").toggleClass("showleftnav-yf");
                 $(".room").removeClass("showleftnav-yr");
                 $(".room").toggleClass("showleftnav-y");
                 if( roomnum =="全部" && roomnumlast =="全部" ){
                     $(".room-val").empty().append("全部");
+                }else if (roomnum =="全部" || roomnumlast =="全部" ){
+                    if(roomnum =="全部"){
+                        $(".room-val").empty().append(roomda);
+                    }else {
+                        $(".room-val").empty().append(roomdas);
+                    }
                 }else {
                     $(".room-val").empty().append(roomdat);
                 }
@@ -473,32 +516,40 @@
         <dl>
             <dt class="room-ting">
                 <div class="ro-tingd"> <i class="iconfont icon-shafa shafad"></i></div>
-                <div class="ro-tingd-qb roting room-chose-blue-fon">全部</div>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                </ul>
-                <div class="clearfix"></div>
+                <div class="ro-tingd-qb">全部</div>
+                <div class="swiper-container" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">1</div>
+                        <div class="swiper-slide">2</div>
+                        <div class="swiper-slide">3</div>
+                        <div class="swiper-slide">4</div>
+                        <div class="swiper-slide">5</div>
+                        <div class="swiper-slide">6</div>
+                        <div class="swiper-slide">7</div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="selectine"></div>
+                </div>
             </dt>
             <dt class="room-shi">
                 <div class="ro-tingd"> <i class="iconfont icon-chuang chuangd"></i></div>
-                <div class="ro-tingd-qbs roshi room-chose-blue-fon">全部</div>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                </ul>
+                <div class="ro-tingd-qbs">全部</div>
+                <div class="swiper-container" id="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">1</div>
+                        <div class="swiper-slide">2</div>
+                        <div class="swiper-slide">3</div>
+                        <div class="swiper-slide">4</div>
+                        <div class="swiper-slide">5</div>
+                        <div class="swiper-slide">6</div>
+                        <div class="swiper-slide">7</div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="selectine1"></div>
+                </div>
+
                 <div class="clearfix"></div>
             </dt>
         </dl>
