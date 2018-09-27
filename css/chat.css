@@ -111,6 +111,10 @@ body{
     line-height: 1rem;
     font-weight: normal;
 }
+.coll{
+    font-size: 0.32rem;
+    color: #000;
+}
 .header .right{
 	position: absolute;
 	right: 0.3rem;
@@ -262,10 +266,10 @@ body{
 }
 .friend {
     height: 100%;
-    border-bottom: 1px solid #e7ebee;
     position: relative;
 	box-sizing: border-box;
-	background: #fff;
+	background: #e6e6e6;
+    margin-top: 0.2rem;
 }
 /*.friend img {
     width: 15%;
@@ -278,8 +282,8 @@ body{
 	float: left;
 	height: 1rem;
 	border-radius: 50%;
-    background: #636262;
-    color: #f0bd42;
+    background: #f0bd42;
+    color: #636262;
 	font-size: 0.32rem;
 	text-align: center;
 	line-height: 1rem;

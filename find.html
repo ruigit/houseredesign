@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>灯泡找房</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function(){
+            new
+            FastClick(document.body);
+        })
+        $(document).ready(function() {
+            //		背景高度
+            var winHeight = window.innerHeight + $(".search-nav").height();
+            var bodyheight = $(".caidan-line").height() + $(".search-nav").height();
+            var winHei = window.innerHeight - $(".search-nav").height();
+            $(".index-map").css({height: winHei});
+            if (winHeight > bodyheight){
+                $(".caidan-line").css({height: winHeight});
+            }else {
+                $(".caidan-line").css({height: bodyheight});
+            }
+//            侧边导航
+            $(".caidan").on("click", function(){
+//                $(".caidan-line").animate({left: '0'}, 800);
+                $(".masking2").removeClass("showleftnav-yf");
+                $(".masking2").toggleClass("showleftnav-yrf");
+                $(".caidan-line").removeClass("showleftnav-r");
+                $(".caidan-line").toggleClass("showleftnav");
+                $(".map-content").removeClass("showleftnav-yr");
+//                解绑移动事件
+//                 $('.search-content').unbind('touchmove');
+//                禁止移动
+                $('.search-content').on("touchmove",function(e){
+                    e.preventDefault();
+                });
+
+            })
+            $(".cha").on("click", function(){
+//                $(".caidan-line").animate({left: '-100%'}, 800);
+                $(".masking2").removeClass("showleftnav-yrf");
+                $(".caidan-line").removeClass("showleftnav");
+                $(".caidan-line").toggleClass("showleftnav-r");
+//                解绑移动事件
+                $('.search-content').unbind('touchmove');
+            })
+
+
+
+
+
+//            点击遮罩层2关闭
+            $(".masking2").on("click", function () {
+                $(".masking2").removeClass("showleftnav-yrf");
+                $(".caidan-line").removeClass("showleftnav");
+                $(".caidan-line").toggleClass("showleftnav-r");
+//                解绑移动事件
+                $('.search-content').unbind('touchmove');
+            })
+
+
+
+
+        })
+    </script>
+</head>
+<body>
+<div class="search-content">
+    <div class="search-nav search-nav-yellow">
+        <i class="iconfont icon-category caidan index-block"></i>
+        <i class="iconfont icon-map map-dt index-block"></i>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="search-chose">
+        <ul>
+            <li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+    <div class="search-content-list">
+
+
+
+
+
+    </div>
+</div>
+</body>
+</html>
+<div class="caidan-line">
+    <div class="caidan-line-1">
+        <dl>
+            <dt>
+                <img src="img/logoyellow.png">
+                <i class="iconfont icon-close cha"></i>
+            </dt>
+            <dt class="bordertop"><p>新房</p></dt>
+            <dt><p>二手房</p></dt>
+            <dt><p>租房</p></dt>
+            <dt><p>公建商铺</p></dt>
+            <dt class="color-tap-yellow"><p>找经纪人</p></dt>
+            <dt><p>我的收藏</p></dt>
+        </dl>
+    </div>
+
+</div>
+<div class="masking2"></div>

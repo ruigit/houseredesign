@@ -18,18 +18,18 @@
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/rem.js"></script>
     <script type="text/javascript" src="js/fastclick.js"></script>
-    <link rel="stylesheet" href="css/mobileSelect.css"/>
-    <script type="text/javascript" src="js/mobileSelect-green.min.js"></script>
     <script>
         //阻止穿透事件
         $(function(){
             new
-            $(document).ready(function() {
             FastClick(document.body);
         })
+        $(document).ready(function() {
             //		背景高度
             var winHeight = window.innerHeight + $(".search-nav").height();
             var bodyheight = $(".caidan-line").height() + $(".search-nav").height();
+            var winHei = window.innerHeight - $(".search-nav").height();
+            $(".index-map").css({height: winHei});
             if (winHeight > bodyheight){
                 $(".caidan-line").css({height: winHeight});
             }else {
@@ -38,753 +38,87 @@
 //            侧边导航
             $(".caidan").on("click", function(){
 //                $(".caidan-line").animate({left: '0'}, 800);
-
+                $(".masking2").removeClass("showleftnav-yf");
+                $(".masking2").toggleClass("showleftnav-yrf");
                 $(".caidan-line").removeClass("showleftnav-r");
                 $(".caidan-line").toggleClass("showleftnav");
-                $('html,body').css({"height":"100%","overflow":"hidden"});
+                $(".map-content").removeClass("showleftnav-yr");
+//                解绑移动事件
+//                 $('.search-content').unbind('touchmove');
 //                禁止移动
-               $('body').on("touchmove",function(e){
-                   e.preventDefault();
-               });
+                $('.search-content').on("touchmove",function(e){
+                    e.preventDefault();
+                });
 
             })
             $(".cha").on("click", function(){
 //                $(".caidan-line").animate({left: '-100%'}, 800);
-                $('html,body').css({"height":"","overflow":""});
+                $(".masking2").removeClass("showleftnav-yrf");
                 $(".caidan-line").removeClass("showleftnav");
                 $(".caidan-line").toggleClass("showleftnav-r");
 //                解绑移动事件
-               $('body').unbind('touchmove');
-            })
-            //            房源面积
-
-            $("#area").on("touchstart", function () {
-//                $(".masking").animate({bottom: '0'}, 800);
-//                $(".area").animate({bottom: '0'}, 800);
-                $(".masking").removeClass("showleftnav-yf");
-                $(".masking").toggleClass("showleftnav-yrf");
-                $(".area").removeClass("showleftnav-y");
-                $(".area").toggleClass("showleftnav-yr");
-                $(".area p").removeClass();
-                //                禁止移动
-//                $('body').on("touchmove",function(e){
-//                    e.preventDefault();
-//                });
+                $('.search-content').unbind('touchmove');
             })
 
-            //area确定
-            $(".area p").on("touchstart", function () {
-                $(".area p").removeClass().addClass("areabj");
 
+
+
+
+//            点击遮罩层2关闭
+            $(".masking2").on("click", function () {
+                $(".masking2").removeClass("showleftnav-yrf");
+                $(".caidan-line").removeClass("showleftnav");
+                $(".caidan-line").toggleClass("showleftnav-r");
+//                解绑移动事件
+                $('.search-content').unbind('touchmove');
             })
 
-                    $(".dater").on("touchstart", function () {
-                        var areanum = parseInt($(".chose-input-num").val());
-                        var areanumlast = parseInt($(".chose-input-num-last").val());
-                        var areaall = $(".area p").html();
-                        var areadat = $(".chose-input-num").val() + ' ~ ' + $(".chose-input-num-last").val();
-//                        $(".masking").animate({bottom: '-100%'}, 800);
-//                        $(".area").animate({bottom: '-40%'}, 800);
-                        if($(".area p").is('.areabj')){
-                            $(".masking").removeClass("showleftnav-yrf");
-                            $(".masking").toggleClass("showleftnav-yf");
-                            $(".area").removeClass("showleftnav-yr");
-                            $(".area").toggleClass("showleftnav-y");
-                            $(".chose-input-num").val() == "";
-                            $(".chose-input-num-last").val() == "";
-                            $(".area-val").empty().append(areaall);
-                        }else if( $(".chose-input-num").val() == "" && $(".chose-input-num-last").val() == ""){
-                            $(".area p").removeClass();
-                            alert("请输入面积");
-                        }else if( areanum >= areanumlast ){
-                            $(".area p").removeClass();
-                            alert("请输入正确的范围");
-                        }else {
-                            $(".area p").removeClass();
-                        $(".masking").removeClass("showleftnav-yrf");
-                        $(".masking").toggleClass("showleftnav-yf");
-                        $(".area").removeClass("showleftnav-yr");
-                        $(".area").toggleClass("showleftnav-y");
-
-                                $(".area-val").empty().append(areadat);
-
-                        //                解绑移动事件
-//                        $('body').unbind('touchmove');
-                        }
-
-                    })
-//            点击遮罩层关闭
-            $(".masking").on("touchstart", function () {
-                $(".area ,.price ,.room ,.louceng-area").removeClass("showleftnav-yr");
-                $(".masking").removeClass("showleftnav-yrf");
-                $(".area ,.price ,.room ,.louceng-area").toggleClass("showleftnav-ymf");
-            })
-
-//            楼层
-
-            $("#floor").on("touchstart", function () {
-//                $(".masking").animate({bottom: '0'}, 800);
-//                $(".area").animate({bottom: '0'}, 800);
-                $(".masking").removeClass("showleftnav-yf");
-                $(".masking").toggleClass("showleftnav-yrf");
-                $(".louceng-area").removeClass("showleftnav-y");
-                $(".louceng-area").toggleClass("showleftnav-yr");
-                $(".louceng-area p").removeClass();
-                //                禁止移动
-//                $('body').on("touchmove",function(e){
-//                    e.preventDefault();
-//                });
-            })
-//              楼层加减
-//             左减
-            $(".jian-one").on("click", function () {
-                if($(".louceng-chose-input-num").val() != "" && $(".louceng-chose-input-num").val() > 1){
-                    var oldValue=parseInt($(".louceng-chose-input-num").val());//取出现在的值，并使用parseInt转为int类型数据
-                    oldValue--;
-                    $(".louceng-chose-input-num").val(oldValue);
-                }else {
-                    alert("请输入正确楼层");
-                }
-
-            })
-            // 左加
-            $(".jia-one").on("click", function () {
-                if($(".louceng-chose-input-num").val() != ""){
-                var oldValue=parseInt($(".louceng-chose-input-num").val());//取出现在的值，并使用parseInt转为int类型数据
-                oldValue++;
-                $(".louceng-chose-input-num").val(oldValue);
-                }else {
-                    alert("请输入正确楼层");
-                }
-            })
-            //             右减
-            $(".jian-two").on("click", function () {
-                if($(".louceng-chose-input-num-last").val() != "" && $(".louceng-chose-input-num-last").val() > 1){
-                var oldValue=parseInt($(".louceng-chose-input-num-last").val());//取出现在的值，并使用parseInt转为int类型数据
-                oldValue--;
-                $(".louceng-chose-input-num-last").val(oldValue);
-                }else {
-                    alert("请输入正确楼层");
-                }
-            })
-            // 右加
-            $(".jia-two").on("click", function () {
-                if($(".louceng-chose-input-num-last").val() != ""){
-                var oldValue=parseInt($(".louceng-chose-input-num-last").val());//取出现在的值，并使用parseInt转为int类型数据
-                oldValue++;
-                $(".louceng-chose-input-num-last").val(oldValue);
-                }else {
-                    alert("请输入正确楼层");
-                }
-            })
-            //楼层-确定
-            $(".louceng-area p").on("touchstart", function () {
-                $(".louceng-area p").removeClass().addClass("areabj");
-
-            })
-
-            $(".louceng-dater").on("touchstart", function () {
-                var areanum = parseInt($(".louceng-chose-input-num").val());
-                var areanumlast = parseInt($(".louceng-chose-input-num-last").val());
-                var areaall = $(".louceng-area p").html();
-                var areadat = $(".louceng-chose-input-num").val() + ' ~ ' + $(".louceng-chose-input-num-last").val();
-//                        $(".masking").animate({bottom: '-100%'}, 800);
-//                        $(".area").animate({bottom: '-40%'}, 800);
-                if($(".louceng-area p").is('.areabj')){
-                    $(".masking").removeClass("showleftnav-yrf");
-                    $(".masking").toggleClass("showleftnav-yf");
-                    $(".louceng-area").removeClass("showleftnav-yr");
-                    $(".louceng-area").toggleClass("showleftnav-y");
-                    $(".louceng-chose-input-num").val() == "";
-                    $(".louceng-chose-input-num-last").val() == "";
-                    $(".floor-val").empty().append(areaall);
-                }else if( $(".louceng-chose-input-num").val() == "" && $(".louceng-chose-input-num-last").val() == ""){
-                    $(".louceng-area p").removeClass();
-                    alert("请输入楼层");
-                }else if( areanum >= areanumlast ){
-                    $(".louceng-area p").removeClass();
-                    alert("请输入正确的范围");
-                }else {
-                    $(".louceng-area p").removeClass();
-                    $(".masking").removeClass("showleftnav-yrf");
-                    $(".masking").toggleClass("showleftnav-yf");
-                    $(".louceng-area").removeClass("showleftnav-yr");
-                    $(".louceng-area").toggleClass("showleftnav-y");
-
-                    $(".floor-val").empty().append(areadat);
-
-                    //                解绑移动事件
-//                        $('body').unbind('touchmove');
-                }
-
-            })
-
-            //            房源面积end
-            //            价位
-            $("#price").on("touchstart", function () {
-//                $(".masking").animate({bottom: '0'}, 800);
-//                $(".price").animate({bottom: '0'}, 800);
-                $(".masking").removeClass("showleftnav-yf");
-                $(".masking").toggleClass("showleftnav-yrf");
-                $(".price").removeClass("showleftnav-y");
-                $(".price").toggleClass("showleftnav-yr");
-                //                禁止移动
-//                $('body').on("touchmove",function(e){
-//                    e.preventDefault();
-//                });
-                $(".price p").removeClass();
-            })
-
-            //price确定
-            $(".price p").on("touchstart", function () {
-                $(".price p").removeClass().addClass("pricebj");
-
-            })
-                    $(".price-dater").on("touchstart", function () {
-                        var pricenum = parseInt($(".price-chose-input-num").val());
-                        var pricenumlast = parseInt($(".price-chose-input-num-last").val());
-                        var priceall = $(".price p").html();
-                        var pricedat = $(".price-chose-input-num").val() + ' ~ ' + $(".price-chose-input-num-last").val();
-                        if($(".price p").is('.pricebj')){
-                            $(".masking").removeClass("showleftnav-yrf");
-                            $(".masking").toggleClass("showleftnav-yf");
-                            $(".price").removeClass("showleftnav-yr");
-                            $(".price").toggleClass("showleftnav-y");
-                            $(".price-chose-input-num").val() == "";
-                            $(".price-chose-input-num-last").val() == "";
-                            $(".price-val").empty().append(priceall);
-                        }else if( $(".price-chose-input-num").val() == "" && $(".price-chose-input-num-last").val() == ""){
-                            $(".price p").removeClass();
-                            alert("请输入价格");
-                        }else if( pricenum >= pricenumlast ){
-                            $(".price p").removeClass();
-                            alert("请输入正确的范围");
-                        }else {
-//                        $(".masking").animate({bottom: '-100%'}, 800);
-//                        $(".price").animate({bottom: '-40%'}, 800);
-                            $(".price p").removeClass();
-                        $(".masking").removeClass("showleftnav-yrf");
-                        $(".masking").toggleClass("showleftnav-yf");
-                        $(".price").removeClass("showleftnav-yr");
-                        $(".price").toggleClass("showleftnav-y");
-                            $(".price-val").empty().append(pricedat);
-                        //                解绑移动事件
-//                        $('body').unbind('touchmove');
-                        }
-
-                    })
 
 
 
-            //            价位end
-            //            房源厅室
-            $("#room").on("touchstart", function () {
-//                $(".masking").animate({bottom: '0'}, 800);
-//                $(".toward").animate({bottom: '0'}, 800);
-                $(".masking").removeClass("showleftnav-yf");
-                $(".masking").toggleClass("showleftnav-yrf");
-                $(".room").removeClass("showleftnav-y");
-                $(".room").toggleClass("showleftnav-yr");
-//                $(".toward-chose dl").scroll(function() {
-//
-//                });
-                $(".room-ting ul li").on("touchstart", function () {
-                    $(this).addClass("roting room-chose-blue").siblings().removeClass("roting room-chose-blue");
-                })
-                $(".room-shi ul li").on("touchstart", function () {
-                    $(this).addClass("roshi room-chose-blue").siblings().removeClass("roshi room-chose-blue");
-                })
-            })
-            $(".room-dater").on("touchstart", function () {
-                var roomnum = $(".roting").html();
-                var roomnumlast = $(".roshi").html();
-                var roomdat = $(".roting").html() + ' ~ ' + $(".roshi").html();
-//                $(".masking").animate({bottom: '-100%'}, 800);
-//                $(".toward").animate({bottom: '-40%'}, 800);
-                $(".masking").removeClass("showleftnav-yrf");
-                $(".masking").toggleClass("showleftnav-yf");
-                $(".room").removeClass("showleftnav-yr");
-                $(".room").toggleClass("showleftnav-y");
-                if( roomnum =="全部" && roomnumlast =="全部" ){
-                    $(".room-val").empty().append("全部");
-                }else {
-                    $(".room-val").empty().append(roomdat);
-                }
-            })
-//            房源朝向
-            var mobileSelect1 = new MobileSelect({
-                trigger: '#toward',
-                title: '编辑筛选的房源朝向',
-                triggerDisplayData: false,
-                wheels: [
-                    {data:['全部','东','东南','北','东北','南','西南','西','西北']}
-                ],
-                position:[3], //初始化定位
-                onShow:function(){
-                    if($(".selectLine").html() == "to"){
-                        $(".selectLine").empty();
-                    }
-                },
-                onHide:function(){
-                    $(".selectLine").empty();
-                },
-                callback:function(indexArr, data){
-                    $(".toward-val").empty().append(data);
-                }
-            });
-            //            房源楼层
-//             var mobileSelect2 = new MobileSelect({
-//                 trigger: '#floor',
-//                 title: '编辑筛选的房源楼层',
-//                 floor: 'to',
-//                 triggerDisplayData: false,
-// //                wheels: [
-// //                    {data:['1F','2F','3F','4F','5F','6F','7F','8F','9F','10F','11F','12F','13F','14F','15F','16F','17F','18F','19F','20F','21F','22F','23F','24F','25F','26F','27F','28F','29F','30F','31F','32F']},
-// //                    {data:['1F','2F','3F','4F','5F','6F','7F','8F','9F','10F','11F','12F','13F','14F','15F','16F','17F','18F','19F','20F','21F','22F','23F','24F','25F','26F','27F','28F','29F','30F','31F','32F']}
-// //                ],
-//                 wheels:[
-//                     {data:[
-//                         {id:'1',value:'全部'},
-//                         {
-//                             id:'2',
-//                             value:'1F',
-//                             childs:[
-//                                 {id:'1',value:'2F'},
-//                                 {id:'2',value:'3F'},
-//                                 {id:'3',value:'4F'},
-//                                 {id:'4',value:'5F'},
-//                                 {id:'5',value:'6F'}
-//                             ]
-//                         },
-//                         {
-//                             id:'3',
-//                             value:'2F',
-//                             childs:[
-//                                 {id:'1',value:'3F'},
-//                                 {id:'2',value:'4F'},
-//                                 {id:'3',value:'5F'},
-//                                 {id:'4',value:'6F'},
-//                                 {id:'5',value:'7F'}
-//                             ]
-//                         },
-//                         {
-//                             id:'4',
-//                             value:'3F',
-//                             childs:[
-//                                 {id:'1',value:'4F'},
-//                                 {id:'2',value:'5F'},
-//                                 {id:'3',value:'6F'},
-//                                 {id:'4',value:'7F'},
-//                                 {id:'5',value:'8F'}
-//                             ]
-//                         },
-//                         {
-//                             id:'5',
-//                             value:'4F',
-//                             childs:[
-//                                 {id:'1',value:'5F'},
-//                                 {id:'2',value:'6F'},
-//                                 {id:'3',value:'7F'},
-//                                 {id:'4',value:'8F'},
-//                                 {id:'5',value:'9F'}
-//                             ]
-//                         },
-//                         {
-//                             id:'6',
-//                             value:'5F',
-//                             childs:[
-//                                 {id:'1',value:'6F'},
-//                                 {id:'2',value:'7F'},
-//                                 {id:'3',value:'8F'},
-//                                 {id:'4',value:'9F'},
-//                                 {id:'5',value:'10F'}
-//                             ]
-//                         },
-//                     ]}
-//                     ],
-//                 position:[2,0], //初始化定位
-//                 onShow:function(){
-//                     if($(".floor-val").html() == "全部"){
-//                         $(".selectLine").empty();
-//
-//                     }else{
-//                         $(".selectLine").html("to");
-//
-//                     }
-//                 },
-//                 onHide:function(){
-//                     $(".selectLine").empty();
-//                 },
-//                 transitionEnd:function(indexArr, data) {
-//                     for (var i=0;i<data.length;i++) {
-//                         if(data[i].value == '全部'){
-//                             $(".selectLine").empty();
-//                             break;
-//                         }else{
-//                             $(".selectLine").html("to");
-//                             break;
-//                         }
-//                     }
-//                 },
-//                 callback:function(indexArr, data) {
-//                     for (var i=0;i<data.length;i++) {
-//                         if(data[i].value == '全部'){
-//                             $(".floor-val").empty().append(data[i].value);
-//                             break;
-//                         }else{
-//                             $(".floor-val").empty().append(data[i++].value + ' ~ ' + data[i].value);
-//                             break;
-//                         }
-//                     }
-//                 }
-//             });
-//            异步获取房源楼层json数据
-//            $.ajax({
-//                type: "POST",
-//                url: "",
-//                data: {},
-//                dataType: "json",
-//                success: function(res){
-//                    //这里假设获取到的res.data为：
-//                    // [{
-//                    //     id:'1',
-//                    //     value:'更新后数据',
-//                    //     childs:[
-//                    //         {id:'A1',value:'apple'},
-//                    //         {id:'A2',value:'banana'},
-//                    //         {id:'A3',value:'orange'}
-//                    //     ]
-//                    // }]
-//                    mobileSelect2.updateWheels(res.data);
-//                }
-//            });
-            // 地区选择
-            var mobileSelect3 = new MobileSelect({
-                trigger: '#broker-chose-click',
-                title: '地区选择',
-                triggerDisplayData: false,
-
-                wheels:[
-                    {data:[
-                            {id:'1',value:'全部'},
-                            {
-                                id:'2',
-                                value:'1F',
-                                childs:[
-                                    {id:'1',value:'2F',childs:[
-                                            {id:'1',value:'2F'},
-                                            {id:'2',value:'3F'},
-                                            {id:'3',value:'4F'},
-                                            {id:'4',value:'5F'},
-                                            {id:'5',value:'6F'}
-                                        ]},
-                                    {id:'2',value:'3F'},
-                                    {id:'3',value:'4F'},
-                                    {id:'4',value:'5F'},
-                                    {id:'5',value:'6F'}
-                                ]
-                            },
-                            {
-                                id:'3',
-                                value:'2F',
-                                childs:[
-                                    {id:'1',value:'3F'},
-                                    {id:'2',value:'4F'},
-                                    {id:'3',value:'5F'},
-                                    {id:'4',value:'6F'},
-                                    {id:'5',value:'7F'}
-                                ]
-                            },
-                            {
-                                id:'4',
-                                value:'3F',
-                                childs:[
-                                    {id:'1',value:'4F'},
-                                    {id:'2',value:'5F'},
-                                    {id:'3',value:'6F'},
-                                    {id:'4',value:'7F'},
-                                    {id:'5',value:'8F'}
-                                ]
-                            },
-                            {
-                                id:'5',
-                                value:'4F',
-                                childs:[
-                                    {id:'1',value:'5F'},
-                                    {id:'2',value:'6F'},
-                                    {id:'3',value:'7F'},
-                                    {id:'4',value:'8F'},
-                                    {id:'5',value:'9F'}
-                                ]
-                            },
-                            {
-                                id:'6',
-                                value:'5F',
-                                childs:[
-                                    {id:'1',value:'6F'},
-                                    {id:'2',value:'7F'},
-                                    {id:'3',value:'8F'},
-                                    {id:'4',value:'9F'},
-                                    {id:'5',value:'10F'}
-                                ]
-                            },
-                        ]}
-                ],
-                position:[0], //初始化定位
-                onShow:function(){
-                    // //                禁止移动
-                    // $('body').on("touchmove",function(e){
-                    //     e.preventDefault();
-                    // });
-
-                    $(".selectLine").empty();
-                },
-                onHide:function(){
-                    $(".selectLine").html("to");
-                    // //                解绑移动事件
-                    // $('body').unbind('touchmove');
-                },
-                transitionEnd:function() {
-                    $(".selectLine").empty();
-                },
-                callback:function(indexArr, data){
-                    console.log(data);
-                }
-
-            });
         })
     </script>
 </head>
 <body>
 <div class="search-content">
-<div class="search-nav search-nav-blue">
-    <i class="iconfont icon-caidan caidan"></i>
-    <i class="iconfont icon-ditu ditu"></i>
-    <div class="search-nav-list">List</div>
-    <div class="clearfix"></div>
-</div>
-<div class="index-search">
-    <input type="text" class="index-searchtext" value="搜索房源关键词"  onfocus="if(this.value=='搜索房源关键词'){this.value=''}" onblur="if(this.value==''){this.value='搜索房源关键词'}">
-    <i class="iconfont icon-fangdajing fangdajingt"></i>
-    <div class="clearfix"></div>
-</div>
-<div class="search-chose">
-    <ul>
-        <li id="broker-chose-click"><p>地区选择</p><div class="clearfix"></div></li>
-        <li><p>房源价格</p><div class="search-chose-p"><i class="iconfont icon-paixujiantoushang shang"></i><i class="iconfont icon-xiala xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-        <li><p>房源面积</p><div class="search-chose-p"><i class="iconfont icon-paixujiantoushang shang"></i><i class="iconfont icon-xiala xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+    <div class="search-nav search-nav-yellow">
+        <i class="iconfont icon-category caidan index-block"></i>
+        <i class="iconfont icon-map map-dt index-block"></i>
         <div class="clearfix"></div>
-    </ul>
-</div>
+    </div>
+
+    <div class="search-chose">
+        <ul>
+            <li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
     <div class="search-content-list">
-    <div class="tab-main-pic-main">
-        <div class="tab-main-pic">
-            <img src="img/news-banner1.jpg">
-        </div>
-        <div class="bottom-inform-img">
-            <img src="img/picd.jpg">
-        </div>
-        <div class="bottom-inform-pic">
-            123万
-        </div>
-        <div class="bottom-inform-i">
-            <i class="iconfont icon-shafa shafa"></i><span>3</span>
-            <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
-            <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
-            <i class="iconfont icon-guo guo"></i><span>1</span>
-            <div class="clearfix"></div>
-        </div>
 
-    </div>
-        <div class="tab-main-pic-main">
-            <div class="tab-main-pic">
-                <img src="img/news-banner1.jpg">
-            </div>
-            <div class="bottom-inform-img">
-                <img src="img/picd.jpg">
-            </div>
-            <div class="bottom-inform-pic">
-                123万
-            </div>
-            <div class="bottom-inform-i">
-                <i class="iconfont icon-shafa shafa"></i><span>3</span>
-                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
-                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
-                <i class="iconfont icon-guo guo"></i><span>1</span>
-                <div class="clearfix"></div>
-            </div>
 
-        </div>
-        <div class="tab-main-pic-main">
-            <div class="tab-main-pic">
-                <img src="img/news-banner1.jpg">
-            </div>
-            <div class="bottom-inform-img">
-                <img src="img/picd.jpg">
-            </div>
-            <div class="bottom-inform-pic">
-                123万
-            </div>
-            <div class="bottom-inform-i">
-                <i class="iconfont icon-shafa shafa"></i><span>3</span>
-                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
-                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
-                <i class="iconfont icon-guo guo"></i><span>1</span>
-                <div class="clearfix"></div>
-            </div>
 
-        </div>
-        <div class="tab-main-pic-main">
-            <div class="tab-main-pic">
-                <img src="img/news-banner1.jpg">
-            </div>
-            <div class="bottom-inform-img">
-                <img src="img/picd.jpg">
-            </div>
-            <div class="bottom-inform-pic">
-                123万
-            </div>
-            <div class="bottom-inform-i">
-                <i class="iconfont icon-shafa shafa"></i><span>3</span>
-                <i class="iconfont icon-zhinengchuang-f chuang"></i><span>2</span>
-                <i class="iconfont icon-shuilongtouhuasaanzhuang huasa"></i><span>2</span>
-                <i class="iconfont icon-guo guo"></i><span>1</span>
-                <div class="clearfix"></div>
-            </div>
 
-        </div>
-    </div>
-<div class="caidan-line">
-    <div class="caidan-line-1">
-        <dl>
-            <dt>
-                <img src="img/logoblue.png">
-                <i class="iconfont icon-chacha cha"></i>
-            </dt>
-            <dt class="bordertop"><p>二手房</p></dt>
-            <dt><p>新房</p></dt>
-            <dt><p>租房</p></dt>
-            <dt><p>公建商铺</p></dt>
-            <dt><p class="border-none">找经纪人</p></dt>
-        </dl>
-    </div>
-    <div class="caidan-line-2">
-        <dl>
-            <dt id="area"><p>面积</p><span class="area-val">全部 ></span><div  class="clearfix"></div></dt>
-            <dt id="toward"><p>朝向</p><span class="toward-val">全部 ></span><div  class="clearfix"></div></dt>
-            <dt id="room"><p>厅室</p><span class="room-val">全部 ></span><div  class="clearfix"></div></dt>
-            <dt id="floor"><p>楼层</p><span class="floor-val">全部 ></span><div  class="clearfix"></div></dt>
-            <dt id="price" class="border-none"><p>价位</p><span class="price-val">全部 ></span><div  class="clearfix"></div></dt>
-        </dl>
-    </div>
-    <div class="caidan-line-3">
-        我的收藏
-    </div>
-</div>
-    <div class="masking"></div>
-    <div class="area">
-        <div class="area-title">编辑筛选的房源面积</div>
-        <p>全部</p>
-        <div class="chose">
-            <div class="chose-input">
-                <input type="text" class="chose-input-num" value="">
-                <span>m²</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="chose-input-ful">~</div>
-            <div class="chose-input">
-                <input type="text" class="chose-input-num-last" value="">
-                <span>m²</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    <div class="dater">确定</div>
-    </div>
-    <div class="room">
-        <div class="room-title">编辑筛选的房源厅室</div>
-        <div class="room-chose">
-            <dl>
-                <dt class="room-ting">
-                    <ul>
-                        <div class="ro-tingd"> <i class="iconfont icon-shafa shafad"></i></div>
-                        <li class="roting room-chose-blue">全部</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <div class="clearfix"></div>
-                    </ul>
-                </dt>
-                <dt class="room-shi">
-                    <ul>
-                        <div class="ro-tingd"> <i class="iconfont icon-zhinengchuang-f chuangd"></i></div>
-                        <li class="roshi room-chose-blue">全部</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <div class="clearfix"></div>
-                    </ul>
-                </dt>
-            </dl>
-        </div>
-        <div class="room-dater">确定</div>
-    </div>
-    <div class="louceng-area">
-        <div class="louceng-area-title">编辑筛选的楼层</div>
-        <p>全部</p>
-        <div class="louceng-jian">
-            <ul>
-                <li><i class="iconfont icon-jianhao jian-lou jian-one"></i></li>
-                <li><i class="iconfont icon-jianhao jian-lou jian-two"></i></li>
-                <div class="clearfix"></div>
-            </ul>
-        </div>
-        <div class="louceng-chose">
-            <div class="louceng-chose-input">
-                <input type="number" class="louceng-chose-input-num" value="">
-                <span>层</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="louceng-chose-input-ful">~</div>
-            <div class="louceng-chose-input">
-                <input type="number" class="louceng-chose-input-num-last" value="">
-                <span>层</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="louceng-jia">
-            <ul>
-                <li><i class="iconfont icon-jiahao jian-lou jia-one"></i></li>
-                <li><i class="iconfont icon-jiahao jian-lou jia-two"></i></li>
-                <div class="clearfix"></div>
-            </ul>
-        </div>
-        <div class="louceng-dater">确定</div>
-    </div>
-    <div class="price">
-        <div class="price-title">编辑筛选的房源价格</div>
-        <p>全部</p>
-        <div class="price-chose">
-            <div class="price-chose-input">
-                <input type="text" class="price-chose-input-num" value="">
-                <span>￥</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="price-chose-input-ful">~</div>
-            <div class="price-chose-input">
-                <input type="text" class="price-chose-input-num-last" value="">
-                <span>￥</span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="price-dater">确定</div>
+
     </div>
 </div>
 </body>
 </html>
+<div class="caidan-line">
+    <div class="caidan-line-1">
+        <dl>
+            <dt>
+                <img src="img/logoyellow.png">
+                <i class="iconfont icon-close cha"></i>
+            </dt>
+            <dt class="bordertop"><p>新房</p></dt>
+            <dt><p>二手房</p></dt>
+            <dt><p>租房</p></dt>
+            <dt><p>公建商铺</p></dt>
+            <dt><p>找经纪人</p></dt>
+            <dt><p>我的收藏</p></dt>
+        </dl>
+    </div>
+
+</div>
+<div class="masking2"></div>
