@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/login-logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/logoblack.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/logopurple.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/index.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/login-agent.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.eot" afterPath="$PROJECT_DIR$/fonts/iconfont.eot" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.svg" afterPath="$PROJECT_DIR$/fonts/iconfont.svg" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.ttf" afterPath="$PROJECT_DIR$/fonts/iconfont.ttf" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.woff" afterPath="$PROJECT_DIR$/fonts/iconfont.woff" />
-      <change beforePath="$PROJECT_DIR$/img/backgroundlogo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/loginbackground.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/logoblue.png" afterPath="$PROJECT_DIR$/img/logoblue.png" />
-      <change beforePath="$PROJECT_DIR$/img/logogreen.png" afterPath="$PROJECT_DIR$/img/logogreen.png" />
-      <change beforePath="$PROJECT_DIR$/img/logored.png" afterPath="$PROJECT_DIR$/img/logored.png" />
-      <change beforePath="$PROJECT_DIR$/img/logowhite.png" afterPath="$PROJECT_DIR$/img/logowhite.png" />
-      <change beforePath="$PROJECT_DIR$/img/logoyellow.png" afterPath="$PROJECT_DIR$/img/logoyellow.png" />
-      <change beforePath="$PROJECT_DIR$/index-blue.html" afterPath="$PROJECT_DIR$/index-blue.html" />
-      <change beforePath="$PROJECT_DIR$/index-green.html" afterPath="$PROJECT_DIR$/index-green.html" />
-      <change beforePath="$PROJECT_DIR$/index-purple.html" afterPath="$PROJECT_DIR$/index-purple.html" />
-      <change beforePath="$PROJECT_DIR$/index-red.html" afterPath="$PROJECT_DIR$/index-red.html" />
-      <change beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
-      <change beforePath="$PROJECT_DIR$/register.html" afterPath="$PROJECT_DIR$/register.html" />
+      <change beforePath="$PROJECT_DIR$/index-blue.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index-green.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index-red.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,21 +24,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.65662307">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/login.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="131">
                   <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/register.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="95" column="30" lean-forward="true" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -300,7 +270,7 @@
       <workItem from="1537492177717" duration="17130000" />
       <workItem from="1537834762201" duration="23247000" />
       <workItem from="1537921074244" duration="18601000" />
-      <workItem from="1538007529506" duration="12419000" />
+      <workItem from="1538007529506" duration="12621000" />
     </task>
     <task id="LOCAL-00001" summary="大连房产系统">
       <created>1518334841807</created>
@@ -582,16 +552,23 @@
       <option name="project" value="LOCAL" />
       <updated>1538017986235</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="大连房产系统">
+      <created>1538028913702</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1538028913702</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163743000" />
+    <option name="totallyTimeSpent" value="163945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13178678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13178678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -929,10 +906,10 @@
         <state relative-caret-position="1555">
           <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
           <folding>
-            <element signature="e#4599#4605#0" expanded="true" />
-            <element signature="e#4605#4611#0" expanded="true" />
-            <element signature="e#4611#4617#0" expanded="true" />
-            <element signature="e#4617#4623#0" expanded="true" />
+            <element signature="e#4599#4605#0" expanded="false" />
+            <element signature="e#4605#4611#0" expanded="false" />
+            <element signature="e#4611#4617#0" expanded="false" />
+            <element signature="e#4617#4623#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -984,14 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index-blue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="494" column="31" lean-forward="true" selection-start-line="494" selection-start-column="31" selection-end-line="494" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index-green.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -1024,14 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1044,6 +1005,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="95" column="30" lean-forward="true" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-blue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="487" column="34" lean-forward="false" selection-start-line="487" selection-start-column="34" selection-end-line="487" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
           <folding />
         </state>
       </provider>
