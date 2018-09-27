@@ -53,6 +53,8 @@
 
 .icon-chufang:before { content: "\e662"; }
 
+.icon-nicheng:before { content: "\e61f"; }
+
 .icon-love:before { content: "\e61e"; }
 
 .icon-zhuanfa:before { content: "\e60c"; }
@@ -116,10 +118,11 @@ body {
 }
 .fenxiang{
     color: #000;
-    font-size: 0.45rem;
+    font-size: 0.42rem;
     float: right;
     margin-right: 0.2rem;
-    margin-top: 0.07rem;
+    margin-top: 0.08rem;
+    font-weight: bold;
 }
 .bottom-inform{
     width: auto;
@@ -722,13 +725,15 @@ body {
     float: left;
     margin-left: 0.5rem;
     margin-top: 0.2rem;
+    font-weight: bold;
 }
 .map-dt{
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     float: right;
     margin-right: 0.5rem;
-    margin-top: 0.2rem;
+    margin-top: 0.22rem;
+    font-weight: bold;
 }
 /*.search-nav-list{*/
     /*color: #fff;*/
@@ -823,6 +828,7 @@ body {
     position: absolute;
     right: 0.1rem;
     top: 1.1rem;
+    font-weight: bold;
 }
 .caidan-line-2{
     width: 100%;
@@ -1600,8 +1606,8 @@ input::-webkit-input-placeholder {
 }
 .index-location-search img{
     width: 0.45rem;
-    height: 0.65rem;
-    margin-top: 0.15rem;
+    height: 0.6rem;
+    margin-top: 0.2rem;
     float: left;
     margin-left: 1rem;
 }
@@ -1611,6 +1617,7 @@ input::-webkit-input-placeholder {
     float: left;
     margin-left: 0rem;
     margin-top: 0.2rem;
+    font-weight: bold;
 }
 .fangdajing{
     color: #fff;
@@ -1618,6 +1625,7 @@ input::-webkit-input-placeholder {
     float: left;
     margin-left: 1rem;
     margin-top: 0.25rem;
+    font-weight: bold;
 }
 .formm{
     color: #fff;
@@ -1625,6 +1633,7 @@ input::-webkit-input-placeholder {
     float: right;
     margin-right: 0.4rem;
     margin-top: 0.27rem;
+    font-weight: bold;
 }
 .index-search{
     margin-top: 0.2rem;
@@ -1819,6 +1828,9 @@ input::-webkit-input-placeholder {
     line-height: 1rem;
     overflow: hidden;
     text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: -2px;
 }
 /*index-mapend*/
 .index-map{
@@ -1990,6 +2002,9 @@ input::-webkit-input-placeholder {
 .search-nav-red{
     background: #d32c2e!important;
 }
+.search-nav-yellow{
+    background: #f1c131!important;
+}
 /*end*/
 /*index end*/
 .register-nav{
@@ -2003,6 +2018,13 @@ input::-webkit-input-placeholder {
     margin-left: 0.2rem;
     margin-top: 0.2rem;
 }
+.regist-zhuce{
+    color: #fff;
+    font-size: 0.58rem;
+    float: left;
+    margin-left: 35%;
+    margin-top: 0.2rem;
+}
 .register-content{
     z-index: 11;
     top:0;
@@ -2010,13 +2032,13 @@ input::-webkit-input-placeholder {
     width: 100%;
     height: auto;
 }
-.register-nav-list {
-    color: #fff;
-    font-size: 0.38rem;
-    float: left;
-    margin-left: 34%;
-    line-height: 1rem;
-}
+/*.register-nav-list {*/
+    /*color: #fff;*/
+    /*font-size: 0.38rem;*/
+    /*float: left;*/
+    /*margin-left: 34%;*/
+    /*line-height: 1rem;*/
+/*}*/
 .register-line{
     width: 100%;
     height: auto;
@@ -2043,7 +2065,7 @@ input::-webkit-input-placeholder {
     transition: all 0.3s ease 0s;
     display: block;
     width: 80%;
-    font-size: 0.35rem;
+    font-size: 0.32rem;
     color: #b8b8b8;
     margin-top: 0.25rem;
     float: left;
@@ -2061,12 +2083,12 @@ input::-webkit-input-placeholder {
 }
 .register-btn-info{
     width: 80%;
-    background: #4f7cef;
+    background: #f1c131;
     line-height: 0.9rem;
     height: 0.9rem;
-    font-size: 0.4rem;
+    font-size: 0.36rem;
     text-align: center;
-    color: #fff;
+    color: #000;
     -moz-border-radius: 0.15rem;
     -webkit-border-radius: 0.15rem;
     border-radius: 0.15rem;
@@ -2077,12 +2099,12 @@ input::-webkit-input-placeholder {
     display: block;
     width: 30%;
     float: left;
-    background: #4f7cef;
+    background: #f1c131;
     line-height: 0.8rem;
     height: 0.8rem;
     font-size: 0.3rem;
     text-align: center;
-    color: #fff;
+    color: #000;
     -moz-border-radius: 0.15rem;
     -webkit-border-radius: 0.15rem;
     border-radius: 0.15rem;
@@ -2120,17 +2142,17 @@ input::-webkit-input-placeholder {
     margin-left: 0.2rem;
 }
 .login-btn-info{
-    width: 80%;
-    background: #4f7cef;
+    width: 90%;
+    background: #f1c131;
     line-height: 0.9rem;
     height: 0.9rem;
-    font-size: 0.4rem;
+    font-size: 0.36rem;
     text-align: center;
-    color: #fff;
+    color: #000;
     -moz-border-radius: 0.15rem;
     -webkit-border-radius: 0.15rem;
     border-radius: 0.15rem;
-    margin: 1rem 10% 0.3rem 10%;
+    margin: 1rem 5% 0.3rem 5%;
     border: none;
 }
 .login-input{
@@ -2143,7 +2165,7 @@ input::-webkit-input-placeholder {
     transition: all 0.3s ease 0s;
     display: block;
     width: 80%;
-    font-size: 0.35rem;
+    font-size: 0.32rem;
     color: #b8b8b8;
     margin-top: 0.25rem;
     float: left;
@@ -2152,24 +2174,29 @@ input::-webkit-input-placeholder {
 .login-register{
     width: 80%;
     margin: 0 10%;
-    line-height: 0.5rem;
-    height: 0.5rem;
+    line-height: 0.6rem;
+    height: 0.6rem;
     font-size: 0.3rem;
     text-align: center;
-    color: #4f7cef;
+    color: #597be7;
     border: none;
+}
+.letter-spa{
+    letter-spacing:5px;
+}
+.lettr-ma{
+    text-indent: 5px;
 }
 .login-background{
     width: 100%;
-    height: 5rem;
-    background: url("../img/loginbackground.png") no-repeat top center;
-    background-size: 100% 5rem;
+    height: 4.5rem;
+    background: #fff;
 }
 .login-background img{
-    width: 2rem;
-    height: 2rem;
+    width: 2.6rem;
+    height: 2.6rem;
     border: none;
-    margin: 18% auto auto 38%;
+    margin: 1rem auto auto 28%;
 }
 /*loginend*/
 /*pad-pro横屏*/
