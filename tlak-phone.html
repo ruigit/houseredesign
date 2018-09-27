@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+<meta name="x5-orientation" content="portrait"/>
+<meta name="screen-orientation" content="portrait"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="email=no"/>
+<meta name="keywords" content="关键字">
+<meta name="description" content="描述">
+<link href="favicon.ico" rel="shortcut icon">
+<title>灯泡找房-聊天界面-phone</title>
+<link rel="stylesheet" type="text/css" href="css/chat.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<script>
+    $(document).ready(function () {
+        function setScrollTop(scroll_top) {
+            document.documentElement.scrollTop = scroll_top;
+            window.pageYOffset = scroll_top;
+            document.body.scrollTop = scroll_top;
+        }
+// 默认进入聊天页面在最下边
+        setScrollTop(document.getElementById('megt').scrollHeight);
+        $(".seduhg").on("click", function () {
+            $(".message").append("<div class='show'><div class='time'>05/22 06:30</div><div class='msg'><span>里</span><p><i clas='msg_input'></i>" + $('#input-val').val() + "</p></div></div>")
+            $("#input-val").val("");
+            // 聊天滚动到最下
+            setScrollTop(document.getElementById('megt').scrollHeight);
+//				解决遮挡input问题和输入一次键盘隐藏问题
+            $(".footer").css({position:"absolute"});
+            $("#input-val").focus();
+        })
+        $('#input-val').on('focus', function () {
+            var target = this;
+            setTimeout(function(){
+                target.scrollIntoViewIfNeeded();
+//						解决ios遮挡input问题
+                document.body.scrollTop = document.body.scrollHeight;
+                //target.scrollIntoView(true);
+//						console.log('scrollIntoViewIfNeeded');
+            },200);
+        });
+    })
+    // 监听ctrl+enter
+    // 		$(document).keypress(function(e) {
+    // 		if (e.ctrlKey && e.which == 13)
+    // 		alert(1)
+    // 		})
+</script>
+</head>
+
+<body>
+<header class="header">
+    <a class="back" href=""></a>
+    <h5 class="tit"><i class="iconfont icon-xinxi sendtt"></i></h5>
+    <!-- <div class="right">资料</div> -->
+    </header>
+    <div class="message" id="megt">
+
+    <div class="send">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i class="msg_input"></i>你好在不在呀，妹子！你好在不在呀，妹子！你好在不在呀，妹子！</p>
+        </div>
+    </div>
+    <div class="show">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i clas="msg_input"></i>你好你好你好</p>
+        </div>
+    </div>
+    <div class="send">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i class="msg_input"></i>你好在不在呀，妹子！</p>
+        </div>
+    </div>
+    <div class="show">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i clas="msg_input"></i>你好你好你好</p>
+        </div>
+    </div>
+    <div class="send">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i class="msg_input"></i>你好在不在呀，妹子！</p>
+        </div>
+    </div>
+    <div class="show">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i clas="msg_input"></i>你好你好你好</p>
+        </div>
+    </div>
+    <div class="send">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i class="msg_input"></i>你好在不在呀，妹子！</p>
+        </div>
+    </div>
+    <div class="show">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i clas="msg_input"></i>你好你好你好</p>
+        </div>
+    </div>
+    <div class="send">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i class="msg_input"></i>你好在不在呀，妹子！</p>
+        </div>
+    </div>
+    <div class="show">
+        <div class="time">05/22 06:30</div>
+        <div class="msg">
+            <span>里</span>
+            <p><i clas="msg_input"></i>你好你好你好</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+
+    <input type="text" id="input-val">
+    <p class="seduhg">发送</p>
+    </div>
+
+</body>
+</html>

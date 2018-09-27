@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+<meta name="keywords" content="关键字">
+<meta name="description" content="描述">
+<link href="favicon.ico" rel="shortcut icon">
+<title>灯泡找房-聊天界面-pc</title>
+<link rel="stylesheet" type="text/css" href="css/list-ht.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<script>
+    $(document).ready(function () {
+        // 默认进入聊天页面在最下边
+        $('#megt').scrollTop($('#megt ul').height());
+        //            切换
+        $(".m-list ul li").on("click", function () {
+            // var i = $(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
+
+        })
+        $(".m-texdt-butt").on("click", function () {
+            // 聊天滚动到最下
+            var div = document.getElementById('megt');
+
+
+            $(".m-message ul").append(
+                "<li><p class='time'><span>10:45</span></p><div class='main self'><span class='avatar'>是</span><div class='text'>" +
+                $('#text-area').val() + "</div></div></li>")
+            // 聊天滚动到最下
+            div.scrollTop = div.scrollHeight;
+        })
+
+    })
+    // 监听ctrl+enter
+    // 		$(document).keypress(function(e) {
+    // 		if (e.ctrlKey && e.which == 13)
+    // 		alert(1)
+    // 		})
+</script>
+</head>
+
+<body>
+<div id="chat">
+    <div class="sidebar">
+        <div class="m-card">
+            <header>
+                <span>里</span>
+                <p class="name">经纪人</p>
+            </header>
+        </div>
+        <div class="m-list">
+            <ul>
+                <li class="active">
+                    <span>里</span>
+                    <div class="m-list-gt">
+                        <i>姓名</i>
+                        <p class="name">示例示例介绍示例介绍示例介绍示例介绍示例介绍介绍</p>
+                    </div>
+                    <div class="stass avail"></div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="">
+                    <span>里</span>
+                    <div class="m-list-gt">
+                        <i>姓名</i>
+                        <p class="name">示例示例介绍示例介绍示例介绍示例介绍示例介绍介绍</p>
+                    </div>
+                    <div class="stass-red avail"></div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="m-message" id="megt">
+            <ul>
+                <li>
+                    <p class="time">
+                        <span>10:1</span>
+                    </p>
+                    <div class="main">
+                        <span class="avatar">是</span>
+                        <div class="text">Hello，这是一个基于Vue + Webpack构建的简单chat示例，聊天记录保存在localStorge。简单演示了Vue的基础特性和webpack配置。</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:45</span>
+                    </p>
+                    <div class="main self">
+                        <span class="avatar">是</span>
+                        <div class="text">111</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:1</span>
+                    </p>
+                    <div class="main">
+                        <span class="avatar">是</span>
+                        <div class="text">Hello，这是一个基于Vue + Webpack构建的简单chat示例，聊天记录保存在localStorge。简单演示了Vue的基础特性和webpack配置。</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:45</span>
+                    </p>
+                    <div class="main self">
+                        <span class="avatar">是</span>
+                        <div class="text">111</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:1</span>
+                    </p>
+                    <div class="main">
+                        <span class="avatar">是</span>
+                        <div class="text">Hello，这是一个基于Vue + Webpack构建的简单chat示例，聊天记录保存在localStorge。简单演示了Vue的基础特性和webpack配置。</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:45</span>
+                    </p>
+                    <div class="main self">
+                        <span class="avatar">是</span>
+                        <div class="text">111</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:1</span>
+                    </p>
+                    <div class="main">
+                        <span class="avatar">是</span>
+                        <div class="text">Hello，这是一个基于Vue + Webpack构建的简单chat示例，聊天记录保存在localStorge。简单演示了Vue的基础特性和webpack配置。</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:45</span>
+                    </p>
+                    <div class="main self">
+                        <span class="avatar">是</span>
+                        <div class="text">111</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:1</span>
+                    </p>
+                    <div class="main">
+                        <span class="avatar">是</span>
+                        <div class="text">Hello，这是一个基于Vue + Webpack构建的简单chat示例，聊天记录保存在localStorge。简单演示了Vue的基础特性和webpack配置。</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:45</span>
+                    </p>
+                    <div class="main self">
+                        <span class="avatar">是</span>
+                        <div class="text">111</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:1</span>
+                    </p>
+                    <div class="main">
+                        <span class="avatar">是</span>
+                        <div class="text">Hello，这是一个基于Vue + Webpack构建的简单chat示例，聊天记录保存在localStorge。简单演示了Vue的基础特性和webpack配置。</div>
+                    </div>
+                </li>
+                <li>
+                    <p class="time">
+                        <span>10:45</span>
+                    </p>
+                    <div class="main self">
+                        <span class="avatar">是</span>
+                        <div class="text">111</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-text">
+            <textarea id="text-area" placeholder="输入信息"></textarea>
+        </div>
+        <div class="m-texdt-butt">按钮</div>
+    </div>
+</div>
+</body>
+</html>

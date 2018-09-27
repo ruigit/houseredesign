@@ -1,0 +1,334 @@
+@charset "utf-8";
+/*字体文件*/
+@font-face {
+    font-family: 'iconfont';  /* project id 563951 */
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-shangsanjiao:before { content: "\e600"; }
+
+.icon-icon:before { content: "\e601"; }
+
+.icon-category:before { content: "\e699"; }
+
+.icon-close:before { content: "\e69a"; }
+
+.icon-form:before { content: "\e6a2"; }
+
+.icon-search:before { content: "\e6ac"; }
+
+.icon-add:before { content: "\e6b9"; }
+
+.icon-subtract:before { content: "\e6fe"; }
+
+.icon-map:before { content: "\e715"; }
+
+.icon-xiasanjiao:before { content: "\e602"; }
+
+.icon-phone:before { content: "\e725"; }
+
+.icon-shouji:before { content: "\e866"; }
+
+.icon-shoucang1:before { content: "\e63c"; }
+
+.icon-xinxi:before { content: "\e60d"; }
+
+.icon-chuang:before { content: "\e688"; }
+
+.icon-zhuce:before { content: "\e63b"; }
+
+.icon-linyu:before { content: "\e623"; }
+
+.icon-youjian:before { content: "\e62b"; }
+
+.icon-chufang:before { content: "\e662"; }
+
+.icon-love:before { content: "\e61e"; }
+
+.icon-zhuanfa:before { content: "\e60c"; }
+
+.icon-suo-:before { content: "\e615"; }
+
+.icon-shafa:before { content: "\e61c"; }
+
+.icon-zuo:before { content: "\e693"; }
+h5{
+	margin: 0;
+}
+img{
+	max-width: 100%;
+    vertical-align: middle
+}
+input{
+	outline: none;	
+}
+body{
+    max-width: 720px;
+    margin: 0 auto;
+    background: #cdcccc;
+    color:#fff;
+    font-size: 0.26rem;
+		position: relative;
+}
+.header{
+    border-bottom: 1px solid #dfdfdf;
+    padding:0 0.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 720px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.back{
+    position: absolute;  
+	top: 0;
+	left: 0.3rem;
+	background:url(../img/left.png) no-repeat;
+    width: 0.2rem;
+    height:0.4rem;
+    margin-top: 0.3rem;
+    background-size: 0.2rem 0.4rem;
+}
+.header .tit{
+    /*font-size: 0.32rem;*/
+    vertical-align: middle;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    font-weight: normal;
+}
+.header .right{
+	position: absolute;
+	right: 0.3rem;
+	top: 0;
+	float: none;
+	font-size: 0.24rem;
+	line-height: 1rem;
+}
+.message{
+    background-color: #cdcccc;
+	padding: 1.2rem 0.3rem 1rem 0.3rem;	
+}
+.time{
+    font-size:0.24rem;
+    color:#666;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+    height:1rem;
+    z-index: 100;
+	left:0;
+    background-color:#fff;
+    line-height:1rem;
+    width: 100%;
+	box-sizing: border-box;
+    max-width: 720px;
+    border-top: 1px solid #ddd;
+}
+.footer img{
+    margin-left:0.2rem;
+    width: 5%;
+}
+ .footer input{
+    margin-left:0.2rem;
+    width:70%;
+    height:0.68rem;
+    border-radius: 0.01rem;
+    /*border:1px solid #ddd;*/
+     border: none;
+	box-sizing: border-box;
+	line-height:0.34rem;
+	font-size: 0.3rem;
+}
+.footer p{
+    width:25%;
+    height:1rem;
+    font-size:0.3rem;
+    color:#000;
+    line-height:1rem;
+    text-align:center;
+    background-color:#f0bd42;
+    float:right;
+    margin: 0 0;
+}
+.send:after,.show:after,.msg:after{
+	content: "";
+	clear: both;
+	display: table;	
+}
+
+.send .msg>span{
+	width: 1rem;
+	float: left;
+	height: 1rem;
+	border-radius: 50%;
+	background: #f0bd42;
+	color: #5d4919;
+	font-size: 0.32rem;
+	text-align: center;
+	line-height: 1rem;
+	display: block;
+}
+.send .msg>p{
+	float: left;
+	margin:0  0.4rem;
+	padding: 0.25rem;
+	background: #636262;
+	font-size: 0.3rem;
+	position: relative;
+	border-radius: 0.2rem;
+	max-width:5rem ;
+	box-sizing: border-box;
+}
+.show .msg>span{
+    width: 1rem;
+    float: left;
+    height: 1rem;
+    border-radius: 50%;
+    background: #636262;
+    color: #f0bd42;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 1rem;
+    display: block;
+}
+.show .msg>p{
+    float: left;
+    margin:0  0.4rem;
+    padding: 0.25rem;
+    background: #ebebeb;
+    font-size: 0.3rem;
+    position: relative;
+    border-radius: 0.2rem;
+    max-width:5rem ;
+    box-sizing: border-box;
+    color: #000!important;
+}
+
+.msg_input{
+	position: absolute;
+
+	width: 0.31rem;
+	height: 0.51rem;
+	left: -0.31rem;
+	top: 0.25rem;
+}
+.show .msg span,.show .msg p,.show .msg{
+	float: right;
+}
+
+
+.show .msg_input{
+	left: auto;
+	right: -0.11rem;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); 	/* IE 9 */
+	-moz-transform:rotate(180deg); 	/* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+	-o-transform:rotate(180deg); 	/* Opera */
+}
+.send,.show{
+	padding-bottom: 0.3rem;
+}
+.friends{
+	width:100%;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+
+}
+.friend:after{
+	content: "";
+	clear: both;
+	display: table;	
+}
+.friend {
+    height: 100%;
+    border-bottom: 1px solid #e7ebee;
+    position: relative;
+	box-sizing: border-box;
+	background: #fff;
+}
+/*.friend img {
+    width: 15%;
+    border-radius: 50%;
+    margin: 0.3rem;
+    float: left;
+}*/
+.friend>i{
+	width: 1rem;
+	float: left;
+	height: 1rem;
+	border-radius: 50%;
+    background: #636262;
+    color: #f0bd42;
+	font-size: 0.32rem;
+	text-align: center;
+	line-height: 1rem;
+	display: block;
+	margin: 0.3rem;
+	font-style: normal;
+}
+.friend p {
+    padding: 0.2rem 0 0 0;
+    float: left;
+    width: 70%;
+}
+.friend p strong {
+    font-weight: 600;
+    font-size: 0.3rem;
+    color: #597a96;
+	width:100%;
+	display:block;
+}
+.friend p span {
+    font-size: 0.28rem;
+    font-weight: 400;
+    color: #aab8c2;
+	width:95%;
+	margin-right: 5%;
+	line-height: 0.4rem;
+	overflow: hidden;
+	display:block;
+}
+.friend .status {
+    background: #26c281;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.4rem;
+}
+.friend .status-red {
+    background: red;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.4rem;
+}
+.sendtt {
+    color: #636262;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
