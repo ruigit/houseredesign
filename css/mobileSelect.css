@@ -102,6 +102,9 @@
 .title-purple{
   color: #7882d2;
 }
+.title-yellow{
+  color: #f0bd40;
+}
 .mobileSelect .content .panel:after {
   content: ".";
   display: block;

@@ -140,7 +140,165 @@ body {
     border-top-left-radius: 0.2rem;
 }
 /*轮播图收藏分享end*/
+.find-jianjie{
 
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.5rem;
+    background: url(../img/finddeback.png) repeat center;
+}
+.find-jianjie ul{
+    width: 100%;
+    padding-top: 1rem;
+}
+.find-jianjie ul li{
+    float: left;
+
+    height: auto;
+}
+.find-jianjie ul li:first-of-type{
+    width: 50%;
+    margin-left: 10%;
+}
+.find-jianjie ul li:last-of-type{
+    width: 40%;
+    text-align: center;
+}
+.find-jianjie ul li:last-of-type img{
+    margin: 0.2rem auto 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow:3px 4px 3px #7b7b7a;
+}
+.find-jianjie ul li span{
+    display: block;
+    float: left;
+    width: auto;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.32rem;
+    color: #000;
+}
+.find-jianjie ul li i{
+    font-style: normal;
+    float: left;
+    width: 60%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.26rem;
+    color: #000;
+    text-indent: 0.1rem;
+}
+.find-jianjie ul li p{
+    width: 100%;
+    /*height: 1.2rem;*/
+    margin: 0.2rem auto;
+    line-height: 0.3rem;
+    font-size: 0.26rem;
+    color: #000;
+    /*overflow: hidden;*/
+}
+.findyoujian{
+    color: #000;
+    font-size: 0.42rem;
+    float: left;
+    margin-right: 0.1rem;
+    margin-top: 0.08rem;
+    width: auto;
+
+}
+.find-jianjie-em{
+    width: 60%;
+    margin-left: 10%;
+}
+.find-jianjie-em span {
+    display: block;
+    float: left;
+    width: auto;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.26rem;
+    color: #000;
+}
+.find-l2 span{
+    font-size: 0.32rem!important;
+}
+.find-l1 ,.find-l2{
+    width: 100%;
+}
+.find-fenye{
+    width: 100%;
+    height: 1rem;
+    background: #f0bd40;
+}
+.find-fenye ul li{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    height: 0.6rem;
+    margin: 0.2rem 0;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #000;
+    line-height: 0.6rem;
+    border-right: 1px #000 solid;
+}
+.find-fenye ul li:last-of-type{
+    border-right: none;
+}
+.find-bott{
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    height: 0.2rem;
+    border-bottom: 1px #cecece solid;
+}
+.find-jilu{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.find-zhanshi{
+    width: 100%;
+    height: auto;
+}
+.color-white{
+    color: #fff!important;
+}
+.detail-mainf {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    z-index: 11;
+    padding-bottom: 0.2rem;
+}
+.bottom-inform-watermark-i{
+    width: 100%;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    background: url(../img/40background.png) repeat center;
+}
+.bottom-inform-watermark-i img{
+    width: 3rem;
+    height: 2rem;
+    border: none;
+    float: right;
+}
+
+.top-inform1 {
+    width: 100%;
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    padding: 0.13rem 0;
+
+}
 .detail-main{
     width: 100%;
     background: #fff;
@@ -1342,6 +1500,10 @@ body {
 .toward-dater-purple{
     background: #7882d2;
 }
+.toward-dater-yellow{
+    background: #f0bd40;
+    color: #000!important;
+}
 /*toward end*/
 /*room start*/
 
@@ -1713,6 +1875,118 @@ input::-webkit-input-placeholder {
 .search-content-list{
     width: 90%;
     margin: 0.2rem 5% auto 5%;
+}
+.find-search{
+    width: 45%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0.4rem auto;
+    border: 1px #828282 solid;
+    box-sizing: border-box;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+.find-input{
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    text-indent: 0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    transition: all 0.3s ease 0s;
+    display: block;
+    width: 70%;
+    font-size: 0.32rem;
+    color: #b8b8b8;
+    margin-top: 0.15rem;
+    float: left;
+    margin-left: 5%;
+}
+.fangdaji {
+    color: #9c9c9c;
+    font-size: 0.45rem;
+    float: left;
+    margin-left: 0.1rem;
+    /*font-weight: bold;*/
+}
+.find-content{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-bottom: 0.2rem;
+}
+.find-content-list{
+    width: 100%;
+    height: auto;
+}
+.find-content-list-color{
+    background: url("../img/findback.png") repeat center;
+}
+.find-content-main{
+    width: 90%;
+    margin: 0 5%;
+    box-sizing: border-box;
+    border-bottom: 1px #cecece solid;
+}
+.find-content-main ul li{
+    float: left;
+    width: 70%;
+    height: 2.5rem;
+}
+.find-content-main ul li:last-of-type{
+    width: 30%;
+    text-align: center;
+}
+.find-content-main ul li span{
+    display: block;
+    float: left;
+    width: auto;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.3rem;
+    color: #000;
+    text-indent: 0.1rem;
+}
+.find-content-main ul li i{
+    font-style: normal;
+    float: left;
+    width: 60%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    color: #000;
+    text-indent: 0.1rem;
+}
+.find-content-main ul li p{
+    padding-left: 0.1rem;
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    color: #000;
+    overflow: hidden;
+}
+.content-im{
+    width: 1rem;
+    padding: 0.12rem 0.1rem;
+    font-size: 0.3rem;
+    color: #000;
+    text-align: center;
+    background: #f0bd40;
+    -moz-border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+    margin: 0.2rem 0 0 0;
+}
+.find-content-main ul li img{
+    width: 1.7rem;
+    height: 1.7rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px #f0bd42 solid;
+    margin: 18% auto 0 auto;
 }
 /*collectionstart*/
 .search-love{

@@ -344,14 +344,6 @@
                     {data:['全部','东','东南','北','东北','南','西南','西','西北']}
                 ],
                 position:[3], //初始化定位
-                onShow:function(){
-                    if($(".selectLine").html() == "to"){
-                        $(".selectLine").empty();
-                    }
-                },
-                onHide:function(){
-                    $(".selectLine").empty();
-                },
                 callback:function(indexArr, data){
                     $(".toward-val").empty().append(data);
                 }

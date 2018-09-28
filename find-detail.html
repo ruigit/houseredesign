@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>灯泡找房</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        })
+        $(document).ready(function() {
+//            收藏
+            $(".shou").on("click", function () {
+                $(this).toggleClass("shoucang icon-love").toggleClass("shoucang1 icon-shoucang1");
+            })
+            // 展示，记录
+            $(".find-fenye ul li").on("click", function () {
+                $(this).addClass("color-white").siblings().removeClass("color-white");
+                var nam = $(this).html();
+                if (nam == "房源展示"){
+                    $(".find-zhanshi").show();
+                    $(".find-jilu").hide()
+                }else if (nam == "成交记录"){
+                    $(".find-jilu").show();
+                    $(".find-zhanshi").hide();
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="top-inform1">
+        <i class="iconfont icon-zuo zuojiantou"></i>
+        <i class="iconfont icon-zhuanfa dingwei"></i>
+        <i class="shou iconfont icon-love shoucang"></i>
+        <i class="iconfont icon-map fenxiang"></i>
+        <div class="clearfix"></div>
+    </div>
+<div class="find-jianjie">
+    <ul>
+        <li>
+            <span>郝铭亮</span><i>sdfsdfsfsafsaf</i>
+            <div class="clearfix"></div>
+            <p>郝铭亮郝铭亮<br />郝铭亮郝铭亮郝铭亮郝亮<br />郝铭亮郝铭亮<br />郝铭亮郝铭亮铭亮</p>
+            <p>郝铭亮郝铭亮郝铭铭亮<br />郝铭亮郝铭亮郝铭亮郝铭亮</p>
+
+        </li>
+        <li>
+            <img src="img/picd.jpg" />
+        </li>
+        <div class="clearfix"></div>
+    </ul>
+    <div class="find-jianjie-em">
+        <div class="find-l1">
+    <i class="iconfont icon-youjian findyoujian"></i>
+    <span>Haomingliang@sina.com</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="find-l2">
+    <i class="iconfont icon-phone findyoujian"></i>
+    <span>13904119989</span>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="find-fenye">
+    <ul>
+        <li class="color-white">房源展示</li>
+        <li>成交记录</li>
+        <div class="clearfix"></div>
+    </ul>
+</div>
+
+<!--房源展示-->
+<div class="find-zhanshi">
+<div class="find-bott"></div>
+<div class="detail-mainf">
+    <div class="detail-main-list">
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <ul>
+                    <li>
+                        <img src="img/news-banner1.jpg">
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <div class="list-left">
+                                    <p>夏御兰湾A区008号湖畔别墅</p>
+                                    <span class="listleft-span-green">580平</span>
+                                    <p>40,800/平</p>
+                                </div>
+                                <div class="list-right">
+                                    <p>￥23,660,000</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </dt>
+                            <dt>
+                                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                                <i class="iconfont icon-chuang chuang"></i><span>2</span>
+                                <i class="iconfont icon-linyu huasa"></i><span>2</span>
+                                <i class="iconfont icon-chufang guo"></i><span>1</span>
+                                <div class="clearfix"></div>
+                            </dt>
+                        </dl>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-main-pic-main">
+            <div class="tab-main-pic">
+                <ul>
+                    <li>
+                        <img src="img/news-banner1.jpg">
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <div class="list-left">
+                                    <p>夏御兰湾A区008号湖畔别墅</p>
+                                    <span class="listleft-span-red">580平</span>
+                                    <p>40,800/平</p>
+                                </div>
+                                <div class="list-right">
+                                    <p>￥23,660,000</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </dt>
+                            <dt>
+                                <i class="iconfont icon-shafa shafa"></i><span>3</span>
+                                <i class="iconfont icon-chuang chuang"></i><span>2</span>
+                                <i class="iconfont icon-linyu huasa"></i><span>2</span>
+                                <i class="iconfont icon-chufang guo"></i><span>1</span>
+                                <div class="clearfix"></div>
+                            </dt>
+                        </dl>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+<!--成交记录-->
+<div class="find-jilu">
+    <div class="find-bott"></div>
+    <div class="detail-mainf">
+        <div class="detail-main-list">
+            <div class="tab-main-pic-main">
+                <div class="tab-main-pic">
+                    <dl>
+                        <dt>
+                            <div class="list-left list-left-mar">
+                                <p>夏御兰湾A区008号湖畔别墅</p>
+                                <span class="listleft-span-green">580平</span>
+                                <p class="list-left-linhe">40,800/平</p>
+                            </div>
+                            <div class="list-right list-right-mar">
+                                <p class="list-align">￥23,660,000</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </dt>
+                        <dt>
+                            <i class="iconfont icon-shafa shafa list-marn-left"></i><span>3</span>
+                            <i class="iconfont icon-chuang chuang"></i><span>2</span>
+                            <i class="iconfont icon-linyu huasa"></i><span>2</span>
+                            <i class="iconfont icon-chufang guo"></i><span>1</span>
+                            <div class="clearfix"></div>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="bottom-inform-watermark-i">
+                    <img src="img/watermark.png">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
