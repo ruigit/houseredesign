@@ -30,12 +30,15 @@
             //		背景高度
             var winHeight = window.innerHeight + $(".search-nav").height();
             var bodyheight = $(".caidan-line").height() + $(".search-nav").height();
-            var winHei = window.innerHeight - $(".search-nav").height();
-            $(".index-map").css({height: winHei});
+            var winHei = window.innerHeight;
+
+
             if (winHeight > bodyheight){
                 $(".caidan-line").css({height: winHeight});
+
             }else {
                 $(".caidan-line").css({height: bodyheight});
+                $(".search-content").css({height: winHei});
             }
 //            侧边导航
             $(".caidan").on("click", function(){
@@ -93,7 +96,7 @@
                                 childs:[
                                     {id:'1',value:'1000米',
                                         childs:[
-                                            {id:'1',value:'00米'},
+                                            {id:'1',value:'00000米米米米米米'},
                                             {id:'2',value:'2000米'},
                                             {id:'3',value:'3000米'},
                                             {id:'4',value:'5000米'},
