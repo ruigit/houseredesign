@@ -1756,13 +1756,25 @@ input::-webkit-input-placeholder {
     background: #e99596;
 }
 .span-green{
-    background: #63ae48;
+    background: #b1d6a3;
 }
 .span-blue{
     background: #a7caf5;
 }
 .span-purple{
     background: #bbc0e8;
+}
+.span-red-l{
+    background: #d32c2e;
+}
+.span-green-l{
+    background: #63ae48;
+}
+.span-blue-l{
+    background: #4f96eb;
+}
+.span-purple-l{
+    background: #7882d2;
 }
 .map-fixed ul li p{
     float: left;
