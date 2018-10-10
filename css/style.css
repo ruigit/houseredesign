@@ -2109,6 +2109,22 @@ input::-webkit-input-placeholder {
     margin: 1rem auto auto 28%;
 }
 /*loginend*/
+#box{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+#device{
+    background-image: url(../img/logoblack.png);
+    background-size: 100% 100%;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 47%;
+}
+
+/*陀螺仪*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 

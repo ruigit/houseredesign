@@ -98,6 +98,21 @@
             $(".map-fixed ul li").on("click", function () {
                 $(this).children("p").html();
             })
+            // 陀螺仪
+            var eyeLeft = document.querySelector('#device');
+            if (window.DeviceOrientationEvent) {
+                window.addEventListener('deviceorientation', function (event) {
+                    var alpha = event.alpha,
+                        beta = event.beta,
+                        gamma = event.gamma,
+                        webkitCompassHeading = event.webkitCompassHeading;
+                    eyeLeft.style.transform
+                            = eyeLeft.style.WebkitTransform
+                            = 'rotate(' + Math.round(webkitCompassHeading) + 'deg)';
+                }, false);
+            } else {
+                document.querySelector('body').innerHTML = '浏览器不支持DeviceOrientationEvent';
+            }
         })
     </script>
 </head>
@@ -114,7 +129,11 @@
         <i class="iconfont icon-form formm index-block"></i>
         <div class="clearfix"></div>
     </div>
-<div class="index-map">模拟</div>
+<div class="index-map">
+    <div id="box">
+    <div id="device"></div>
+    </div>
+</div>
 <div class="map-fixed">
     <ul>
         <li>
