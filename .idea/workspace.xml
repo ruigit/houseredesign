@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="">
+    <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="默认的">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index-yellow.html" afterPath="$PROJECT_DIR$/index-yellow.html" />
+      <change beforePath="$PROJECT_DIR$/search.html" afterPath="$PROJECT_DIR$/search.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +23,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.65662307">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index-yellow.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index-yellow.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index-yellow.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="115" column="10" lean-forward="true" selection-start-line="115" selection-start-column="10" selection-end-line="115" selection-end-column="10" />
+                <state relative-caret-position="540">
+                  <caret line="144" column="46" lean-forward="true" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/search.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3834">
+                  <caret line="561" column="32" lean-forward="true" selection-start-line="561" selection-start-column="32" selection-end-line="561" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -36,38 +46,8 @@
           <file leaf-file-name="index-green.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index-green.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="8478">
-                  <caret line="471" column="37" lean-forward="false" selection-start-line="471" selection-start-column="37" selection-end-line="471" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index-blue.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index-blue.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="8460">
-                  <caret line="470" column="40" lean-forward="false" selection-start-line="470" selection-start-column="40" selection-end-line="470" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index-purple.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index-purple.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="8568">
-                  <caret line="476" column="42" lean-forward="false" selection-start-line="476" selection-start-column="42" selection-end-line="476" selection-end-column="42" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index-red.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index-red.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="8280">
-                  <caret line="460" column="39" lean-forward="false" selection-start-line="460" selection-start-column="39" selection-end-line="460" selection-end-column="39" />
+                <state relative-caret-position="0">
+                  <caret line="470" column="12" lean-forward="true" selection-start-line="470" selection-start-column="12" selection-end-line="470" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -80,8 +60,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="347">
-                  <caret line="2115" column="1" lean-forward="false" selection-start-line="2115" selection-start-column="1" selection-end-line="2115" selection-end-column="1" />
+                <state relative-caret-position="365">
+                  <caret line="2116" column="8" lean-forward="true" selection-start-line="2116" selection-start-column="8" selection-end-line="2116" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -165,15 +145,15 @@
         <option value="$PROJECT_DIR$/list-red.html" />
         <option value="$PROJECT_DIR$/find-detail.html" />
         <option value="$PROJECT_DIR$/find.html" />
-        <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/index-green.html" />
         <option value="$PROJECT_DIR$/index-blue.html" />
         <option value="$PROJECT_DIR$/index-blue.html" />
         <option value="$PROJECT_DIR$/index-purple.html" />
         <option value="$PROJECT_DIR$/index-red.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index-yellow.html" />
+        <option value="$PROJECT_DIR$/search.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -384,7 +364,8 @@
       <workItem from="1539045786877" duration="292000" />
       <workItem from="1539052569036" duration="102000" />
       <workItem from="1539052692104" duration="481000" />
-      <workItem from="1539130773320" duration="2733000" />
+      <workItem from="1539130773320" duration="2861000" />
+      <workItem from="1539303868576" duration="1329000" />
     </task>
     <task id="LOCAL-00001" summary="大连房产系统">
       <created>1518334841807</created>
@@ -715,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538201363855</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="默认的">
+      <created>1539154478184</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1539154478184</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198799000" />
+    <option name="totallyTimeSpent" value="200256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -756,7 +744,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="大连房产系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="大连房产系统" />
+    <MESSAGE value="默认的" />
+    <option name="LAST_COMMIT_MESSAGE" value="默认的" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1063,13 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="535" column="10" lean-forward="true" selection-start-line="535" selection-start-column="10" selection-end-line="535" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index-red.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8280">
@@ -1094,28 +1076,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index-green.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8478">
-          <caret line="471" column="37" lean-forward="false" selection-start-line="471" selection-start-column="37" selection-end-line="471" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/gulpfile.js" />
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/index-green.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="2115" column="1" lean-forward="false" selection-start-line="2115" selection-start-column="1" selection-end-line="2115" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="470" column="12" lean-forward="true" selection-start-line="470" selection-start-column="12" selection-end-line="470" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index-yellow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="115" column="10" lean-forward="true" selection-start-line="115" selection-start-column="10" selection-end-line="115" selection-end-column="10" />
+        <state relative-caret-position="540">
+          <caret line="144" column="46" lean-forward="true" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="2116" column="8" lean-forward="true" selection-start-line="2116" selection-start-column="8" selection-end-line="2116" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3834">
+          <caret line="561" column="32" lean-forward="true" selection-start-line="561" selection-start-column="32" selection-end-line="561" selection-end-column="32" />
           <folding />
         </state>
       </provider>
