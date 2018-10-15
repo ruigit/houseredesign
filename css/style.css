@@ -2109,19 +2109,16 @@ input::-webkit-input-placeholder {
     margin: 1rem auto auto 28%;
 }
 /*loginend*/
-#box{
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
-}
+
 #device{
     background-image: url(../img/direction.png);
     background-size: 100% 100%;
-    width: 1.3rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     position: absolute;
     top: 1rem;
-    left: 47%;
+    left: 42%;
+    z-index: 333;
 }
 
 /*陀螺仪*/
