@@ -695,6 +695,10 @@ body {
     display: block;
     text-align: right;
     padding-right: 0.15rem;
+    overflow: hidden;
+    height: 0.7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .caidan-line-3{
     width: 85%;
@@ -1300,6 +1304,11 @@ body {
     border-left: 1px #cecece solid;
     border-right: 1px #cecece solid;
 }
+.room-chose-yellow{
+    color: #f0bd42!important;
+    border-left: 1px #cecece solid;
+    border-right: 1px #cecece solid;
+}
 .room-chose-green-fon{
     color: #63ae48!important;
 }
@@ -1311,6 +1320,9 @@ body {
 }
 .room-chose-purple-fon{
     color: #7882d2!important;
+}
+.room-chose-yellow-fon{
+    color: #f0bd42!important;
 }
 .swiper-slide-active{
     filter:alpha(opacity=100)!important; /* IE */
@@ -1524,9 +1536,11 @@ input::-webkit-input-placeholder {
     color: #000;
     margin-left: 15%;
     height: 0.6rem;
-    overflow-y: hidden;
+    overflow: hidden;
     text-align: center;
     width: 60%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .search-chose-p{
     float: left;
@@ -1559,9 +1573,11 @@ input::-webkit-input-placeholder {
     color: #000;
     margin-left: 15%;
     height: 0.6rem;
-    overflow-y: hidden;
+    overflow: hidden;
     text-align: center;
     width: 60%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .search-chose-list{
     display: none;

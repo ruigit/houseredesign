@@ -118,7 +118,7 @@
                 var areadat = $(".chose-input-num").val() + ' ~ ' + $(".chose-input-num-last").val();
 //                        $(".masking").animate({bottom: '-100%'}, 800);
 //                        $(".area").animate({bottom: '-40%'}, 800);
-                if($(".area p").is('.areabj')){
+                if($(".chose-input-num").val() == "全部" && $(".chose-input-num-last").val() == "全部"){
                     $(".masking").removeClass("showleftnav-yrf");
                     $(".masking").toggleClass("showleftnav-yf");
                     $(".area").removeClass("showleftnav-yr");
@@ -129,7 +129,7 @@
                 }else if( $(".chose-input-num").val() == "" && $(".chose-input-num-last").val() == ""){
                     $(".area p").removeClass();
                     alert("请输入面积");
-                }else if( areanum >= areanumlast ){
+                }else if( areanum >= areanumlast){
                     $(".area p").removeClass();
                     alert("请输入正确的范围");
                 }else {
@@ -138,9 +138,17 @@
                     $(".masking").toggleClass("showleftnav-yf");
                     $(".area").removeClass("showleftnav-yr");
                     $(".area").toggleClass("showleftnav-y");
-
-                    $("#area p").empty().append(areadat);
-
+                    if($(".chose-input-num").val() == "全部" && $(".chose-input-num-last").val() == ""){
+                        $("#area p").empty().append($(".chose-input-num").val());
+                    }else if($(".chose-input-num-last").val() == "全部" &&$(".chose-input-num").val() == ""){
+                        $("#area p").empty().append($(".chose-input-num-last").val());
+                    }else if( $(".chose-input-num").val() != "" && $(".chose-input-num-last").val() == "" || $(".chose-input-num-last").val() == "全部"){
+                        $("#area p").empty().append(areanum + "m²以上");
+                    }else if($(".chose-input-num").val() == "" && $(".chose-input-num-last").val() != "" || $(".chose-input-num").val() == "全部"){
+                        $("#area p").empty().append(areanumlast + "m²以下");
+                    }else {
+                        $("#area p").empty().append(areadat + "m²");
+                    }
                     //                解绑移动事件
 //                        $('body').unbind('touchmove');
                 }
@@ -222,7 +230,7 @@
                 var pricenumlast = parseInt($(".price-chose-input-num-last").val());
                 var priceall = $(".price p").html();
                 var pricedat = $(".price-chose-input-num").val() + ' ~ ' + $(".price-chose-input-num-last").val();
-                if($(".price p").is('.pricebj')){
+                    if($(".price-chose-input-num").val() == "全部" && $(".price-chose-input-num-last").val() == "全部"){
                     $(".masking").removeClass("showleftnav-yrf");
                     $(".masking").toggleClass("showleftnav-yf");
                     $(".price").removeClass("showleftnav-yr");
@@ -244,7 +252,18 @@
                     $(".masking").toggleClass("showleftnav-yf");
                     $(".price").removeClass("showleftnav-yr");
                     $(".price").toggleClass("showleftnav-y");
-                    $("#price p").empty().append(pricedat);
+                        if($(".price-chose-input-num").val() == "全部" && $(".price-chose-input-num-last").val() == ""){
+                            $("#price p").empty().append($(".price-chose-input-num").val());
+                        }else if($(".price-chose-input-num-last").val() == "全部" &&$(".price-chose-input-num").val() == ""){
+                            $("#price p").empty().append($(".price-chose-input-num-last").val());
+                        }else if( $(".price-chose-input-num").val() != "" && $(".price-chose-input-num-last").val() == "" || $(".price-chose-input-num-last").val() == "全部"){
+                                $("#price p").empty().append(pricenum + "元以上");
+                        }else if($(".price-chose-input-num").val() == "" && $(".price-chose-input-num-last").val() != "" || $(".price-chose-input-num").val() == "全部"){
+                                $("#price p").empty().append(pricenumlast + "元以下");
+                        }else{
+                            $("#price p").empty().append(pricedat + "元");
+                        }
+
                     //                解绑移动事件
 //                        $('body').unbind('touchmove');
                 }
@@ -318,20 +337,20 @@
             $(".room-dater").on("click", function () {
                 var roomnum = $(".roting").html();
                 var roomnumlast = $(".roshi").html();
-                var roomdat = $(".room-ting .swiper-slide-active").html() + ' ~ ' + $(".room-shi .swiper-slide-active").html();
-                var roomda = $(".roting").html() + ' ~ ' + $(".room-shi .swiper-slide-active").html();
-                var roomdas = $(".room-ting .swiper-slide-active").html() + ' ~ ' + $(".roshi").html();
+                var roomdat = $(".room-ting .swiper-slide-active").html() + ' 厅 ' + ' ~ ' + $(".room-shi .swiper-slide-active").html() + ' 室 ' ;
+                // var roomda = $(".roting").html() + ' 厅 ' + ' ~ ' + $(".room-shi .swiper-slide-active").html();
+                // var roomdas = $(".room-ting .swiper-slide-active").html() + ' ~ ' + $(".roshi").html() + ' 室 ';
                 $(".masking").removeClass("showleftnav-yrf");
                 $(".masking").toggleClass("showleftnav-yf");
                 $(".room").removeClass("showleftnav-yr");
                 $(".room").toggleClass("showleftnav-y");
                 if( roomnum =="全部" && roomnumlast =="全部" ){
-                    $(".room-val").empty().append("全部");
+                    $("#room p").empty().append("全部");
                 }else if (roomnum =="全部" || roomnumlast =="全部" ){
                     if(roomnum =="全部"){
-                        $("#room p").empty().append(roomda);
+                        $("#room p").empty().append($(".roting").html() + ' ~ ' + $(".room-shi .swiper-slide-active").html() + ' 室 ');
                     }else {
-                        $("#room p").empty().append(roomdas);
+                        $("#room p").empty().append($(".room-ting .swiper-slide-active").html() + ' 厅 ' + ' ~ ' + $(".roshi").html());
                     }
                 }else {
                     $("#room p").empty().append(roomdat);
@@ -416,7 +435,7 @@
                 var pricenumlast = parseInt($(".ceng-chose-input-num-last").val());
                 var priceall = $(".ceng p").html();
                 var pricedat = $(".ceng-chose-input-num").val() + ' ~ ' + $(".ceng-chose-input-num-last").val();
-                if($(".ceng p").is('.ceng-pricebj')){
+                if($(".ceng-chose-input-num").val() == "全部" && $(".ceng-chose-input-num-last").val() == "全部"){
                     $(".masking").removeClass("showleftnav-yrf");
                     $(".masking").toggleClass("showleftnav-yf");
                     $(".ceng").removeClass("showleftnav-yr");
@@ -436,7 +455,18 @@
                     $(".masking").toggleClass("showleftnav-yf");
                     $(".ceng").removeClass("showleftnav-yr");
                     $(".ceng").toggleClass("showleftnav-y");
-                    $("#floor p").empty().append(pricedat);
+                    if($(".ceng-chose-input-num").val() == "全部" && $(".ceng-chose-input-num-last").val() == ""){
+                        $("#floor p").empty().append($(".ceng-chose-input-num").val());
+                    }else if($(".ceng-chose-input-num-last").val() == "全部" &&$(".ceng-chose-input-num").val() == ""){
+                        $("#floor p").empty().append($(".ceng-chose-input-num-last").val());
+                    }else if( $(".ceng-chose-input-num").val() != "" && $(".ceng-chose-input-num-last").val() == "" || $(".ceng-chose-input-num-last").val() == "全部"){
+                        $("#floor p").empty().append(pricenum + "层以上");
+                    }else if($(".ceng-chose-input-num").val() == "" && $(".ceng-chose-input-num-last").val() != "" || $(".ceng-chose-input-num").val() == "全部"){
+                        $("#floor p").empty().append(pricenumlast + "层以下");
+                    }else {
+                        $("#floor p").empty().append(pricedat + "层");
+                    }
+
                     //                解绑移动事件
 //                        $('body').unbind('touchmove');
                 }
@@ -456,7 +486,7 @@
                                 childs:[
                                     {id:'1',value:'1000米',
                                         childs:[
-                                            {id:'1',value:'00米米米米米米'},
+                                            {id:'1',value:'00米米米米米米0000'},
                                             {id:'2',value:'2000米'},
                                             {id:'3',value:'3000米'},
                                             {id:'4',value:'5000米'},
@@ -666,13 +696,13 @@
                 <div class="ro-tingd-qb">全部</div>
                 <div class="swiper-container" id="swiper1">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">0</div>
                         <div class="swiper-slide">1</div>
                         <div class="swiper-slide">2</div>
                         <div class="swiper-slide">3</div>
                         <div class="swiper-slide">4</div>
                         <div class="swiper-slide">5</div>
                         <div class="swiper-slide">6</div>
-                        <div class="swiper-slide">7</div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="clearfix"></div>
@@ -684,13 +714,13 @@
                 <div class="ro-tingd-qbs">全部</div>
                 <div class="swiper-container" id="swiper2">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">0</div>
                         <div class="swiper-slide">1</div>
                         <div class="swiper-slide">2</div>
                         <div class="swiper-slide">3</div>
                         <div class="swiper-slide">4</div>
                         <div class="swiper-slide">5</div>
                         <div class="swiper-slide">6</div>
-                        <div class="swiper-slide">7</div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="clearfix"></div>
