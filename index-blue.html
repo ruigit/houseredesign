@@ -100,7 +100,7 @@
                     $(".chose-input-num").val("");
                     $(".chose-input-num-last").val("");
                     $(".area-val").empty().append(areaall);
-                }else if( $(".chose-input-num").val() == "" || $(".chose-input-num-last").val() == ""){
+                }else if( $(".chose-input-num").val() == "" && $(".chose-input-num-last").val() == ""){
                     $(".area p").removeClass();
                     alert("请输入面积");
                 }else if( areanum >= areanumlast ){
@@ -228,7 +228,7 @@
                     $(".price-chose-input-num").val("");
                     $(".price-chose-input-num-last").val("");
                     $(".price-val").empty().append(priceall);
-                }else if( $(".price-chose-input-num").val() == "" || $(".price-chose-input-num-last").val() == ""){
+                }else if( $(".price-chose-input-num").val() == "" && $(".price-chose-input-num-last").val() == ""){
                     $(".price p").removeClass();
                     alert("请输入价格");
                 }else if( pricenum >= pricenumlast ){
@@ -414,7 +414,7 @@
                     $(".ceng-chose-input-num").val("");
                     $(".ceng-chose-input-num-last").val("");
                     $(".floor-val").empty().append(priceall);
-                }else if( $(".ceng-chose-input-num").val() == "" || $(".ceng-chose-input-num-last").val() == ""){
+                }else if( $(".ceng-chose-input-num").val() == "" && $(".ceng-chose-input-num-last").val() == ""){
                     $(".ceng p").removeClass();
                     alert("请输入楼层");
                 }else if( pricenum >= pricenumlast ){
