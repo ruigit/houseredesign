@@ -340,16 +340,14 @@
            var eyeLeft = document.querySelector('#device');
            if (window.DeviceOrientationEvent) {
                window.addEventListener('deviceorientation', function (event) {
-                   var  tt = parseInt($(".BMap_noprint").offset().top);
+                   var tt = parseInt($(".BMap_noprint").offset().top);
                    var ll = parseInt($(".BMap_noprint").offset().left);
                    eyeLeft.style.left = ll +'px';
                    eyeLeft.style.top = tt +'px';
                    var compassdir;
-
                    if(event.webkitCompassHeading) {
                        // Apple works only with this, alpha doesn't work
                        compassdir = event.webkitCompassHeading;
-
                    }
                    else {
                        compassdir = event.alpha;
@@ -357,7 +355,6 @@
                    eyeLeft.style.transform
                        = eyeLeft.style.WebkitTransform
                        = 'rotate(' + Math.round(compassdir) + 'deg)';
-
                }, false);
            } else {
                document.querySelector('body').innerHTML = '浏览器不支持DeviceOrientationEvent';

@@ -2109,7 +2109,6 @@ input::-webkit-input-placeholder {
     margin: 1rem auto auto 28%;
 }
 /*loginend*/
-
 #device{
     background-image: url(../img/direction.png);
     background-size: 100% 100%;
@@ -2120,7 +2119,6 @@ input::-webkit-input-placeholder {
     left: 42%;
     z-index: 333;
 }
-
 /*陀螺仪*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
