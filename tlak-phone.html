@@ -49,6 +49,8 @@
         });
         window.addEventListener('touchmove', function () {
             $(".footer").css({position:"fixed"});
+            // 关闭键盘
+            $("#input-val").blur();
         })
     })
     // 监听ctrl+enter
