@@ -861,10 +861,10 @@ body {
 
 .area {
     position: fixed;
-    bottom: -42%;
+    bottom: -5rem;
     width: 100%;
     background: #fff;
-    height: 42%;
+    height: 5rem;
     z-index: 15;
 }
 
@@ -1142,10 +1142,11 @@ body {
 
 .ceng {
     position: fixed;
-    bottom: -42%;
+    /*bottom: -42%;*/
+    bottom: -5rem;
     width: 100%;
     background: #fff;
-    height: 42%;
+    height: 5rem;
     z-index: 15;
 }
 
@@ -1249,10 +1250,10 @@ body {
 /*louceng end*/
 .price {
     position: fixed;
-    bottom: -42%;
+    bottom: -5rem;
     width: 100%;
     background: #fff;
-    height: 42%;
+    height: 5rem;
     z-index: 15;
 }
 
@@ -1264,7 +1265,7 @@ body {
     font-size: 0.35rem;
     line-height: 1rem;
     text-align: center;
-
+    /*letter-spacing:4px;*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1275,7 +1276,6 @@ body {
     width: 80%;
     margin: 0.2rem 10% 0 10%;
     height: 0.7rem;
-
     font-size: 0.3rem;
     line-height: 0.7rem;
     text-align: center;
@@ -1393,10 +1393,10 @@ body {
 
 .room {
     position: fixed;
-    bottom: -42%;
+    bottom: -5rem;
     width: 100%;
     background: #fff;
-    height: 42%;
+    height: 5rem;
     z-index: 15;
 }
 

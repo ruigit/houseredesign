@@ -40,10 +40,16 @@
                 target.scrollIntoViewIfNeeded();
 //						解决ios遮挡input问题
                 document.body.scrollTop = document.body.scrollHeight;
+                $(".footer").css({position:"fixed"});
                 //target.scrollIntoView(true);
 //						console.log('scrollIntoViewIfNeeded');
             },200);
+        }).on("blur",function(){
+            $(".footer").css({position:"fixed"});
         });
+        window.addEventListener('touchmove', function () {
+            $(".footer").css({position:"fixed"});
+        })
     })
     // 监听ctrl+enter
     // 		$(document).keypress(function(e) {
