@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="默认的">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/tlak-phone.html" afterPath="$PROJECT_DIR$/tlak-phone.html" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/img/direction.png" afterPath="$PROJECT_DIR$/img/direction.png" />
+      <change beforePath="$PROJECT_DIR$/img/login-logo.png" afterPath="$PROJECT_DIR$/img/login-logo.png" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +24,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5781694">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index-yellow.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index-yellow.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index-yellow.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="365">
-                  <caret line="343" column="71" lean-forward="false" selection-start-line="343" selection-start-column="71" selection-end-line="343" selection-end-column="71" />
+                <state relative-caret-position="146">
+                  <caret line="321" column="52" lean-forward="true" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -35,7 +37,7 @@
           <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/search.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="129">
+                <state relative-caret-position="6210">
                   <caret line="345" column="11" lean-forward="false" selection-start-line="345" selection-start-column="11" selection-end-line="345" selection-end-column="11" />
                   <folding />
                 </state>
@@ -45,18 +47,8 @@
           <file leaf-file-name="index-green.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index-green.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="572">
+                <state relative-caret-position="18">
                   <caret line="465" column="69" lean-forward="false" selection-start-line="465" selection-start-column="69" selection-end-line="465" selection-end-column="69" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tlak-phone.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tlak-phone.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="783">
-                  <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -66,21 +58,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="236">
-                  <caret line="1398" column="16" lean-forward="false" selection-start-line="1398" selection-start-column="16" selection-end-line="1398" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mobileSelect.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/mobileSelect.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
+                <state relative-caret-position="401">
+                  <caret line="2474" column="18" lean-forward="true" selection-start-line="2474" selection-start-column="18" selection-end-line="2474" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -161,7 +143,6 @@
         <option value="$PROJECT_DIR$/find-detail.html" />
         <option value="$PROJECT_DIR$/find.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/index-yellow.html" />
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/index-purple.html" />
         <option value="$PROJECT_DIR$/index-red.html" />
@@ -172,10 +153,11 @@
         <option value="$PROJECT_DIR$/list-green.html" />
         <option value="$PROJECT_DIR$/list-purple.html" />
         <option value="$PROJECT_DIR$/list-red.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/mobileSelect.css" />
         <option value="$PROJECT_DIR$/tlak-phone.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index-yellow.html" />
       </list>
     </option>
   </component>
@@ -225,8 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,6 +228,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,14 +377,9 @@
       <workItem from="1539562700709" duration="160000" />
       <workItem from="1539562870098" duration="8141000" />
       <workItem from="1539649119725" duration="13875000" />
-      <workItem from="1539735505226" duration="6914000" />
-    </task>
-    <task id="LOCAL-00008" summary="大连房产系统">
-      <created>1521510585242</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1521510585242</updated>
+      <workItem from="1539735505226" duration="7431000" />
+      <workItem from="1539822011724" duration="174000" />
+      <workItem from="1539908157090" duration="1389000" />
     </task>
     <task id="LOCAL-00009" summary="大连房产系统">
       <created>1521530618957</created>
@@ -740,11 +717,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539756142886</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="默认的">
+      <created>1539756705964</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1539756705964</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246956000" />
+    <option name="totallyTimeSpent" value="249036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -753,13 +737,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.50197434" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.49802566" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.49802566" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.2497532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -769,6 +752,7 @@
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.13178678" sideWeight="0.19537815" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1085,7 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
           <caret line="442" column="63" lean-forward="true" selection-start-line="442" selection-start-column="63" selection-end-line="442" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,38 +1086,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1979">
           <caret line="468" column="34" lean-forward="false" selection-start-line="468" selection-start-column="26" selection-end-line="468" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-yellow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="343" column="71" lean-forward="false" selection-start-line="343" selection-start-column="71" selection-end-line="343" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="6210">
           <caret line="345" column="11" lean-forward="false" selection-start-line="345" selection-start-column="11" selection-end-line="345" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-green.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="465" column="69" lean-forward="false" selection-start-line="465" selection-start-column="69" selection-end-line="465" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="1398" column="16" lean-forward="false" selection-start-line="1398" selection-start-column="16" selection-end-line="1398" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1143,7 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,6 +1108,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
           <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-green.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="465" column="69" lean-forward="false" selection-start-line="465" selection-start-column="69" selection-end-line="465" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="2474" column="18" lean-forward="true" selection-start-line="2474" selection-start-column="18" selection-end-line="2474" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-yellow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="321" column="52" lean-forward="true" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="52" />
           <folding />
         </state>
       </provider>
