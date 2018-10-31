@@ -1774,7 +1774,14 @@ input::-webkit-input-placeholder {
     height: 0.6rem;
     margin: 0.2rem auto;
 }
-
+.list-chose ul li{
+    width: 33.3%!important;
+}
+.list-inde-y{
+    width: 90%;
+    margin: 0.2rem 5% 0 5%;
+    border-bottom: 1px #cecece solid;
+}
 .search-chose ul li {
     width: 50%;
     float: left;
