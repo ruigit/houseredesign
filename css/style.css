@@ -1790,14 +1790,15 @@ input::-webkit-input-placeholder {
 
 .search-chose ul li p {
     float: left;
-    font-size: 0.35rem;
+    font-size: 0.32rem;
     line-height: 0.6rem;
     color: #000;
-    margin-left: 15%;
+    margin-left: 16%;
     height: 0.6rem;
     overflow: hidden;
-    text-align: center;
-    width: 60%;
+    text-align: right;
+    min-width: 40%;
+    max-width: 60%;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -1831,14 +1832,15 @@ input::-webkit-input-placeholder {
 
 .search-chose1 ul li p {
     float: left;
-    font-size: 0.35rem;
+    font-size: 0.32rem;
     line-height: 0.6rem;
     color: #000;
-    margin-left: 15%;
+    margin-left: 16%;
     height: 0.6rem;
     overflow: hidden;
-    text-align: center;
-    width: 60%;
+    text-align: right;
+    min-width: 40%;
+    max-width: 60%;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -2494,6 +2496,83 @@ input::-webkit-input-placeholder {
 }
 
 /*陀螺仪*/
+.index{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    position: relative;
+    z-index: 33;
+}
+.index-timer{
+    position: absolute;
+    right: 0.3rem;
+    top: 0.4rem;
+    width: 1.4rem;
+    height: 0.5rem;
+    box-sizing: border-box;
+    -moz-border-radius: 0.08rem;
+    -webkit-border-radius: 0.08rem;
+    border-radius: 0.08rem;
+    background: url("../img/huibackground.png") repeat center;
+}
+.index-timer span{
+    width: 0.3rem;
+    padding-left: 0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    float: left;
+    font-size: 0.28rem;
+    text-align: center;
+    display: block;
+    color: #000;
+}
+.index-timer p{
+    width: 0.9rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    float: left;
+    font-size: 0.28rem;
+    text-align: center;
+    color: #000;
+}
+.index-logo{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-top: 38%;
+    margin-bottom: 0.25rem;
+}
+.index-logo img{
+    width: 2.6rem;
+    height: 2.6rem;
+    border: none;
+    margin: 0 auto auto 28%;
+}
+.index-lo{
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+.index-lo img{
+    width: 3.4rem;
+    height: 1.8rem;
+    border: none;
+    margin: 0rem auto auto 28%;
+}
+.index-tm{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 33;
+    bottom: 0;
+    left: 0;
+}
+.index-tm img{
+    width: 100%;
+    height: 1.4rem;
+    border: none;
+}
+/*indexend*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 

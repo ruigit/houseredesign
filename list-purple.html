@@ -447,7 +447,67 @@
                 }
 
             })
+//            地区
+            var mobileSelect = new MobileSelect({
+                trigger: '#region',
+                title: '地区',
+                triggerDisplayData: false,
 
+                wheels: [
+                    {data:[
+                            {
+                                id:'1',
+                                value:'附近',
+                                childs:[
+                                    {id:'1',value:'1000米',
+                                        childs:[
+                                            {id:'1',value:'00米米米米米米0000'},
+                                            {id:'2',value:'2000米'},
+                                            {id:'3',value:'3000米'},
+                                            {id:'4',value:'5000米'},
+                                            {id:'5',value:'10000米'}
+                                        ]
+                                    },
+                                    {id:'2',value:'2000米'},
+                                    {id:'3',value:'3000米'},
+                                    {id:'4',value:'5000米'},
+                                    {id:'5',value:'10000米'}
+                                ]
+                            },
+                            {id:'2',value:'上城区'},
+                            {id:'3',value:'下城区'},
+                            {id:'4',value:'江干区'},
+                            {id:'5',value:'拱墅区'},
+                            {id:'6',value:'西湖区'}
+                        ]}
+                ],
+                position:[0], //初始化定位
+                callback:function(indexArr, data){
+                    $("#region p").empty().append(data[2].value);
+                }
+            });
+            // $.ajax({
+            //     type: "POST",
+            //     url: "",
+            //     data: {},
+            //     dataType: "json",
+            //     success: function(res){
+            //         numArr = res.data;//先取numArr数据，再加载mobileSelect
+            //         //            地区
+            //         var mobileSelect = new MobileSelect({
+            //             trigger: '#region',
+            //             title: '地区',
+            //             triggerDisplayData: false,
+            //             wheels: [
+            //                 {data : numArr}
+            //             ],
+            //             position:[0], //初始化定位
+            //             callback:function(indexArr, data){
+            //                 $("#region p").empty().append(data[2].value);
+            //             }
+            //         });
+            //     }
+            // });
         })
     </script>
 </head>
@@ -461,7 +521,7 @@
 
     <div class="search-chose list-chose">
         <ul>
-            <li><p>区域</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li id="region"><p>区域</p><div class="search-chose-p"></div><div class="clearfix"></div></li>
             <li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
             <li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
             <div class="clearfix"></div>
