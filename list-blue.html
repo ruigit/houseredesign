@@ -331,9 +331,9 @@
                     $(".room-val").empty().append("全部");
                 }else if (roomnum =="全部" || roomnumlast =="全部" ){
                     if(roomnum =="全部"){
-                        $("#room p").empty().append($(".roting").html() + ' ~ ' + $(".room-shi .swiper-slide-active").html() + ' 室 ');
+                        $(".room-val").empty().append($(".roting").html() + ' ~ ' + $(".room-shi .swiper-slide-active").html() + ' 室 ');
                     }else {
-                        $("#room p").empty().append($(".room-ting .swiper-slide-active").html() + ' 厅 ' + ' ~ ' + $(".roshi").html());
+                        $(".room-val").empty().append($(".room-ting .swiper-slide-active").html() + ' 厅 ' + ' ~ ' + $(".roshi").html());
                     }
                 }else {
                     $(".room-val").empty().append(roomdat);
@@ -539,7 +539,7 @@
 
     <div class="chose">
         <div class="chose-input">
-            <input type="text" class="chose-input-num" value="">
+            <input type="tel" class="chose-input-num" value="">
             <span>m²</span>
             <div class="clearfix"></div>
         </div>
@@ -547,7 +547,7 @@
             <i class="iconfont icon-subtract shafadhen"></i>
         </div>
         <div class="chose-input">
-            <input type="text" class="chose-input-num-last" value="">
+            <input type="tel" class="chose-input-num-last" value="">
             <span>m²</span>
             <div class="clearfix"></div>
         </div>
@@ -608,7 +608,7 @@
     <div class="price-chose">
         <div class="price-chose-input">
             <i class="iconfont icon-subtract subtract jian"></i>
-            <input type="text" class="price-chose-input-num" value="">
+            <input type="tel" class="price-chose-input-num" value="">
             <i class="iconfont icon-add adds jia"></i>
             <div class="clearfix"></div>
         </div>
@@ -617,7 +617,7 @@
         </div>
         <div class="price-chose-input">
             <i class="iconfont icon-subtract subtract jian1"></i>
-            <input type="text" class="price-chose-input-num-last" value="">
+            <input type="tel" class="price-chose-input-num-last" value="">
             <i class="iconfont icon-add adds jia1"></i>
             <div class="clearfix"></div>
         </div>
@@ -632,7 +632,7 @@
     <div class="ceng-chose">
         <div class="ceng-chose-input">
             <i class="iconfont icon-subtract ceng-subtract ceng-jian"></i>
-            <input type="text" class="ceng-chose-input-num" value="">
+            <input type="tel" class="ceng-chose-input-num" value="">
             <i class="iconfont icon-add ceng-adds ceng-jia"></i>
             <div class="clearfix"></div>
         </div>
@@ -641,7 +641,7 @@
         </div>
         <div class="ceng-chose-input">
             <i class="iconfont icon-subtract ceng-subtract ceng-jian1"></i>
-            <input type="text" class="ceng-chose-input-num-last" value="">
+            <input type="tel" class="ceng-chose-input-num-last" value="">
             <i class="iconfont icon-add ceng-adds ceng-jia1"></i>
             <div class="clearfix"></div>
         </div>

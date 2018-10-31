@@ -2573,6 +2573,13 @@ input::-webkit-input-placeholder {
     border: none;
 }
 /*indexend*/
+/*通过选择器就可以简单的修改该placeholder的样式*/
+input::placeholder{
+    font-size:0.24rem;
+    color: #cecece;
+    text-align: center;
+    line-height: 0.4rem;
+}
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 
