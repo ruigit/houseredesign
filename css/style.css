@@ -1802,7 +1802,12 @@ input::-webkit-input-placeholder {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
+.quyu{
+    margin-left: 0!important;
+    min-width: 100%!important;
+    max-width: 100%!important;
+    text-align: center!important;
+}
 .search-chose-p {
     float: left;
     width: 0.3rem;

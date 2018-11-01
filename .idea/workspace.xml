@@ -4,6 +4,7 @@
     <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="默认的">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/list-purple.html" afterPath="$PROJECT_DIR$/list-purple.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,17 +23,17 @@
     <splitter split-orientation="horizontal" split-proportion="0.67481524">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="list-purple.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="list-purple.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/list-purple.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="636" column="21" lean-forward="true" selection-start-line="636" selection-start-column="21" selection-end-line="636" selection-end-column="21" />
+                <state relative-caret-position="336">
+                  <caret line="522" column="12" lean-forward="true" selection-start-line="522" selection-start-column="12" selection-end-line="522" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/search.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="891">
@@ -49,8 +50,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="2573" column="1" lean-forward="true" selection-start-line="2573" selection-start-column="1" selection-end-line="2573" selection-end-column="1" />
+                <state relative-caret-position="357">
+                  <caret line="1804" column="6" lean-forward="true" selection-start-line="1804" selection-start-column="6" selection-end-line="1804" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -142,8 +143,8 @@
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/list-blue.html" />
         <option value="$PROJECT_DIR$/list-green.html" />
-        <option value="$PROJECT_DIR$/list-purple.html" />
         <option value="$PROJECT_DIR$/list-red.html" />
+        <option value="$PROJECT_DIR$/list-purple.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
@@ -372,14 +373,7 @@
       <workItem from="1540772520191" duration="570000" />
       <workItem from="1540858325647" duration="1753000" />
       <workItem from="1540945506171" duration="13943000" />
-      <workItem from="1541031523430" duration="310000" />
-    </task>
-    <task id="LOCAL-00015" summary="大连房产系统">
-      <created>1523585668896</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1523585668896</updated>
+      <workItem from="1541031523430" duration="693000" />
     </task>
     <task id="LOCAL-00016" summary="大连房产系统">
       <created>1528188439940</created>
@@ -717,16 +711,23 @@
       <option name="project" value="LOCAL" />
       <updated>1540977514721</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="默认的">
+      <created>1541031862723</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1541031862724</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266140000" />
+    <option name="totallyTimeSpent" value="266523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13178678" sideWeight="0.8046219" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13178678" sideWeight="0.8046219" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.50197434" order="7" side_tool="true" content_ui="tabs" />
@@ -1104,14 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list-purple.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="636" column="21" lean-forward="true" selection-start-line="636" selection-start-column="21" selection-end-line="636" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
@@ -1122,8 +1115,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="2573" column="1" lean-forward="true" selection-start-line="2573" selection-start-column="1" selection-end-line="2573" selection-end-column="1" />
+        <state relative-caret-position="357">
+          <caret line="1804" column="6" lean-forward="true" selection-start-line="1804" selection-start-column="6" selection-end-line="1804" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list-purple.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="522" column="12" lean-forward="true" selection-start-line="522" selection-start-column="12" selection-end-line="522" selection-end-column="12" />
           <folding />
         </state>
       </provider>
