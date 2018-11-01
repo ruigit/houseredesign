@@ -2573,7 +2573,7 @@ input::-webkit-input-placeholder {
     border: none;
 }
 /*indexend*/
-/*通过选择器就可以简单的修改该placeholder的样式*/
+/*通过选择器修改placeholder的样式*/
 input::placeholder{
     font-size:0.24rem;
     color: #cecece;
