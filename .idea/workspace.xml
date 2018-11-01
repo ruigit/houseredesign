@@ -26,8 +26,8 @@
           <file leaf-file-name="list-purple.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/list-purple.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="522" column="12" lean-forward="true" selection-start-line="522" selection-start-column="12" selection-end-line="522" selection-end-column="12" />
+                <state relative-caret-position="263">
+                  <caret line="463" column="59" lean-forward="false" selection-start-line="463" selection-start-column="59" selection-end-line="463" selection-end-column="59" />
                   <folding />
                 </state>
               </provider>
@@ -51,7 +51,7 @@
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="357">
-                  <caret line="1804" column="6" lean-forward="true" selection-start-line="1804" selection-start-column="6" selection-end-line="1804" selection-end-column="6" />
+                  <caret line="1804" column="0" lean-forward="false" selection-start-line="1804" selection-start-column="0" selection-end-line="1810" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -373,14 +373,7 @@
       <workItem from="1540772520191" duration="570000" />
       <workItem from="1540858325647" duration="1753000" />
       <workItem from="1540945506171" duration="13943000" />
-      <workItem from="1541031523430" duration="693000" />
-    </task>
-    <task id="LOCAL-00016" summary="大连房产系统">
-      <created>1528188439940</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1528188439940</updated>
+      <workItem from="1541031523430" duration="1028000" />
     </task>
     <task id="LOCAL-00017" summary="大连房产系统">
       <created>1532061970112</created>
@@ -718,11 +711,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541031862724</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="默认的">
+      <created>1541032291150</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1541032291150</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266523000" />
+    <option name="totallyTimeSpent" value="266858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -1113,18 +1113,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/list-purple.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="1804" column="6" lean-forward="true" selection-start-line="1804" selection-start-column="6" selection-end-line="1804" selection-end-column="6" />
+        <state relative-caret-position="263">
+          <caret line="463" column="59" lean-forward="false" selection-start-line="463" selection-start-column="59" selection-end-line="463" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list-purple.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="522" column="12" lean-forward="true" selection-start-line="522" selection-start-column="12" selection-end-line="522" selection-end-column="12" />
+        <state relative-caret-position="357">
+          <caret line="1804" column="0" lean-forward="false" selection-start-line="1804" selection-start-column="0" selection-end-line="1810" selection-end-column="1" />
           <folding />
         </state>
       </provider>

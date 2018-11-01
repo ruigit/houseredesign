@@ -1807,6 +1807,7 @@ input::-webkit-input-placeholder {
     min-width: 100%!important;
     max-width: 100%!important;
     text-align: center!important;
+    text-indent: 2%;
 }
 .search-chose-p {
     float: left;
