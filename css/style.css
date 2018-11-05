@@ -1941,6 +1941,7 @@ input::-webkit-input-placeholder {
     float: left;
     width: 70%;
     height: 2.5rem;
+    padding-top: 0.2rem;
 }
 
 .find-content-main ul li:last-of-type {
