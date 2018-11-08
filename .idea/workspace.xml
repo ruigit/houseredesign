@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="默认的">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/tlak-pc.html" afterPath="$PROJECT_DIR$/tlak-pc.html" />
+      <change beforePath="$PROJECT_DIR$/tlak-phone-list.html" afterPath="$PROJECT_DIR$/tlak-phone-list.html" />
+      <change beforePath="$PROJECT_DIR$/tlak-phone.html" afterPath="$PROJECT_DIR$/tlak-phone.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +27,8 @@
           <file leaf-file-name="list-purple.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/list-purple.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="483" column="37" lean-forward="true" selection-start-line="483" selection-start-column="37" selection-end-line="483" selection-end-column="37" />
+                <state relative-caret-position="8694">
+                  <caret line="483" column="37" lean-forward="false" selection-start-line="483" selection-start-column="37" selection-end-line="483" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -35,8 +37,8 @@
           <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/search.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="680" column="89" lean-forward="true" selection-start-line="680" selection-start-column="89" selection-end-line="680" selection-end-column="89" />
+                <state relative-caret-position="16">
+                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -50,7 +52,7 @@
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
-                  <caret line="1933" column="7" lean-forward="true" selection-start-line="1933" selection-start-column="7" selection-end-line="1933" selection-end-column="7" />
+                  <caret line="1933" column="7" lean-forward="false" selection-start-line="1933" selection-start-column="7" selection-end-line="1933" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -117,17 +119,14 @@
         <option value="$PROJECT_DIR$/detail-blue.html" />
         <option value="$PROJECT_DIR$/detail-red.html" />
         <option value="$PROJECT_DIR$/detail-purple.html" />
-        <option value="$PROJECT_DIR$/tlak-pc.html" />
         <option value="$PROJECT_DIR$/login-agent.html" />
         <option value="$PROJECT_DIR$/register.html" />
         <option value="$PROJECT_DIR$/broker.html" />
-        <option value="$PROJECT_DIR$/tlak-phone-list.html" />
         <option value="$PROJECT_DIR$/css/chat.css" />
         <option value="$PROJECT_DIR$/js/mobileSelect-yellow.min.js" />
         <option value="$PROJECT_DIR$/find-detail.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/css/mobileSelect.css" />
-        <option value="$PROJECT_DIR$/tlak-phone.html" />
         <option value="$PROJECT_DIR$/index-yellow.html" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/list-index-yellow.html" />
@@ -146,6 +145,9 @@
         <option value="$PROJECT_DIR$/list-purple.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/tlak-phone.html" />
+        <option value="$PROJECT_DIR$/tlak-pc.html" />
+        <option value="$PROJECT_DIR$/tlak-phone-list.html" />
       </list>
     </option>
   </component>
@@ -195,8 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,6 +218,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,14 +376,10 @@
       <workItem from="1540945506171" duration="13943000" />
       <workItem from="1541031523430" duration="1604000" />
       <workItem from="1541117889094" duration="174000" />
-      <workItem from="1541376867000" duration="568000" />
-    </task>
-    <task id="LOCAL-00018" summary="大连房产系统">
-      <created>1532068031377</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1532068031377</updated>
+      <workItem from="1541376867000" duration="704000" />
+      <workItem from="1541463094405" duration="163000" />
+      <workItem from="1541549692602" duration="130000" />
+      <workItem from="1541636424051" duration="281000" />
     </task>
     <task id="LOCAL-00019" summary="大连房产系统">
       <created>1532316681530</created>
@@ -719,11 +717,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541033418347</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="默认的">
+      <created>1541398908064</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1541398908065</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268176000" />
+    <option name="totallyTimeSpent" value="268886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -901,13 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tlak-pc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="161" column="42" lean-forward="true" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/detail-red.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -926,13 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="285" column="18" lean-forward="false" selection-start-line="285" selection-start-column="18" selection-end-line="285" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tlak-phone-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -980,13 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tlak-phone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1078,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9738">
           <caret line="541" column="110" lean-forward="false" selection-start-line="541" selection-start-column="110" selection-end-line="541" selection-end-column="110" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,7 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
           <caret line="140" column="66" lean-forward="false" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,22 +1083,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="153" column="65" lean-forward="true" selection-start-line="153" selection-start-column="65" selection-end-line="153" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/list-purple.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="483" column="37" lean-forward="true" selection-start-line="483" selection-start-column="37" selection-end-line="483" selection-end-column="37" />
+        <state relative-caret-position="8694">
+          <caret line="483" column="37" lean-forward="false" selection-start-line="483" selection-start-column="37" selection-end-line="483" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="680" column="89" lean-forward="true" selection-start-line="680" selection-start-column="89" selection-end-line="680" selection-end-column="89" />
+        <state relative-caret-position="16">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tlak-phone-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tlak-pc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tlak-phone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1124,7 +1129,7 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="1933" column="7" lean-forward="true" selection-start-line="1933" selection-start-column="7" selection-end-line="1933" selection-end-column="7" />
+          <caret line="1933" column="7" lean-forward="false" selection-start-line="1933" selection-start-column="7" selection-end-line="1933" selection-end-column="7" />
           <folding />
         </state>
       </provider>
