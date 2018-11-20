@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="默认的">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/chat.css" afterPath="$PROJECT_DIR$/css/chat.css" />
-      <change beforePath="$PROJECT_DIR$/tlak-phone-list.html" afterPath="$PROJECT_DIR$/tlak-phone-list.html" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/detail-blue.html" afterPath="$PROJECT_DIR$/detail-blue.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,28 +36,18 @@
           <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/search.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="522">
-                  <caret line="603" column="68" lean-forward="true" selection-start-line="603" selection-start-column="34" selection-end-line="603" selection-end-column="68" />
+                <state relative-caret-position="432">
+                  <caret line="626" column="40" lean-forward="true" selection-start-line="626" selection-start-column="40" selection-end-line="626" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tlak-phone.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tlak-phone.html">
+          <file leaf-file-name="detail-blue.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/detail-blue.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tlak-phone-list.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tlak-phone-list.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="48" />
+                <state relative-caret-position="643">
+                  <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -67,21 +57,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="chat.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/chat.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="599">
-                  <caret line="331" column="18" lean-forward="true" selection-start-line="331" selection-start-column="18" selection-end-line="331" selection-end-column="18" />
+                <state relative-caret-position="832">
+                  <caret line="2626" column="0" lean-forward="false" selection-start-line="2626" selection-start-column="0" selection-end-line="2626" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -145,7 +125,6 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/css/slider.css" />
         <option value="$PROJECT_DIR$/detail-green.html" />
-        <option value="$PROJECT_DIR$/detail-blue.html" />
         <option value="$PROJECT_DIR$/detail-red.html" />
         <option value="$PROJECT_DIR$/detail-purple.html" />
         <option value="$PROJECT_DIR$/login-agent.html" />
@@ -171,12 +150,13 @@
         <option value="$PROJECT_DIR$/list-green.html" />
         <option value="$PROJECT_DIR$/list-red.html" />
         <option value="$PROJECT_DIR$/list-purple.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/tlak-phone.html" />
         <option value="$PROJECT_DIR$/tlak-pc.html" />
         <option value="$PROJECT_DIR$/css/chat.css" />
         <option value="$PROJECT_DIR$/tlak-phone-list.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/detail-blue.html" />
       </list>
     </option>
   </component>
@@ -226,8 +206,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -414,14 +394,8 @@
       <workItem from="1542154857628" duration="138000" />
       <workItem from="1542241274119" duration="670000" />
       <workItem from="1542327349976" duration="193000" />
-      <workItem from="1542586833417" duration="884000" />
-    </task>
-    <task id="LOCAL-00020" summary="大连房产系统">
-      <created>1532323339024</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1532323339024</updated>
+      <workItem from="1542586833417" duration="1165000" />
+      <workItem from="1542672951467" duration="2119000" />
     </task>
     <task id="LOCAL-00021" summary="大连房产系统">
       <created>1532335609677</created>
@@ -759,11 +733,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541657522007</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="默认的">
+      <created>1542597428937</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1542597428938</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271152000" />
+    <option name="totallyTimeSpent" value="273552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -772,12 +753,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.50197434" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.49802566" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.49802566" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.2497532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1093,13 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detail-blue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/find-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
@@ -1129,42 +1103,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tlak-phone.html">
+    <entry file="file://$PROJECT_DIR$/css/chat.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="603" column="68" lean-forward="true" selection-start-line="603" selection-start-column="34" selection-end-line="603" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="599">
+          <caret line="331" column="18" lean-forward="false" selection-start-line="331" selection-start-column="18" selection-end-line="331" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tlak-phone-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="48" />
+        <state relative-caret-position="144">
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/chat.css">
+    <entry file="file://$PROJECT_DIR$/tlak-phone.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="331" column="18" lean-forward="true" selection-start-line="331" selection-start-column="18" selection-end-line="331" selection-end-column="18" />
+        <state relative-caret-position="378">
+          <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="626" column="40" lean-forward="true" selection-start-line="626" selection-start-column="40" selection-end-line="626" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="2626" column="0" lean-forward="false" selection-start-line="2626" selection-start-column="0" selection-end-line="2626" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detail-blue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
           <folding />
         </state>
       </provider>

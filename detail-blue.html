@@ -32,8 +32,14 @@
 //            收藏
             $(".shou").on("click", function () {
                 $(this).toggleClass("shoucang icon-love").toggleClass("shoucang1 icon-shoucang1");
-            })
-
+            });
+//立即分享到微信朋友圈
+            $("#share_btn").on("click", function() {
+                $("#shareit").show();
+            });
+            $("#shareit").on("click", function() {
+                $("#shareit").hide();
+            });
         })
     </script>
 </head>
@@ -42,11 +48,12 @@
 <div class="wrapper">
     <div class="top-inform">
         <i class="iconfont icon-zuo zuojiantou"></i>
-        <i class="iconfont icon-zhuanfa dingwei"></i>
+        <i id="share_btn" class="iconfont icon-zhuanfa dingwei"></i>
         <i class="shou iconfont icon-love shoucang"></i>
         <i class="iconfont icon-map fenxiang"></i>
         <div class="clearfix"></div>
     </div>
+
     <!-- 轮播图开始 -->
     <div class="aui-banner-content " data-aui-slider>
         <div class="aui-banner-wrapper">
@@ -135,6 +142,12 @@
             </li></a>
             <div class="clearfix"></div>
         </ul>
+    </div>
+</div>
+<div id="shareit">
+    <img class="arrow" src="img/share-it.png">
+    <div id="follow">
+        <p>请点击右上角<img src="img/xcx.png"><br />左侧按钮<br />选择转发即可<br /></p>
     </div>
 </div>
 </body>

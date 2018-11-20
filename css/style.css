@@ -2587,6 +2587,43 @@ input::placeholder{
     text-align: center;
     line-height: 0.4rem;
 }
+/*分享*/
+#shareit {
+    -webkit-user-select: none;
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 105;
+}
+
+.arrow {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    width:4.5rem;
+    height:6.5rem;
+}
+
+#follow p{
+    width:60%;
+    line-height:0.8rem;
+    font-size:0.38rem;
+    text-align:center;
+    margin:85% 20% auto 20%;
+    color:#fff;
+}
+#follow p img{
+    background: #fff;
+    width: 1.5rem;
+    height: 0.5rem;
+    line-height:0.8rem;
+    margin-left: 0.2rem;
+}
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 
