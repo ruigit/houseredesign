@@ -64,10 +64,10 @@
             })
 
                 // 列表筛选
-                $(".search-chose ul li").on("click", function(){
-                    $(this).find("i").toggleClass("icon-xiasanjiao");
-                    $(this).find("i").toggleClass("icon-shangsanjiao");
-                })
+                // $(".search-chose ul li").on("click", function(){
+                //     $(this).find("i").toggleClass("icon-xiasanjiao");
+                //     $(this).find("i").toggleClass("icon-shangsanjiao");
+                // })
 
 
             //            房源面积
@@ -447,7 +447,95 @@
                 }
 
             })
+//            地区
+            var mobileSelect = new MobileSelect({
+                trigger: '#region',
+                title: '地区',
+                triggerDisplayData: false,
 
+                wheels: [
+                    {data:[
+                            {
+                                id:'1',
+                                value:'附近',
+                                childs:[
+                                    {id:'1',value:'1000米',
+                                        childs:[
+                                            {id:'1',value:'米米米米米米0000'},
+                                            {id:'2',value:'2000米'},
+                                            {id:'3',value:'3000米'},
+                                            {id:'4',value:'5000米'},
+                                            {id:'5',value:'10000米'}
+                                        ]
+                                    },
+                                    {id:'2',value:'2000米'},
+                                    {id:'3',value:'3000米'},
+                                    {id:'4',value:'5000米'},
+                                    {id:'5',value:'10000米'}
+                                ]
+                            },
+                            {id:'2',value:'上城区'},
+                            {id:'3',value:'下城区'},
+                            {id:'4',value:'江干区'},
+                            {id:'5',value:'拱墅区'},
+                            {id:'6',value:'西湖区'}
+                        ]}
+                ],
+                position:[0], //初始化定位
+                callback:function(indexArr, data){
+                    $("#region p").empty().append(data[2].value);
+                }
+            });
+            // $.ajax({
+            //     type: "POST",
+            //     url: "",
+            //     data: {},
+            //     dataType: "json",
+            //     success: function(res){
+            //         numArr = res.data;//先取numArr数据，再加载mobileSelect
+            //         //            地区
+            //         var mobileSelect = new MobileSelect({
+            //             trigger: '#region',
+            //             title: '地区',
+            //             triggerDisplayData: false,
+            //             wheels: [
+            //                 {data : numArr}
+            //             ],
+            //             position:[0], //初始化定位
+            //             callback:function(indexArr, data){
+            //                 $("#region p").empty().append(data[2].value);
+            //             }
+            //         });
+            //     }
+            // });
+            //            价格
+            var mobileSelect4 = new MobileSelect({
+                trigger: '#price1',
+                title: '价格',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['全部','东','东南','北','东北','南','西南','西','西北']}
+                ],
+                position:[3], //初始化定位
+
+                callback:function(indexArr, data){
+                    $("#price1 p").empty().append(data);
+                }
+            });
+            //            面积
+            var mobileSelect5 = new MobileSelect({
+                trigger: '#area1',
+                title: '面积',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['全部','东','东南','北','东北','南','西南','西','西北']}
+                ],
+                position:[3], //初始化定位
+
+                callback:function(indexArr, data){
+                    $("#area1 p").empty().append(data);
+                }
+            });
         })
     </script>
 </head>
@@ -461,9 +549,9 @@
 
     <div class="search-chose list-chose">
         <ul>
-            <li><p>区域</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-            <li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-            <li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li id="region"><p>区域</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li id="price1"><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li id="area1"><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
             <div class="clearfix"></div>
         </ul>
     </div>
