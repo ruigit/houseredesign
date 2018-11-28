@@ -537,6 +537,15 @@
                     $("#area1 p").empty().append(data);
                 }
             });
+            // 禁止软键盘弹出
+            // $("input").focus(function(){
+            //     document.activeElement.blur();
+            // });
+            // 防止ios微信弹出键盘遮挡问题
+            $(document).on('focusout', function () {
+                //软键盘收起的事件处理
+                window.scrollTo(0,document.body.clientHeight);
+            });
         })
     </script>
 </head>
