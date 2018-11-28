@@ -2164,10 +2164,10 @@ input::-webkit-input-placeholder {
 
 .map-content {
     position: fixed;
-    bottom: -93%;
+    bottom: -95.55%;
     width: 100%;
     background: #fff;
-    height: 93%;
+    height: 94%;
     z-index: 15;
 }
 
