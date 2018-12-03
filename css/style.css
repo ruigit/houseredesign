@@ -689,6 +689,7 @@ body {
     height: 1rem;
     position: relative;
     z-index: 9;
+    top: 0;
 }
 
 .caidan {
