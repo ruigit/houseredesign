@@ -70,6 +70,7 @@
                 $('.search-content').on("touchmove",function(e){
                     e.preventDefault();
                 });
+                $('.search-content').css("height","100%");
                 // 列表筛选
                 $(".search-chose ul li").on("click", function(){
                     $(this).find("i").toggleClass("icon-xiasanjiao");
@@ -81,7 +82,7 @@
                 $('.search-content').unbind('touchmove');
                 $(".map-content").removeClass("showleftnav-yr");
                 $(".map-content").addClass("showleftnav-y");
-
+                $('.search-content').css("height","auto");
             })
 
 //            点击遮罩层2关闭
