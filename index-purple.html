@@ -76,8 +76,10 @@
                 $('.search-content').css("height","100%");
                 // 列表筛选
                 $(".search-chose ul li").on("click", function(){
-                    $(this).find("i").toggleClass("icon-xiasanjiao");
-                    $(this).find("i").toggleClass("icon-shangsanjiao");
+                    $(this).find("i").toggleClass("icon-shang");
+                    $(this).find("i").toggleClass("icon-icon--xia");
+                    $(this).find("i").addClass("room-chose-purple-fon");
+                    $(this).find("p").addClass("room-chose-purple-fon");
                 })
             })
             $(".map-search").on("click", function(){
@@ -686,8 +688,8 @@
     </div>
     <div class="search-chose">
         <ul>
-            <li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-            <li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shang shang2"></i><i class="iconfont icon-icon--xia xia2"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shang shang2"></i><i class="iconfont icon-icon--xia xia2"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
             <div class="clearfix"></div>
         </ul>
     </div>
