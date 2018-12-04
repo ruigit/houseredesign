@@ -77,6 +77,8 @@
                     $(this).find("i").toggleClass("icon-icon--xia");
                     $(this).find("i").addClass("room-chose-yellow-fon");
                     $(this).find("p").addClass("room-chose-yellow-fon");
+                    $(this).siblings().find("i").removeClass("room-chose-yellow-fon");
+                    $(this).siblings().find("p").removeClass("room-chose-yellow-fon");
                 })
             })
             $(".map-search").on("click", function(){

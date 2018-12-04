@@ -80,6 +80,8 @@
                     $(this).find("i").toggleClass("icon-icon--xia");
                     $(this).find("i").addClass("room-chose-purple-fon");
                     $(this).find("p").addClass("room-chose-purple-fon");
+                    $(this).siblings().find("i").removeClass("room-chose-purple-fon");
+                    $(this).siblings().find("p").removeClass("room-chose-purple-fon");
                 })
             })
             $(".map-search").on("click", function(){
