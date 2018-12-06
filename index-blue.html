@@ -283,56 +283,92 @@
                 $(".masking").toggleClass("showleftnav-yrf");
                 $(".room").removeClass("showleftnav-y");
                 $(".room").toggleClass("showleftnav-yr");
-                $(".ro-tingd-qb").removeClass("roting room-chose-blue-fon");
-                $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
-                // $(".selectine").show();
-                // $(".selectine1").show();
+                var ting;
+                var shi;
+                if ($(".room-val").html() == "全部"){
+                    // $(".ro-tingd-qb").removeClass("roting room-chose-blue-fon");
+                    // $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
+                    $(".ro-tingd-qb").addClass("roting room-chose-black-fon");
+                    $(".ro-tingd-qbs").addClass("roshi room-chose-black-fon");
+                    ting = NaN;
+                    shi = NaN;
+                }else if($(".room-val").html().indexOf("厅") > 0 && $(".room-val").html().indexOf("全部") > 0){
+                    $(".ro-tingd-qb").removeClass("roting room-chose-black-fon");
+                    // $(".ro-tingd-qbs").removeClass("roshi room-chose-black-fon");
+                    var num = $(".room-ting .swiper-slide-active").html();
+                    ting = num;
+                    // var shi = 2;
+                    shi = NaN;
+                }else if($(".room-val").html().indexOf("室") > 0 && $(".room-val").html().indexOf("全部") >= 0){
+                    // $(".ro-tingd-qb").removeClass("roting room-chose-black-fon");
+                    $(".ro-tingd-qbs").removeClass("roshi room-chose-black-fon");
+                    var numl = $(".room-shi .swiper-slide-active").html();
+                    shi = numl;
+                    ting = NaN;
+                }else if ($(".room-val").html().indexOf("厅") > 0 && $(".room-val").html().indexOf("室") > 0){
+                    $(".ro-tingd-qb").removeClass("roting room-chose-black-fon");
+                    $(".ro-tingd-qbs").removeClass("roshi room-chose-black-fon");
+                    var num = $(".room-ting .swiper-slide-active").html();
+                    var numl = $(".room-shi .swiper-slide-active").html();
+                    shi = numl;
+                    ting = num;
+                }
+
                 var mySwiper = new Swiper('#swiper1',{
                     slidesPerView : "auto",
                     touchMoveStopPropagation : false,
                     centeredSlides : true,
+                    runCallbacksOnInit : false,
                     initialSlide :3,
                     speed:100,
                     mode:'horizontal',
                     loop: false,
                     on: {
+                        init: function(){
+
+                        this.slideTo(ting, 0, false);
+
+                        },
                         slideChangeTransitionEnd: function(){
                             $(".room-ting .swiper-slide-active").html();
+                            // console.log(this.realIndex);
                         },
-                    },
-                    on: {
                         touchEnd: function(){
-                            $(".ro-tingd-qb").removeClass("roting room-chose-blue-fon");
-                        },
+                            $(".ro-tingd-qb").removeClass("roting room-chose-black-fon");
+                        }
                     }
                 });
                 var mySwiper1 = new Swiper('#swiper2',{
                     slidesPerView : "auto",
                     touchMoveStopPropagation : false,
                     centeredSlides : true,
+                    runCallbacksOnInit : false,
                     initialSlide :3,
                     speed:100,
                     mode:'horizontal',
                     loop: false,
                     on: {
+                        init: function(){
+
+                            this.slideTo(shi, 0, false);
+
+                        },
                         slideChangeTransitionEnd: function(){
                             $(".room-shi .swiper-slide-active").html();
                         },
-                    },
-                    on: {
                         touchEnd: function(){
-                            $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
-                        },
+                            $(".ro-tingd-qbs").removeClass("roshi room-chose-black-fon");
+                        }
                     }
                 });
 
                 $(".ro-tingd-qb").on("click", function () {
-                    $(this).addClass("roting room-chose-blue-fon");
+                    $(this).addClass("roting room-chose-black-fon");
                     $(".room-ting .swiper-slide-active").removeClass("swiper-slide-active");
                     // $(".selectine").hide();
                 })
                 $(".ro-tingd-qbs").on("click", function () {
-                    $(this).addClass("roshi room-chose-blue-fon");
+                    $(this).addClass("roshi room-chose-black-fon");
                     $(".room-shi .swiper-slide-active").removeClass("swiper-slide-active");
                     // $(".selectine1").hide();
                 })
@@ -359,7 +395,7 @@
                 }else {
                     $(".room-val").empty().append(roomdat);
                 }
-            })
+            });
 //            房源朝向
             var mobileSelect1 = new MobileSelect({
                 trigger: '#toward',
@@ -598,13 +634,13 @@
                 <div class="ro-tingd-qb">全部</div>
                 <div class="swiper-container" id="swiper1">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">0</div>
                         <div class="swiper-slide">1</div>
                         <div class="swiper-slide">2</div>
                         <div class="swiper-slide">3</div>
                         <div class="swiper-slide">4</div>
                         <div class="swiper-slide">5</div>
                         <div class="swiper-slide">6</div>
-                        <div class="swiper-slide">7</div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="clearfix"></div>
@@ -616,13 +652,13 @@
                 <div class="ro-tingd-qbs">全部</div>
                 <div class="swiper-container" id="swiper2">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">0</div>
                         <div class="swiper-slide">1</div>
                         <div class="swiper-slide">2</div>
                         <div class="swiper-slide">3</div>
                         <div class="swiper-slide">4</div>
                         <div class="swiper-slide">5</div>
                         <div class="swiper-slide">6</div>
-                        <div class="swiper-slide">7</div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="clearfix"></div>

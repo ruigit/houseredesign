@@ -1511,7 +1511,9 @@ body {
 .room-chose-yellow-fon {
     color: #f0bd42 !important;
 }
-
+.room-chose-black-fon {
+    color: #000 !important;
+}
 .swiper-slide-active {
     filter: alpha(opacity=100) !important; /* IE */
     -moz-opacity: 1 !important; /* 老版Mozilla */
