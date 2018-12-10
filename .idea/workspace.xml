@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="默认的">
+    <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="解决微信键盘弹出问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/login-agent.html" afterPath="$PROJECT_DIR$/login-agent.html" />
-      <change beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
-      <change beforePath="$PROJECT_DIR$/register.html" afterPath="$PROJECT_DIR$/register.html" />
+      <change beforePath="$PROJECT_DIR$/css/mobileSelect.css" afterPath="$PROJECT_DIR$/css/mobileSelect.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +22,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.6537806">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/search.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-4690">
-                  <caret line="299" column="30" lean-forward="false" selection-start-line="299" selection-start-column="30" selection-end-line="299" selection-end-column="30" />
+                <state relative-caret-position="-1860">
+                  <caret line="603" column="13" lean-forward="true" selection-start-line="603" selection-start-column="13" selection-end-line="603" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="find.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/find.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -132,7 +140,6 @@
         <option value="$PROJECT_DIR$/js/mobileSelect-yellow.min.js" />
         <option value="$PROJECT_DIR$/find-detail.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/css/mobileSelect.css" />
         <option value="$PROJECT_DIR$/list-index-yellow.html" />
         <option value="$PROJECT_DIR$/find.html" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -160,6 +167,7 @@
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/login-agent.html" />
         <option value="$PROJECT_DIR$/register.html" />
+        <option value="$PROJECT_DIR$/css/mobileSelect.css" />
       </list>
     </option>
   </component>
@@ -215,6 +223,11 @@
             <path>
               <item name="housegai" type="b2602c69:ProjectViewProjectNode" />
               <item name="housegai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="housegai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="housegai" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="housegai" type="b2602c69:ProjectViewProjectNode" />
@@ -407,14 +420,7 @@
       <workItem from="1543968763527" duration="3844000" />
       <workItem from="1544055333053" duration="6039000" />
       <workItem from="1544141661108" duration="367000" />
-      <workItem from="1544400634466" duration="248000" />
-    </task>
-    <task id="LOCAL-00033" summary="大连房产系统">
-      <created>1537947956345</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1537947956345</updated>
+      <workItem from="1544400634466" duration="1412000" />
     </task>
     <task id="LOCAL-00034" summary="大连房产系统">
       <created>1537948387217</created>
@@ -752,11 +758,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544061050963</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="解决微信键盘弹出问题">
+      <created>1544400906976</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1544400906977</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305301000" />
+    <option name="totallyTimeSpent" value="306465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -794,7 +807,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="大连房产系统" />
     <MESSAGE value="默认的" />
-    <option name="LAST_COMMIT_MESSAGE" value="默认的" />
+    <MESSAGE value="解决微信键盘弹出问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决微信键盘弹出问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -949,13 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobileSelect.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -1089,13 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/find.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="153" column="65" lean-forward="true" selection-start-line="153" selection-start-column="65" selection-end-line="153" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/find-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2514">
@@ -1145,8 +1145,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4690">
-          <caret line="299" column="30" lean-forward="false" selection-start-line="299" selection-start-column="30" selection-end-line="299" selection-end-column="30" />
+        <state relative-caret-position="-1860">
+          <caret line="603" column="13" lean-forward="true" selection-start-line="603" selection-start-column="13" selection-end-line="603" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobileSelect.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding />
         </state>
       </provider>
