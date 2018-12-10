@@ -89,6 +89,22 @@
                     $("#upass1").prop("type","password");
                 }
             });
+            // 防止安卓弹出键盘遮挡问题
+            var AndroidHeight = $(window).height();  //获取当前页面高度
+            $(window).resize(function () {
+                var thisHeight = $(this).height();
+                if ( AndroidHeight - thisHeight > 140 ) {
+                    //键盘弹出
+                } else {
+                    //键盘收起
+                    window.scrollTo(0,document.body.clientHeight);
+                }
+            });
+            // 防止ios微信弹出键盘遮挡问题
+            $(document).on('focusout', function () {
+                //软键盘收起的事件处理
+                window.scrollTo(0,document.body.clientHeight);
+            });
         })
     </script>
 </head>
