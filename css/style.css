@@ -2594,6 +2594,12 @@ input::placeholder{
     line-height:0.8rem;
     margin-left: 0.2rem;
 }
+/*.zuo{*/
+    /*position: relative;*/
+    /*left: 0rem;*/
+    /*top: 0.1rem;*/
+    /*z-index: 888;*/
+/*}*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 
