@@ -37,7 +37,7 @@
             $("#share_btn").on("click", function() {
                 $("#shareit").show();
             });
-            $("#shareit").on("click", function() {
+            $(".detail-close").on("click", function() {
                 $("#shareit").hide();
             });
         })
@@ -145,6 +145,7 @@
     </div>
 </div>
 <div id="shareit">
+    <i class="iconfont icon-close detail-close"></i>
     <img class="arrow" src="img/share-it.png">
     <div id="follow">
         <p>请点击右上角<img src="img/xcx.png"><br />左侧按钮<br />选择转发即可<br /></p>
