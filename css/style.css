@@ -1869,7 +1869,7 @@ input::-webkit-input-placeholder {
     transition: all 0.3s ease 0s;
     display: block;
     width: 70%;
-    font-size: 0.32rem;
+    font-size: 0.28rem;
     color: #b8b8b8;
     margin-top: 0.15rem;
     float: left;
