@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>table表格页面</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/table.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script>
+        $(function () {
+            var width = 0;
+            for (var i = 0; i < $('.table-main-right ul li').length; i++) {
+                width += $('.table-main-right ul li').eq(i).outerWidth(true);
+            }
+            $('.table-main-right ul').width(width);
+            $('.table-main-right').height($('.table-main-right ul li').height());
+        });
+
+    </script>
+</head>
+<body>
+<div class="table-main">
+    <div class="table-main-left">
+        <ul>
+            <li>用户</li>
+            <li>用户1</li>
+            <li>用户2</li>
+            <li>用户3</li>
+            <li>用户4</li>
+            <li>用户5</li>
+        </ul>
+    </div>
+    <div class="table-main-right">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <dl>
+                        <dt>姓名</dt>
+                        <dt>姓名姓名姓名姓名姓名</dt>
+                        <dt>姓名</dt>
+                        <dt>姓名</dt>
+                        <dt>姓名</dt>
+                        <dt>姓名</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>电话</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>活跃度</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>加入时间</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>位置</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>ID</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>性别</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>是否为好友</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>个性签名</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                        <dt>部门</dt>
+                    </dl>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </nav>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>
