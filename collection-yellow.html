@@ -18,6 +18,8 @@
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/rem.js"></script>
     <script type="text/javascript" src="js/fastclick.js"></script>
+    <link rel="stylesheet" href="css/mobileSelect.css"/>
+    <script type="text/javascript" src="js/mobileSelect-yellow.min.js"></script>
     <script>
         //阻止穿透事件
         $(function(){
@@ -25,60 +27,240 @@
             FastClick(document.body);
         })
         $(document).ready(function() {
-            //		背景高度
-            var winHeight = window.innerHeight + $(".search-nav").height();
-            var bodyheight = $(".caidan-line").height() + $(".search-nav").height();
-            var winHei = window.innerHeight - $(".search-nav").height();
-            $(".index-map").css({height: winHei});
-            if (winHeight > bodyheight){
-                $(".caidan-line").css({height: winHeight});
-            }else {
-                $(".caidan-line").css({height: bodyheight});
-            }
-//            侧边导航
-            $(".caidan").on("click", function(){
-//                $(".caidan-line").animate({left: '0'}, 800);
-                $(".masking2").removeClass("showleftnav-yf");
-                $(".masking2").toggleClass("showleftnav-yrf");
-                $(".caidan-line").removeClass("showleftnav-r");
-                $(".caidan-line").toggleClass("showleftnav");
-                $(".map-content").removeClass("showleftnav-yr");
-//                解绑移动事件
+            // //		背景高度
+            // var winHeight = window.innerHeight + $(".search-nav").height();
+            // var bodyheight = $(".caidan-line").height() + $(".search-nav").height();
+            // var winHei = window.innerHeight - $(".search-nav").height();
+            // $(".index-map").css({height: winHei});
+            // if (winHeight > bodyheight){
+            //     $(".caidan-line").css({height: winHeight});
+            // }else {
+            //     $(".caidan-line").css({height: bodyheight});
+            // }
+// //            侧边导航
+//             $(".caidan").on("click", function(){
+// //                $(".caidan-line").animate({left: '0'}, 800);
+//                 $(".masking2").removeClass("showleftnav-yf");
+//                 $(".masking2").toggleClass("showleftnav-yrf");
+//                 $(".caidan-line").removeClass("showleftnav-r");
+//                 $(".caidan-line").toggleClass("showleftnav");
+//                 $(".map-content").removeClass("showleftnav-yr");
+// //                解绑移动事件
+// //                 $('.search-content').unbind('touchmove');
+// //                禁止移动
+//                 $('.search-content').on("touchmove",function(e){
+//                     e.preventDefault();
+//                 });
+//
+//             })
+//             $(".cha").on("click", function(){
+// //                $(".caidan-line").animate({left: '-100%'}, 800);
+//                 $(".masking2").removeClass("showleftnav-yrf");
+//                 $(".caidan-line").removeClass("showleftnav");
+//                 $(".caidan-line").toggleClass("showleftnav-r");
+// //                解绑移动事件
 //                 $('.search-content').unbind('touchmove');
-//                禁止移动
-                $('.search-content').on("touchmove",function(e){
-                    e.preventDefault();
+//             })
+
+// //            点击遮罩层2关闭
+//             $(".masking2").on("click", function () {
+//                 $(".masking2").removeClass("showleftnav-yrf");
+//                 $(".caidan-line").removeClass("showleftnav");
+//                 $(".caidan-line").toggleClass("showleftnav-r");
+// //                解绑移动事件
+//                 $('.search-content').unbind('touchmove');
+//             })
+
+//            价格
+            var mobileSelect3 = new MobileSelect({
+                trigger: '#price1',
+                title: '价格',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['全部','东','东南','北','东北','南','西南','西','西北']}
+                ],
+                position:[3], //初始化定位
+
+                callback:function(indexArr, data){
+                    $("#price1 p").empty().append(data);
+                }
+            });
+            //            地区
+            var mobileSelect1 = new MobileSelect({
+                trigger: '#region',
+                title: '地区',
+                triggerDisplayData: false,
+
+                wheels: [
+                    {data:[
+                            {
+                                id:'1',
+                                value:'附近',
+                                childs:[
+                                    {id:'1',value:'1000米',
+                                        childs:[
+                                            {id:'1',value:'米米米米米米0000'},
+                                            {id:'2',value:'2000米'},
+                                            {id:'3',value:'3000米'},
+                                            {id:'4',value:'5000米'},
+                                            {id:'5',value:'10000米'}
+                                        ]
+                                    },
+                                    {id:'2',value:'2000米'},
+                                    {id:'3',value:'3000米'},
+                                    {id:'4',value:'5000米'},
+                                    {id:'5',value:'10000米'}
+                                ]
+                            },
+                            {id:'2',value:'上城区'},
+                            {id:'3',value:'下城区'},
+                            {id:'4',value:'江干区'},
+                            {id:'5',value:'拱墅区'},
+                            {id:'6',value:'西湖区'}
+                        ]}
+                ],
+                position:[0], //初始化定位
+                callback:function(indexArr, data){
+                    $("#region p").empty().append(data[2].value);
+                }
+            });
+            // $.ajax({
+            //     type: "POST",
+            //     url: "",
+            //     data: {},
+            //     dataType: "json",
+            //     success: function(res){
+            //         numArr = res.data;//先取numArr数据，再加载mobileSelect
+            //         //            地区
+            //         var mobileSelect = new MobileSelect({
+            //             trigger: '#region',
+            //             title: '地区',
+            //             triggerDisplayData: false,
+            //             wheels: [
+            //                 {data : numArr}
+            //             ],
+            //             position:[0], //初始化定位
+            //             callback:function(indexArr, data){
+            //                 $("#region p").empty().append(data[2].value);
+            //             }
+            //         });
+            //     }
+            // });
+            //            户型
+            var mobileSelect2 = new MobileSelect({
+                trigger: '#housetype',
+                title: '面积',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['全部','东','东南','北','东北','南','西南','西','西北']}
+                ],
+                position:[3], //初始化定位
+
+                callback:function(indexArr, data){
+                    $("#housetype p").empty().append(data);
+                }
+            });
+            //     房源类型
+            var mobileSelect4 = new MobileSelect({
+                trigger: '#resource',
+                title: '房源类型',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['全部','新房','二手房','租房','共建商铺']}
+                ],
+                position:[1], //初始化定位
+
+                callback:function(indexArr, data){
+                    $("#resource p").empty().append(data);
+                }
+            });
+//            更多筛选
+            $("#more").on("click", function () {
+                var bodyHeight = $(".search-content").outerHeight(true);
+                var winHeightl = window.innerHeight;
+                var winHeight = window.innerHeight - $(".search-nav").height() - $(".more-search").outerHeight(true) - $(".search-chose").height() + 11;
+                var winHeightb = $(".search-content").outerHeight(true) - $(".search-nav").height() - $(".more-search").outerHeight(true) - $(".search-chose").height() + 11;
+                if (bodyHeight > winHeightl){
+                    $(".masking3").css({height: winHeightb});
+                }else {
+                    $(".masking3").css({height: winHeight});
+                }
+
+                //                禁止移动
+//                $('body').on("touchmove",function(e){
+//                    e.preventDefault();
+//                });
+                $(".masking3").toggle();
+                $(".more-line").toggle();
+                $("body").on("click", "#m-area ul li", function () {
+                    $(this).siblings().removeClass('mli-change-color');
+                    $(this).toggleClass('mli-change-color');
                 });
+                $("body").on("click", "#m-orientation ul li", function () {
+                    $(this).siblings().removeClass('mli-change-color');
+                    $(this).toggleClass('mli-change-color');
+                });
+                $("body").on("click", "#m-level ul li",function () {
+                    $(this).siblings().removeClass('mli-change-color');
+                    $(this).toggleClass('mli-change-color');
+                });
+            });
+            // 重置
+            $(".replacement").on("click", function () {
+                $('.more-line dl dt li').removeClass('mli-change-color');
+            });
+            // 确定
+            $(".more-dater").on("click", function () {
+                //                解绑移动事件
+//                        $('body').unbind('touchmove');
+                $(".masking3").toggle();
+                $(".more-line").toggle();
+                if ($("#m-area ul li").is('.mli-change-color')){
+                    // 面积数据
+                    console.log($("#m-area  .mli-change-color").html())
+                }
+                if ($("#m-orientation ul li").is('.mli-change-color')){
+                    // 朝向数据
+                    console.log($("#m-orientation .mli-change-color").html())
+                }
+                if ($("#m-level ul li").is('.mli-change-color')){
+                    // 楼层数据
+                    console.log($("#m-level .mli-change-color").html())
+                }
+            });
+            // 遮罩层关闭
+            $(".masking3").on("click", function () {
+                //                解绑移动事件
+//                        $('body').unbind('touchmove');
+                $(".masking3").toggle();
+                $(".more-line").toggle();
+            });
 
-            })
-            $(".cha").on("click", function(){
-//                $(".caidan-line").animate({left: '-100%'}, 800);
-                $(".masking2").removeClass("showleftnav-yrf");
-                $(".caidan-line").removeClass("showleftnav");
-                $(".caidan-line").toggleClass("showleftnav-r");
-//                解绑移动事件
-                $('.search-content').unbind('touchmove');
-            })
+            // 排序
+            $(".sort").on("click", function(){
+                // 排序
+            });
 
-                // 列表筛选
-                $(".search-chose ul li").on("click", function(){
-                    $(this).find("i").toggleClass("icon-xiasanjiao");
-                    $(this).find("i").toggleClass("icon-shangsanjiao");
-                })
-
-
-
-//            点击遮罩层2关闭
-            $(".masking2").on("click", function () {
-                $(".masking2").removeClass("showleftnav-yrf");
-                $(".caidan-line").removeClass("showleftnav");
-                $(".caidan-line").toggleClass("showleftnav-r");
-//                解绑移动事件
-                $('.search-content').unbind('touchmove');
-            })
-
-
-
+// 禁止软键盘弹出
+            // $("input").focus(function(){
+            //     document.activeElement.blur();
+            // });
+            // 防止安卓弹出键盘遮挡问题
+            var AndroidHeight = $(window).height();  //获取当前页面高度
+            $(window).resize(function () {
+                var thisHeight = $(this).height();
+                if ( AndroidHeight - thisHeight > 140 ) {
+                    //键盘弹出
+                } else {
+                    //键盘收起
+                    window.scrollTo(0,document.body.clientHeight);
+                }
+            });
+            // 防止ios微信弹出键盘遮挡问题
+            $(document).on('focusout', function () {
+                //软键盘收起的事件处理
+                window.scrollTo(0,document.body.clientHeight);
+            });
 
         })
     </script>
@@ -86,19 +268,26 @@
 <body>
 <div class="search-content">
     <div class="search-nav search-nav-yellow">
-        <i class="iconfont icon-category caidan index-block"></i>
-        <i class="iconfont icon-map map-dt index-block"></i>
+        <i class="iconfont icon-zuo caidan more-block"></i>
+        <!--<i class="iconfont icon-map map-dt index-block"></i>-->
         <div class="clearfix"></div>
     </div>
-
-    <!--<div class="search-chose">-->
-        <!--<ul>-->
-            <!--<li><p>价格</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>-->
-            <!--<li><p>面积</p><div class="search-chose-p"><i class="iconfont icon-shangsanjiao shang"></i><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>-->
-            <!--<div class="clearfix"></div>-->
-        <!--</ul>-->
-    <!--</div>-->
-    <div class="list-inde-y"></div>
+    <div class="more-search">
+            <div id="resource"><p>区域</p><div class="search-more-p"><i class="iconfont icon-xiasanjiao xiam"></i><div class="clearfix"></div></div><div class="clearfix"></div></div>
+            <div class="more-input-s"><input class="more-input" id="search" type="text" name="" value="" placeholder="请输入小区名称/地铁/商圈"><div class="search-more-p"><i class="iconfont icon-search more-fdj"></i><div class="clearfix"></div></div><div class="clearfix"></div></div>
+            <div class="clearfix"></div>
+    </div>
+    <div class="search-chose sortsize">
+        <ul>
+            <li id="region"><p>区域</p><div class="search-chose-p"><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li id="price1"><p>价格</p><div class="search-chose-p"><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li id="housetype"><p>户型</p><div class="search-chose-p"><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li id="more"><p>更多</p><div class="search-chose-p"><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
+            <li class="sort"><div class="search-chose-p1"><i class="iconfont icon-paixu paixu"></i></div><div class="clearfix"></div></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+    <!--<div class="list-inde-y"></div>-->
     <div class="search-content-list">
         <div class="tab-main-pic-main">
             <div class="tab-main-pic">
@@ -233,21 +422,75 @@
 </div>
 </body>
 </html>
-<div class="caidan-line">
-    <div class="caidan-line-1">
-        <dl>
-            <dt>
-                <img src="img/logoyellow.png">
-                <i class="iconfont icon-close cha"></i>
-            </dt>
-            <dt class="bordertop"><p>新房</p></dt>
-            <dt><p>二手房</p></dt>
-            <dt><p>租房</p></dt>
-            <dt><p>公建商铺</p></dt>
-            <dt><p>找经纪人</p></dt>
-            <dt class="color-tap-yellow"><p>我的收藏</p></dt>
-        </dl>
-    </div>
+<!--<div class="caidan-line">-->
+    <!--<div class="caidan-line-1">-->
+        <!--<dl>-->
+            <!--<dt>-->
+                <!--<img src="img/logoyellow.png">-->
+                <!--<i class="iconfont icon-close cha"></i>-->
+            <!--</dt>-->
+            <!--<dt class="bordertop"><p>新房</p></dt>-->
+            <!--<dt><p>二手房</p></dt>-->
+            <!--<dt><p>租房</p></dt>-->
+            <!--<dt><p>公建商铺</p></dt>-->
+            <!--<dt><p>找经纪人</p></dt>-->
+            <!--<dt class="color-tap-yellow"><p>我的收藏</p></dt>-->
+        <!--</dl>-->
+    <!--</div>-->
 
+<!--</div>-->
+<!--<div class="masking2"></div>-->
+<div class="more-line">
+<dl>
+    <dt id="m-area">
+        <p>面积(平米)</p>
+        <ul>
+            <li>50以下</li>
+            <li>50-70</li>
+            <li>70-90</li>
+            <li>90-120</li>
+            <li>120-150</li>
+            <li>150-200</li>
+            <li>200-300</li>
+            <li>300以上</li>
+            <div class="clearfix"></div>
+        </ul>
+    </dt>
+    <dt id="m-orientation">
+        <p>朝向</p>
+        <ul>
+            <li>东</li>
+            <li>东南</li>
+            <li>北</li>
+            <li>东北</li>
+            <li>南</li>
+            <li>西南</li>
+            <li>西</li>
+            <li>西北</li>
+            <div class="clearfix"></div>
+        </ul>
+    </dt>
+    <dt id="m-level">
+        <p>楼层</p>
+        <ul>
+            <li>1-5</li>
+            <li>5-10</li>
+            <li>10-15</li>
+            <li>15-20</li>
+            <li>20-25</li>
+            <li>25-30</li>
+            <li>30-35</li>
+            <li>35以上</li>
+            <div class="clearfix"></div>
+        </ul>
+    </dt>
+</dl>
+<div class="more-button">
+    <ul>
+        <li class="replacement">重置</li>
+        <li class="more-dater">确定</li>
+        <div class="clearfix"></div>
+    </ul>
 </div>
-<div class="masking2"></div>
+</div>
+<div class="masking3"></div>

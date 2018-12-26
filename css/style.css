@@ -71,6 +71,8 @@
 
 .icon-shang:before { content: "\e606"; }
 
+.icon-paixu:before { content: "\e66c"; }
+
 html,
 body {
     width: 100%;
@@ -1729,7 +1731,12 @@ input::-webkit-input-placeholder {
 .search-chose ul {
     width: 100%;
     height: 0.6rem;
-    margin: 0.2rem auto;
+    margin: 0.1rem auto;
+}
+.search-chose ul li {
+    width: 50%;
+    float: left;
+    height: 0.6rem;
 }
 .list-chose ul li{
     width: 33.3%!important;
@@ -1739,11 +1746,205 @@ input::-webkit-input-placeholder {
     margin: 0.2rem 5% 0 5%;
     border-bottom: 1px #cecece solid;
 }
-.search-chose ul li {
-    width: 50%;
-    float: left;
-    height: 0.6rem;
+
+/*搜索列表修改start*/
+.sortsize ul li {
+    width: 20%!important;
+    /*float: left;*/
+    /*height: 0.6rem;*/
 }
+.search-chose-p1 {
+    float: left;
+    width: 0.5rem;
+    height: 0.6rem;
+    margin-left: 30%;
+}
+.paixu {
+    color: #000;
+    font-size: 0.45rem;
+    margin-top: 0.06rem;
+    float: left;
+}
+.sortsize ul li p{
+    font-size: 0.28rem!important;
+    margin-left: 10%!important;
+    text-align: center!important;
+}
+.more-line{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    position: absolute;
+    z-index: 989;
+    top: 3.4rem;
+    display: none;
+}
+.more-line dl dt{
+    width: 90%;
+    height: auto;
+    margin: 0.2rem 5%;
+}
+.more-line dl dt p{
+    font-size: 0.28rem;
+    color: #000;
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+.more-line dl dt ul li{
+    width: 22.5%;
+    margin: 0.2rem 1% 0 1.5%;
+    height: auto;
+    float: left;
+    font-size: 0.26rem;
+    color: #000;
+    line-height: 0.6rem;
+    text-align: center;
+    box-sizing: border-box;
+    background: #f6f6f6;
+    overflow: hidden;
+    -moz-border-radius: 0.02rem;
+    -webkit-border-radius: 0.02rem;
+    border-radius: 0.02rem;
+    border: 1px #f6f6f6 solid;
+}
+.mli-change-color{
+    color: #f1c131!important;
+    border: 1px #f1c131 solid!important;
+    background: #fff!important;
+}
+.more-button{
+    width: 100%;
+    background: #fff;
+    height: auto;
+    margin: 0.5rem auto 0.3rem auto;
+}
+.more-button ul li{
+    width: 45%;
+    margin-left: 3.5%;
+    float: left;
+    text-align: center;
+    font-size: 0.32rem;
+    line-height: 0.7rem;
+    height: 0.7rem;
+    background: #f6f6f6;
+    overflow: hidden;
+    -moz-border-radius: 0.02rem;
+    -webkit-border-radius: 0.02rem;
+    border-radius: 0.02rem;
+}
+.more-block {
+    color: #000 !important;
+    margin-left: 0.2rem!important;
+}
+.more-search{
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px #999 solid;
+    border-radius: 0.5rem;
+    margin: 0.4rem auto;
+}
+.xiam {
+    color: #666666;
+    font-size: 0.4rem;
+    margin-top: 0.03rem;
+    float: left;
+}
+#resource p {
+    float: left;
+    font-size: 0.32rem;
+    line-height: 0.5rem;
+    color: #000;
+    /*margin-left: 2%;*/
+    height: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+    min-width: 40%;
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-indent: 0.1rem;
+}
+.search-more-p {
+    float: left;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.05rem;
+}
+#resource{
+    float: left;
+    width: 30%;
+    /*margin-left: 2%;*/
+    border-right: 1px #000 solid;
+    margin: 0.1rem auto 0.1rem 2%;
+}
+.more-input-s{
+    float: left;
+    width: 60%;
+}
+.more-input {
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    text-indent: 0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    transition: all 0.3s ease 0s;
+    display: block;
+    width: 85%;
+    font-size: 0.26rem;
+    margin: 0.1rem 0;
+    color: #b8b8b8;
+    float: left;
+    /*margin-left: 5%;*/
+}
+.more-input::-webkit-input-placeholder{
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    color: #b8b8b8;
+    overflow: hidden;
+    text-indent: 0;
+}
+.more-input::-moz-placeholder{
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    color: #b8b8b8;
+    overflow: hidden;
+    text-indent: 0;
+}
+.more-input:-moz-placeholder{
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    color: #b8b8b8;
+    overflow: hidden;
+    text-indent: 0;
+}
+.more-input:-ms-input-placeholder{
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    color: #b8b8b8;
+    overflow: hidden;
+    text-indent: 0;
+}
+.more-fdj {
+    color: #000;
+    font-size: 0.4rem;
+    margin-top: 0.15rem;
+    float: left;
+    margin-left: 0.32rem;
+}
+.masking3 {
+    top: 3.4rem;
+    width: 100%;
+    height: auto;
+    background: url(../img/huibackground.png) repeat center;
+    position: absolute;
+    left: 0;
+    z-index: 110;
+    display: none;
+}
+/*搜索列表修改end*/
 
 .search-chose ul li p {
     float: left;
