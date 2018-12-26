@@ -1944,6 +1944,21 @@ input::-webkit-input-placeholder {
     z-index: 110;
     display: none;
 }
+.more-yellow{
+    color: #f1c131 !important;
+}
+.more-red{
+    color: #d32c2e !important;
+}
+.more-blue{
+    color: #4f96eb !important;
+}
+.more-green{
+    color: #63ae48 !important;
+}
+.more-purple{
+    color: #7882d2 !important;
+}
 /*搜索列表修改end*/
 
 .search-chose ul li p {

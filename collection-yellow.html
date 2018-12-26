@@ -83,6 +83,7 @@
 
                 callback:function(indexArr, data){
                     $("#price1 p").empty().append(data);
+                    $("#price1 p").addClass("more-yellow");
                 }
             });
             //            地区
@@ -121,6 +122,7 @@
                 ],
                 position:[0], //初始化定位
                 callback:function(indexArr, data){
+                    $("#region p").addClass("more-yellow");
                     $("#region p").empty().append(data[2].value);
                 }
             });
@@ -158,6 +160,7 @@
 
                 callback:function(indexArr, data){
                     $("#housetype p").empty().append(data);
+                    $("#housetype p").addClass("more-yellow");
                 }
             });
             //     房源类型
@@ -172,6 +175,7 @@
 
                 callback:function(indexArr, data){
                     $("#resource p").empty().append(data);
+                    $("#resource p").addClass("more-yellow");
                 }
             });
 //            更多筛选
@@ -193,21 +197,20 @@
                 $(".masking3").toggle();
                 $(".more-line").toggle();
                 $("body").on("click", "#m-area ul li", function () {
-                    $(this).siblings().removeClass('mli-change-color');
-                    $(this).toggleClass('mli-change-color');
+                    $(this).addClass('mli-change-color').siblings().removeClass('mli-change-color');
                 });
                 $("body").on("click", "#m-orientation ul li", function () {
-                    $(this).siblings().removeClass('mli-change-color');
-                    $(this).toggleClass('mli-change-color');
+                    $(this).addClass('mli-change-color').siblings().removeClass('mli-change-color');
                 });
                 $("body").on("click", "#m-level ul li",function () {
-                    $(this).siblings().removeClass('mli-change-color');
-                    $(this).toggleClass('mli-change-color');
+                    $(this).addClass('mli-change-color').siblings().removeClass('mli-change-color');
                 });
             });
             // 重置
             $(".replacement").on("click", function () {
                 $('.more-line dl dt li').removeClass('mli-change-color');
+                $("#more p").removeClass("more-yellow");
+                $("#more p").empty().append("更多");
             });
             // 确定
             $(".more-dater").on("click", function () {
@@ -215,17 +218,22 @@
 //                        $('body').unbind('touchmove');
                 $(".masking3").toggle();
                 $(".more-line").toggle();
-                if ($("#m-area ul li").is('.mli-change-color')){
-                    // 面积数据
-                    console.log($("#m-area  .mli-change-color").html())
-                }
-                if ($("#m-orientation ul li").is('.mli-change-color')){
-                    // 朝向数据
-                    console.log($("#m-orientation .mli-change-color").html())
-                }
-                if ($("#m-level ul li").is('.mli-change-color')){
-                    // 楼层数据
-                    console.log($("#m-level .mli-change-color").html())
+
+                if ($(".mli-change-color").length > 0){
+                    $("#more p").addClass("more-yellow");
+                    $("#more p").empty().append("更多" + $(".mli-change-color").length);
+                    if ($("#m-area ul li").is('.mli-change-color')){
+                        // 面积数据
+                        console.log($("#m-area  .mli-change-color").html())
+                    }
+                    if ($("#m-orientation ul li").is('.mli-change-color')){
+                        // 朝向数据
+                        console.log($("#m-orientation .mli-change-color").html())
+                    }
+                    if ($("#m-level ul li").is('.mli-change-color')){
+                        // 楼层数据
+                        console.log($("#m-level .mli-change-color").html())
+                    }
                 }
             });
             // 遮罩层关闭
@@ -235,11 +243,22 @@
                 $(".masking3").toggle();
                 $(".more-line").toggle();
             });
+//     排序
+            var mobileSelect5 = new MobileSelect({
+                trigger: '#sort',
+                title: '排序',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['全部','新房','二手房','租房','共建商铺']}
+                ],
+                position:[1], //初始化定位
 
-            // 排序
-            $(".sort").on("click", function(){
-                // 排序
+                callback:function(indexArr, data){
+                    // $("#resource p").empty().append(data);
+                    $(".paixu").addClass("more-yellow");
+                }
             });
+
 
 // 禁止软键盘弹出
             // $("input").focus(function(){
@@ -283,7 +302,7 @@
             <li id="price1"><p>价格</p><div class="search-chose-p"><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
             <li id="housetype"><p>户型</p><div class="search-chose-p"><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
             <li id="more"><p>更多</p><div class="search-chose-p"><i class="iconfont icon-xiasanjiao xia"></i><div class="clearfix"></div></div><div class="clearfix"></div></li>
-            <li class="sort"><div class="search-chose-p1"><i class="iconfont icon-paixu paixu"></i></div><div class="clearfix"></div></li>
+            <li id="sort"><div class="search-chose-p1"><i class="iconfont icon-paixu paixu"></i></div><div class="clearfix"></div></li>
             <div class="clearfix"></div>
         </ul>
     </div>
