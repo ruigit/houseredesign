@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>灯泡找房</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <link rel="stylesheet" href="css/mobileSelect.css"/>
+    <script type="text/javascript" src="js/mobileSelect-yellow.min.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function(){
+            new
+            FastClick(document.body);
+        })
+        $(document).ready(function() {
+            //		背景高度
+            var winHeight = window.innerHeight;
+            var bodyheight = $(".check-content").outerHeight(true);
+
+            if (winHeight > bodyheight){
+                $(".check-content").css({height: winHeight});
+            }else {
+                $(".check-content").css({height: bodyheight});
+            }
+
+            //            所属区域
+            var mobileSelect1 = new MobileSelect({
+                trigger: '#check-region',
+                title: '所属区域',
+                triggerDisplayData: false,
+
+                wheels: [
+                    {data:[
+                            {
+                                id:'1',
+                                value:'附近',
+                                childs:[
+                                    {id:'1',value:'1000米',
+                                        childs:[
+                                            {id:'1',value:'米米米米米米0000'},
+                                            {id:'2',value:'2000米'},
+                                            {id:'3',value:'3000米'},
+                                            {id:'4',value:'5000米'},
+                                            {id:'5',value:'10000米'}
+                                        ]
+                                    },
+                                    {id:'2',value:'2000米'},
+                                    {id:'3',value:'3000米'},
+                                    {id:'4',value:'5000米'},
+                                    {id:'5',value:'10000米'}
+                                ]
+                            },
+                            {id:'2',value:'上城区'},
+                            {id:'3',value:'下城区'},
+                            {id:'4',value:'江干区'},
+                            {id:'5',value:'拱墅区'},
+                            {id:'6',value:'西湖区'}
+                        ]}
+                ],
+                position:[0], //初始化定位
+                callback:function(indexArr, data){
+                    if (typeof(data[2]) == "undefined" && typeof(data[1]) != "undefined"){
+                        $("#check-region p").empty().append(data[0].value + data[1].value);
+                    }else if(typeof(data[2]) == "undefined" && typeof(data[1]) == "undefined"){
+                        $("#check-region p").empty().append(data[0].value);
+                    }else{
+                        $("#check-region p").empty().append(data[0].value + data[1].value + data[2].value);
+                    }
+                }
+            });
+            // $.ajax({
+            //     type: "POST",
+            //     url: "",
+            //     data: {},
+            //     dataType: "json",
+            //     success: function(res){
+            //         numArr = res.data;//先取numArr数据，再加载mobileSelect
+            //         //            地区
+            //         var mobileSelect = new MobileSelect({
+            //             trigger: '#region',
+            //             title: '地区',
+            //             triggerDisplayData: false,
+            //             wheels: [
+            //                 {data : numArr}
+            //             ],
+            //             position:[0], //初始化定位
+            //             callback:function(indexArr, data){
+            //                 $("#region p").empty().append(data[2].value);
+            //             }
+            //         });
+            //     }
+            // });
+            //            户型
+            var mobileSelect2 = new MobileSelect({
+                trigger: '#check-housetype',
+                title: '户型',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['0室','1室','2室','3室','4室','5室','6室']},
+                    {data:['0厅','1厅','2厅','3厅','4厅','5厅','6厅']},
+                    {data:['0卫','1卫','2卫','3卫','4卫','5卫','6卫']}
+                ],
+                position:[1,1,1], //初始化定位
+
+                callback:function(indexArr, data){
+                    $("#check-housetype p").empty().append(data);
+
+                }
+            });
+
+            //     登记类型
+            var mobileSelect4 = new MobileSelect({
+                trigger: '#check-resource',
+                title: '登记类型',
+                triggerDisplayData: false,
+                wheels: [
+                    {data:['全部','新房','二手房','租房','共建商铺']}
+                ],
+                position:[1], //初始化定位
+
+                callback:function(indexArr, data){
+                    $("#check-resource p").empty().append(data);
+
+                }
+            });
+
+
+
+            // 禁止软键盘弹出
+            // $("input").focus(function(){
+            //     document.activeElement.blur();
+            // });
+            // 防止安卓弹出键盘遮挡问题
+            var AndroidHeight = $(window).height();  //获取当前页面高度
+            $(window).resize(function () {
+                var thisHeight = $(this).height();
+                if ( AndroidHeight - thisHeight > 140 ) {
+                    //键盘弹出
+                } else {
+                    //键盘收起
+                    window.scrollTo(0,document.body.clientHeight);
+                }
+            });
+            // 防止ios微信弹出键盘遮挡问题
+            $(document).on('focusout', function () {
+                //软键盘收起的事件处理
+                window.scrollTo(0,document.body.clientHeight);
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="check-content">
+    <div class="check-nav search-nav-yellow">
+        <i class="iconfont icon-zuo check-zuo"></i>
+        <div class="check-zhuce">登记房源</div>
+        <div class="clearfix"></div>
+    </div>
+<div class="check-listone">
+    <dl>
+        <dt>
+            <ul>
+                <li>
+                    登记类型
+                </li>
+                <li id="check-resource">
+                    <p>登记房源</p>
+                    <i class="iconfont icon-youjiantou check-right"></i>
+                    <div class="clearfix"></div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </dt>
+        <dt>
+            <ul>
+                <li>
+                    所属区域
+                </li>
+                <li id="check-region">
+                    <p>所属区域</p>
+                    <i class="iconfont icon-youjiantou check-right"></i>
+                    <div class="clearfix"></div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </dt>
+        <dt>
+            <ul>
+                <li>
+                    小区名称
+                </li>
+                <li>
+                    <input class="check-input" type="text" name="" value="" placeholder="小区名称">
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </dt>
+        <dt>
+            <ul>
+                <li>
+                    期待售价(元)
+                </li>
+                <li>
+                    <input class="check-input" type="text" name="" value="" placeholder="期待售价">
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </dt>
+        <dt>
+            <ul>
+                <li>
+                    房源面积(平米)
+                </li>
+                <li>
+                    <input class="check-input" type="text" name="" value="" placeholder="房源面积">
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </dt>
+        <dt>
+            <ul>
+                <li>
+                    户型
+                </li>
+                <li id="check-housetype">
+                    <p>户型</p>
+                    <i class="iconfont icon-youjiantou check-right"></i>
+                    <div class="clearfix"></div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </dt>
+        <dt>
+            <ul>
+                <li>
+                    建筑年代
+                </li>
+                <li>
+                    <input class="check-input" type="text" name="" value="" placeholder="建筑年代">
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </dt>
+        <dt>
+            <p>
+                业主心态
+            </p>
+            <textarea class="check-textarea" placeholder="描述"></textarea>
+        </dt>
+        <dt>
+            <p>
+                房屋介绍
+            </p>
+            <textarea class="check-textarea" placeholder="描述"></textarea>
+        </dt>
+    </dl>
+</div>
+    <div class="check-listone">
+        <dl>
+            <dt>
+                <ul>
+                    <li>
+                        称呼
+                    </li>
+                    <li>
+                        <input class="check-input" type="text" name="" value="" placeholder="称呼">
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            </dt>
+            <dt>
+                <ul>
+                    <li>
+                        联系方式
+                    </li>
+                    <li>
+                        <input class="check-input" type="text" name="" value="" placeholder="联系方式">
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            </dt>
+        </dl>
+    </div>
+    <div class="check-ensure search-nav-yellow">我要登记</div>
+</div>
+</body>
+</html>

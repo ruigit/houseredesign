@@ -16,7 +16,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-shangsanjiao:before { content: "\e600"; }
 
 .icon-icon:before { content: "\e601"; }
@@ -60,6 +59,8 @@
 .icon-love:before { content: "\e61e"; }
 
 .icon-icon--xia:before { content: "\e604"; }
+
+.icon-youjiantou:before { content: "\e617"; }
 
 .icon-zhuanfa:before { content: "\e60c"; }
 
@@ -735,9 +736,9 @@ body {
 
 .caidan-line-1 dl dt img {
     width: 0.56rem;
-    height: 0.8rem;
+    height: 0.74rem;
     border: none;
-    margin: 0.1rem auto;
+    margin: 0.2rem auto auto auto;
 }
 
 .caidan-line-1 dl dt p {
@@ -2828,6 +2829,226 @@ input::placeholder{
     /*top: 0.1rem;*/
     /*z-index: 888;*/
 /*}*/
+/*checkstart*/
+.check-nav {
+    width: 100%;
+    height: 1rem;
+}
+
+.check-zuo {
+    color: #000;
+    font-size: 0.65rem;
+    float: left;
+    margin-left: 0.2rem;
+    line-height: 1rem;
+}
+
+.check-zhuce {
+    color: #000;
+    font-size: 0.34rem;
+    float: left;
+    margin-left: 27%;
+    line-height: 1rem;
+}
+
+.check-content {
+    width: 100%;
+    height: auto;
+    background: #f4f4f4;
+    padding-bottom: 0.8rem;
+    position: relative;
+    z-index: 80;
+}
+.check-listone{
+    width: 100%;
+    background: #fff;
+    height: auto;
+    margin-bottom: 0.2rem;
+}
+.check-listone dl dt{
+    width: 96%;
+    height: auto;
+    margin-left: 4%;
+    border-bottom: 1px #fafafa solid;
+    box-sizing: border-box;
+}
+.check-listone dl dt ul li:first-of-type{
+    width: 35%;
+    font-size: 0.3rem;
+    color: #000;
+    line-height: 1rem;
+}
+.check-listone dl dt ul li{
+    float: left;
+    width: 65%;
+    height: 1rem;
+}
+.check-listone dl dt ul li p {
+    float: left;
+    font-size: 0.3rem;
+    line-height: 1rem;
+    color: #b5b5b5;
+    /* margin-left: 2%; */
+    height: 1rem;
+    overflow: hidden;
+    text-align: right;
+    width: 86%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-indent: 0.1rem;
+}
+.check-right {
+    color: #b5b5b5;
+    font-size: 0.5rem;
+    float: left;
+    margin-left: 0rem;
+    line-height: 1rem;
+}
+.check-input {
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    text-indent: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    transition: all 0.3s ease 0s;
+    width: 91%;
+    font-size: 0.3rem;
+    margin: 0.1rem 9% 0.1rem auto;
+    text-align: right;
+    color: #b5b5b5;
+    /* margin-left: 5%; */
+}
+.check-input::-webkit-input-placeholder{
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    color: #b5b5b5;
+    overflow: hidden;
+    text-indent: 0;
+    text-align: right;
+}
+.check-input::-moz-placeholder{
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    color: #b5b5b5;
+    overflow: hidden;
+    text-indent: 0;
+    text-align: right;
+}
+.check-input:-moz-placeholder{
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    color: #b5b5b5;
+    overflow: hidden;
+    text-indent: 0;
+    text-align: right;
+}
+.check-input:-ms-input-placeholder{
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    color: #b5b5b5;
+    overflow: hidden;
+    text-indent: 0;
+    text-align: right;
+}
+.check-listone dl dt p{
+    width: 100%;
+    font-size: 0.3rem;
+    color: #000;
+    line-height: 1rem;
+}
+.check-textarea{
+    border:0;
+    border-radius:5px;
+    background-color:#fafafa;
+    width: 90%;
+    margin: 0 auto 0.2rem 1%;
+    height: 1.5rem;
+    padding: 0.15rem 0.1rem;
+    font-size: 0.26rem;
+    color: #b5b5b5;
+    text-indent: 0.2rem;
+    resize: none;
+}
+.check-ensure{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.34rem;
+    z-index: 99;
+}
+/*checkend*/
+/*fenye修改start*/
+.detail-fenye {
+    width: 100%;
+    height: 0.8rem;
+    /*background: #f0bd40;*/
+    box-sizing: border-box;
+    border: 1px #cecece solid;
+    border-left: none;
+    border-right: none;
+}
+
+.detail-fenye ul li {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    height: 0.8rem;
+    /*margin: 0.1rem 0;*/
+    text-align: center;
+    font-size: 0.28rem;
+    color: #000;
+    line-height: 0.8rem;
+    /*border-right: 1px #cecece solid;*/
+}
+
+.detail-fenye ul li:last-of-type {
+    border-right: none;
+}
+.detail-color-green {
+    background: #63ae48;
+    color: #fff!important;
+}
+
+.detail-color-red {
+    background: #d32c2e;
+    color: #fff!important;
+}
+
+.detail-color-blue {
+    background: #4f96eb;
+    color: #fff!important;
+}
+
+.detail-color-purple {
+    background: #7882d2;
+    color: #fff!important;
+}
+.detail-lis{
+    width: 100%!important;
+    margin: 0.35rem 0 auto 0!important;
+}
+.tab-bor{
+    border-bottom: none!important;
+}
+.detail-bor{
+    border-bottom: 1px #cecece solid!important;
+    padding-bottom: 0.2rem!important;
+    margin-bottom: 0.2rem!important;
+}
+.detail-main-list1 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.detail-95{
+    width: 90%!important;
+    margin: 0 5%!important;
+}
+/*fenye修改end*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 

@@ -123,7 +123,13 @@
                 position:[0], //初始化定位
                 callback:function(indexArr, data){
                     $("#region p").addClass("more-yellow");
-                    $("#region p").empty().append(data[2].value);
+                    if (typeof(data[2]) == "undefined" && typeof(data[1]) != "undefined"){
+                        $("#region p").empty().append(data[1].value);
+                    }else if(typeof(data[2]) == "undefined" && typeof(data[1]) == "undefined"){
+                        $("#region p").empty().append(data[0].value);
+                    }else{
+                        $("#region p").empty().append(data[2].value);
+                    }
                 }
             });
             // $.ajax({

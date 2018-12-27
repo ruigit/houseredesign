@@ -33,7 +33,18 @@
             $(".shou").on("click", function () {
                 $(this).toggleClass("shoucang icon-love").toggleClass("shoucang1 icon-shoucang1");
             })
-
+// 展示，记录
+            $(".detail-fenye ul li").on("click", function () {
+                $(this).addClass("detail-color-red").siblings().removeClass("detail-color-red");
+                var nam = $(this).html();
+                if (nam == "房屋详情"){
+                    $(".detail-main-list-middle").show();
+                    $(".detail-main-broker").hide()
+                }else if (nam == "经纪人"){
+                    $(".detail-main-broker").show();
+                    $(".detail-main-list-middle").hide();
+                }
+            })
         })
     </script>
 </head>
@@ -79,7 +90,7 @@
 </div>
 <div class="detail-main">
     <div class="detail-main-list">
-        <div class="tab-main-pic-main">
+        <div class="tab-main-pic-main tab-bor">
             <div class="tab-main-pic">
                 <dl>
                     <dt>
@@ -103,15 +114,37 @@
                 </dl>
             </div>
         </div>
-        <div class="detail-main-list-middle">
+    </div>
+    <div class="detail-main-list1">
+        <div class="detail-fenye">
+            <ul>
+                <li class="detail-color-red">房屋详情</li>
+                <li>经纪人</li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <div class="detail-main-list-middle detail-95">
             <span>房屋详细信息</span>
             <p>夏御兰湾A区008号湖畔别墅夏御兰湾A区008号</p>
             <p>夏御兰湾A区008号湖畔别墅夏御兰湾A区008号夏御兰湾A区008号</p>
             <p>夏御兰湾A区008号湖畔别墅夏御兰湾</p>
             <span>夏御兰湾A区008号湖畔别墅</span>
         </div>
-        <div class="detail-main-broker">
-            <ul>
+
+        <div class="detail-main-broker detail-95" style="display: none">
+            <ul class="detail-bor">
+                <li>
+                    <img src="img/picd.jpg" />
+                </li>
+                <li>
+                    <p class="detail-borker-top">张靓颖</p>
+                    <p>夏御兰湾A区008号</p>
+                    <p>夏御兰湾A</p>
+                    <span>0411-4567890&nbsp;&nbsp;&nbsp;&nbsp;13904114789</span>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+            <ul class="detail-bor">
                 <li>
                     <img src="img/picd.jpg" />
                 </li>
