@@ -157,7 +157,7 @@
             //            户型
             var mobileSelect2 = new MobileSelect({
                 trigger: '#housetype',
-                title: '面积',
+                title: '户型',
                 triggerDisplayData: false,
                 wheels: [
                     {data:['全部','东','东南','北','东北','南','西南','西','西北']}
@@ -177,11 +177,35 @@
                 wheels: [
                     {data:['全部','新房','二手房','租房','共建商铺']}
                 ],
-                position:[1], //初始化定位
+                position:[0], //初始化定位
 
                 callback:function(indexArr, data){
                     $("#resource p").empty().append(data);
                     $("#resource p").addClass("more-yellow");
+                    // 换类型清理筛选数据
+                    $(".sortsize ul li p").removeClass("more-yellow");
+                    $("#region p").empty().append("区域");
+                    $("#price1 p").empty().append("价格");
+                    $("#housetype p").empty().append("户型");
+                    $("#more p").empty().append("更多");
+                    $('.more-line dl dt li').removeClass('mli-change-color');
+                    $('#sort i').removeClass('more-yellow');
+                    // 重置位置
+                    mobileSelect1.locatePosition(0,0,0);
+                    mobileSelect2.locatePosition(0,3);
+                    mobileSelect3.locatePosition(0,3);
+                    mobileSelect5.locatePosition(0,1);
+                    if (data == "新房"){
+                        mobileSelect3.updateWheel(0,['sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']);
+                        mobileSelect2.updateWheel(0,['户型2','户型2','户型2day','We户型2esday','Thu户型2ay','F户型2day','Saturday']);
+                    }else if(data == "二手房"){
+                        mobileSelect3.updateWheel(0,['2','3','4','5','6','6','8']);
+                    }else if(data == "租房"){
+                        mobileSelect3.updateWheel(0,['23','23','Tuesday','Wednesday','23','Friday','Saturday']);
+                    }else if(data == "共建商铺"){
+                        mobileSelect3.updateWheel(0,['66','666','6666','Wednesday','Thursday','Friday','Saturday']);
+                    }
+
                 }
             });
 //            更多筛选
@@ -298,7 +322,7 @@
         <div class="clearfix"></div>
     </div>
     <div class="more-search">
-            <div id="resource"><p>区域</p><div class="search-more-p"><i class="iconfont icon-xiasanjiao xiam"></i><div class="clearfix"></div></div><div class="clearfix"></div></div>
+            <div id="resource"><p>类型</p><div class="search-more-p"><i class="iconfont icon-xiasanjiao xiam"></i><div class="clearfix"></div></div><div class="clearfix"></div></div>
             <div class="more-input-s"><input class="more-input" id="search" type="text" name="" value="" placeholder="请输入小区名称/地铁/商圈"><div class="search-more-p"><i class="iconfont icon-search more-fdj"></i><div class="clearfix"></div></div><div class="clearfix"></div></div>
             <div class="clearfix"></div>
     </div>

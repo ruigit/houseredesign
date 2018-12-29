@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="搜索列表修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index-purple.html" afterPath="$PROJECT_DIR$/index-purple.html" />
-      <change beforePath="$PROJECT_DIR$/list-blue.html" afterPath="$PROJECT_DIR$/list-blue.html" />
-      <change beforePath="$PROJECT_DIR$/归档.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/collection-yellow.html" afterPath="$PROJECT_DIR$/collection-yellow.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +22,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.64241046">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="collection-yellow.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="collection-yellow.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/collection-yellow.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="131" column="21" lean-forward="false" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
+                <state relative-caret-position="152">
+                  <caret line="181" column="11" lean-forward="true" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
@@ -38,7 +35,7 @@
           <file leaf-file-name="check.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/check.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2052">
+                <state relative-caret-position="18">
                   <caret line="114" column="61" lean-forward="false" selection-start-line="114" selection-start-column="61" selection-end-line="114" selection-end-column="61" />
                   <folding />
                 </state>
@@ -57,7 +54,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index-purple.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index-purple.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index-purple.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="343">
@@ -175,7 +172,6 @@
         <option value="$PROJECT_DIR$/table.html" />
         <option value="$PROJECT_DIR$/css/slider.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/collection-yellow.html" />
         <option value="$PROJECT_DIR$/check.html" />
         <option value="$PROJECT_DIR$/index-green.html" />
         <option value="$PROJECT_DIR$/index-blue.html" />
@@ -193,6 +189,7 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index-purple.html" />
         <option value="$PROJECT_DIR$/list-blue.html" />
+        <option value="$PROJECT_DIR$/collection-yellow.html" />
       </list>
     </option>
   </component>
@@ -460,7 +457,7 @@
       <workItem from="1545783332543" duration="17673000" />
       <workItem from="1545869736165" duration="14456000" />
       <workItem from="1545901505156" duration="203000" />
-      <workItem from="1546042915500" duration="1647000" />
+      <workItem from="1546042915500" duration="1600000" />
     </task>
     <task id="LOCAL-00045" summary="大连房产系统">
       <created>1538117080095</created>
@@ -809,7 +806,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358806000" />
+    <option name="totallyTimeSpent" value="362470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -854,8 +851,7 @@
     <MESSAGE value="table手机端表格" />
     <MESSAGE value="搜索列表修改" />
     <MESSAGE value="修改" />
-    <MESSAGE value="菜单搜索修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="菜单搜索修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -941,13 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2606">
           <caret line="7" column="99" lean-forward="false" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mobileSelect-yellow.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="197" column="21" lean-forward="true" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1084,14 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="114" column="61" lean-forward="false" selection-start-line="114" selection-start-column="61" selection-end-line="114" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -1125,14 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="679" column="10" lean-forward="false" selection-start-line="679" selection-start-column="10" selection-end-line="679" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collection-yellow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="131" column="21" lean-forward="false" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,6 +1184,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="586" column="30" lean-forward="true" selection-start-line="586" selection-start-column="30" selection-end-line="586" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="114" column="61" lean-forward="false" selection-start-line="114" selection-start-column="61" selection-end-line="114" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mobileSelect-yellow.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7051">
+          <caret line="197" column="21" lean-forward="true" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collection-yellow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="181" column="11" lean-forward="true" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
           <folding />
         </state>
       </provider>
