@@ -3049,6 +3049,47 @@ input::placeholder{
     margin: 0 5%!important;
 }
 /*fenye修改end*/
+/*菜单修改start*/
+.caidan-xiu{
+    width: 100%;
+    /* border-bottom: 1px #cecece solid; */
+    height: auto;
+    background: url(../img/cebianback.png) repeat center;
+}
+.caidan-xiu li{
+    float: left;
+    width: 85%;
+    margin-left: 7.5%;
+    height: 0.7rem;
+    border-bottom: 1px #a4a4a4 solid;
+    cursor: pointer;
+}
+
+.caidan-xiu li p {
+    width: 35%;
+    line-height: 0.7rem;
+    font-size: 0.24rem;
+    color: #000;
+    float: left;
+    margin-left: 15%;
+    margin-top: 1px;
+}
+
+.caidan-xiu li span {
+    width: 45%;
+    line-height: 0.7rem;
+    font-size: 0.24rem;
+    color: #3d3d3d;
+    float: right;
+    display: block;
+    text-align: right;
+    padding-right: 0.15rem;
+    overflow: hidden;
+    height: 0.7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*菜单修改end*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 
