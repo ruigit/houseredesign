@@ -125,7 +125,7 @@
 
     Slider.DEFAULTS = {
         speed: 500, // 移动速度
-        autoplay: 4000, // 循环时间毫秒
+        autoplay: 3000, // 循环时间毫秒
         lazyLoad: true, // 是否延迟加载图片 data-src=""
         pagination: '.aui-banner-pagination',
         wrapperClass: 'aui-banner-wrapper',

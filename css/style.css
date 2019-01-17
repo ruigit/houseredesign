@@ -446,12 +446,26 @@ body {
 .detail-main-broker ul li:first-of-type img {
     width: 1.7rem;
     height: 1.7rem;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 2px #f0bd42 solid;
+    /*-moz-border-radius: 50%;*/
+    /*-webkit-border-radius: 50%;*/
+    /*border-radius: 50%;*/
+    /*border: 2px #f0bd42 solid;*/
     margin-left: 10%;
     margin-top: 8%;
+}
+.imco{
+    width: 1.7rem!important;
+    color: #000;
+    font-style:normal;
+    line-height: 0.6rem;
+    height: 0.6rem!important;
+    display: block;
+    margin-left: 10%!important;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 2%!important;
+    font-size: 0.28rem;
 }
 
 .detail-phone {
@@ -637,7 +651,23 @@ body {
     display: block;
     margin-left: 0.15rem;
 }
-
+.alt-left{
+    margin-left: 8%;
+}
+.red-alt{
+    width: auto;
+    line-height: 0.45rem;
+    margin-right: 0.15rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.26rem;
+    color: #000;
+    text-align: center;
+    padding: 0 0.15rem;
+    box-sizing: border-box;
+    border: 1px #cecece solid;
+    float: left;
+    border-radius: 0.1rem;
+}
 /*detail end*/
 
 /*search start*/
