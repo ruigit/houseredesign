@@ -2095,8 +2095,14 @@ input::-webkit-input-placeholder {
 .search-content-list {
     width: 90%;
     margin: 0.2rem 5% auto 5%;
+    overflow-x: hidden;
 }
-
+.gundong{
+    width: 102%;
+    padding: 0 2% 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 .find-search {
     width: 45%;
     height: 0.8rem;

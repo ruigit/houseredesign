@@ -95,6 +95,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     width: 0;
     height: 0;
     background: transparent;
+    color: transparent;
 }
 
 /*ios上的input，select清除默认*/
