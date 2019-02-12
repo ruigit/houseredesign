@@ -283,6 +283,10 @@
                 $(".masking").toggleClass("showleftnav-yrf");
                 $(".room").removeClass("showleftnav-y");
                 $(".room").toggleClass("showleftnav-yr");
+                // 厅
+                var num = 2;
+                // 室
+                var numl = 3;
                 var ting;
                 var shi;
                 if ($(".room-val").html() == "全部"){
@@ -290,30 +294,34 @@
                     // $(".ro-tingd-qbs").removeClass("roshi room-chose-blue-fon");
                     $(".ro-tingd-qb").addClass("roting room-chose-black-fon");
                     $(".ro-tingd-qbs").addClass("roshi room-chose-black-fon");
-                    ting = NaN;
-                    shi = NaN;
+                    // ting = NaN;
+                    // shi = NaN;
+                    ting = num;
+                    shi = numl;
                 }else if($(".room-val").html().indexOf("厅") > 0 && $(".room-val").html().indexOf("全部") > 0){
                     $(".ro-tingd-qb").removeClass("roting room-chose-black-fon");
                     // $(".ro-tingd-qbs").removeClass("roshi room-chose-black-fon");
-                    var num = $(".room-ting .swiper-slide-active").html();
+
                     ting = num;
                     // var shi = 2;
-                    shi = NaN;
+                    // shi = NaN;
+                    shi = numl;
                 }else if($(".room-val").html().indexOf("室") > 0 && $(".room-val").html().indexOf("全部") >= 0){
                     // $(".ro-tingd-qb").removeClass("roting room-chose-black-fon");
                     $(".ro-tingd-qbs").removeClass("roshi room-chose-black-fon");
-                    var numl = $(".room-shi .swiper-slide-active").html();
+
                     shi = numl;
-                    ting = NaN;
+                    // ting = NaN;
+                    ting = num;
                 }else if ($(".room-val").html().indexOf("厅") > 0 && $(".room-val").html().indexOf("室") > 0){
                     $(".ro-tingd-qb").removeClass("roting room-chose-black-fon");
                     $(".ro-tingd-qbs").removeClass("roshi room-chose-black-fon");
-                    var num = $(".room-ting .swiper-slide-active").html();
-                    var numl = $(".room-shi .swiper-slide-active").html();
+
                     shi = numl;
                     ting = num;
                 }
-
+                console.log(ting);
+                console.log(shi);
                 var mySwiper = new Swiper('#swiper1',{
                     slidesPerView : "auto",
                     touchMoveStopPropagation : false,
