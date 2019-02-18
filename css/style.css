@@ -453,6 +453,88 @@ body {
     margin-left: 10%;
     margin-top: 8%;
 }
+
+.tab-new-padd{
+    padding-bottom: 0!important;
+    margin-bottom: 0!important;
+}
+.detail-main-bro {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.4rem;
+}
+.detail-broder{
+    width: 90%;
+    margin: 0.4rem auto 0.2rem auto;
+    box-sizing: border-box;
+    border-top: 1px #cecece solid;
+}
+
+.detail-main-bro ul li {
+    width: 60%;
+    height: auto;
+    float: left;
+}
+
+.detail-main-bro ul li span {
+    width: 92%;
+    line-height: 0.6rem;
+    display: block;
+    text-align: left;
+    color: #0150ad;
+    font-size: 0.26rem;
+}
+
+.detail-main-bro ul li p {
+    width: 92%;
+    /*height: 0.35rem;*/
+    /*overflow: hidden;*/
+    line-height: 0.35rem;
+    text-align: left;
+    color: #000;
+    font-size: 0.26rem;
+}
+
+.detail-main-bro ul li:first-of-type {
+    width: 40%;
+}
+
+.detail-main-bro ul li:first-of-type img {
+    width: 1.7rem;
+    height: 1.7rem;
+    /*-moz-border-radius: 50%;*/
+    /*-webkit-border-radius: 50%;*/
+    /*border-radius: 50%;*/
+    /*border: 2px #f0bd42 solid;*/
+    margin-left: 20%;
+    margin-top: 8%;
+    box-sizing: border-box;
+}
+.detail-new-img{
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px #f0bd42 solid;
+}
+.detail-bor-top {
+    margin-top: 8%;
+}
+.imcor{
+    width: 1.7rem!important;
+    color: #000;
+    font-style:normal;
+    line-height: 0.6rem;
+    height: 0.6rem!important;
+    display: block;
+    margin-left: 20%!important;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 2%!important;
+    font-size: 0.28rem;
+}
+
+
 .imco{
     width: 1.7rem!important;
     color: #000;
@@ -3138,6 +3220,108 @@ input::placeholder{
     white-space: nowrap;
 }
 /*菜单修改end*/
+/*委托列表start*/
+.tlak-list-suspension{
+    position: fixed;
+    bottom: 1rem;
+    right: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    line-height: 0.3rem;
+    font-size: 0.26rem;
+    color: #6777d6;
+    background: #fff;
+    text-align: center;
+    padding-top: 0.23rem;
+    -webkit-box-shadow:0 0 30px #6777d6;
+    -moz-box-shadow:0 0 30px #6777d6;
+    box-shadow:0 0 30px #6777d6;
+    z-index: 83;
+}
+.delegation-list{
+    background: #fff;
+    padding-bottom: 0.2rem!important;
+}
+.delegation-main-list{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 0.5rem;
+}
+.delegation-main-list dl dt{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-bottom: 1px #f3f3f3 solid;
+    padding: 0.25rem 0;
+    position: relative;
+}
+.delegation-title{
+    /*max-width: 41%;*/
+    width: auto;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.4rem;
+    color: #000;
+    text-indent: 0.1rem;
+    float: left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.delegation-alt{
+    width: auto;
+    margin-top: 0.27rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.24rem;
+    box-sizing: border-box;
+    border-radius: 0.03rem;
+    color: #fff;
+    float: left;
+    margin-left: 0.2rem;
+    /*margin-bottom: 0.2rem;*/
+}
+.delegation-backcolor-yellow{
+    background: #eec352;
+}
+.delegation-backcolor-grey{
+    background: #b7b7b7;
+}
+
+.delegation-main-list dl dt p{
+    width: 100%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.28rem;
+    color: #cfcfcf;
+    overflow: hidden;
+    text-indent: 0.1rem;
+}
+.delegation-span{
+    width: 1.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #eec352;
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.1rem;
+    z-index: 81;
+    overflow: hidden;
+}
+/*委托详情start*/
+.delegation-main{
+    padding-bottom: 0.2rem!important;
+}
+.listtwor{
+    margin-bottom: 0!important;
+}
+.delegation-list dl dt ul li p{
+    width: 94%!important;
+}
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 
