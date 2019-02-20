@@ -74,6 +74,7 @@
 
 .icon-paixu:before { content: "\e66c"; }
 
+.icon-fanhui:before {content: "\e62a";}
 html,
 body {
     width: 100%;
