@@ -3291,7 +3291,7 @@ input::placeholder{
 }
 
 .delegation-main-list dl dt p{
-    width: 100%;
+    width: 70%;
     height: 0.45rem;
     line-height: 0.45rem;
     font-size: 0.28rem;
