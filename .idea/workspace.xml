@@ -4,10 +4,6 @@
     <list default="true" readonly="true" id="0ec7a343-9ae6-49a3-9456-ec8f64ee0251" name="默认的" comment="修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.eot" afterPath="$PROJECT_DIR$/fonts/iconfont.eot" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.svg" afterPath="$PROJECT_DIR$/fonts/iconfont.svg" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.ttf" afterPath="$PROJECT_DIR$/fonts/iconfont.ttf" />
-      <change beforePath="$PROJECT_DIR$/fonts/iconfont.woff" afterPath="$PROJECT_DIR$/fonts/iconfont.woff" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +25,8 @@
           <file leaf-file-name="collection-yellow.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/collection-yellow.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="854">
-                  <caret line="208" column="17" lean-forward="true" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
+                <state relative-caret-position="582">
+                  <caret line="242" column="50" lean-forward="true" selection-start-line="242" selection-start-column="50" selection-end-line="242" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -49,7 +45,7 @@
           <file leaf-file-name="delegation-list.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/delegation-list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
+                <state relative-caret-position="1296">
                   <caret line="72" column="73" lean-forward="false" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
                   <folding>
                     <element signature="e#1780#1786#0" expanded="true" />
@@ -130,8 +126,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="559">
-                  <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="39" />
+                <state relative-caret-position="-454">
+                  <caret line="3169" column="43" lean-forward="false" selection-start-line="3169" selection-start-column="43" selection-end-line="3169" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -239,9 +235,9 @@
         <option value="$PROJECT_DIR$/delegation.html" />
         <option value="$PROJECT_DIR$/delegation-list.html" />
         <option value="$PROJECT_DIR$/detail-purple.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/collection-yellow.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -291,8 +287,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,6 +308,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,14 +522,13 @@
       <workItem from="1550189921646" duration="122000" />
       <workItem from="1550449244912" duration="12055000" />
       <workItem from="1550535413622" duration="216000" />
-      <workItem from="1550621446170" duration="1153000" />
-    </task>
-    <task id="LOCAL-00056" summary="默认的">
-      <created>1539756142886</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1539756142886</updated>
+      <workItem from="1550621446170" duration="1177000" />
+      <workItem from="1550708766795" duration="134000" />
+      <workItem from="1550794748369" duration="145000" />
+      <workItem from="1551053852953" duration="175000" />
+      <workItem from="1551140044715" duration="170000" />
+      <workItem from="1551226387164" duration="127000" />
+      <workItem from="1551313222984" duration="644000" />
     </task>
     <task id="LOCAL-00057" summary="默认的">
       <created>1539756705964</created>
@@ -871,11 +866,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550628533496</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="修改">
+      <created>1550653657211</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1550653657211</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396540000" />
+    <option name="totallyTimeSpent" value="397959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2047" height="1047" extended-state="0" />
@@ -1255,7 +1257,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/delegation-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="1296">
           <caret line="72" column="73" lean-forward="false" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
           <folding>
             <element signature="e#1780#1786#0" expanded="true" />
@@ -1302,18 +1304,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/collection-yellow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="39" />
+        <state relative-caret-position="582">
+          <caret line="242" column="50" lean-forward="true" selection-start-line="242" selection-start-column="50" selection-end-line="242" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collection-yellow.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="208" column="17" lean-forward="true" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
+        <state relative-caret-position="-454">
+          <caret line="3169" column="43" lean-forward="false" selection-start-line="3169" selection-start-column="43" selection-end-line="3169" selection-end-column="43" />
           <folding />
         </state>
       </provider>
