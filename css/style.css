@@ -3010,6 +3010,19 @@ input::placeholder{
     white-space: nowrap;
     text-indent: 0.1rem;
 }
+.delegation-mindset{
+    width: 100%;
+    font-size: 0.3rem;
+    color: #000;
+    line-height: 1rem;
+}
+.delegation-mindset-main{
+    width: 97%;
+    font-size: 0.3rem;
+    color: #b5b5b5;
+    line-height: 0.5rem;
+    margin-bottom: 0.2rem;
+}
 .check-right {
     color: #b5b5b5;
     font-size: 0.5rem;
